@@ -1,0 +1,1797 @@
+******************************
+	Start
+******************************
+
+#Test category: mc
+The circumference is: 217 mm
+For more information open file "Test        7" with the offline menue!!!
+Result of mc: No Errors occurred!
+#End of mc
+
+#Test category: mc
+The circumference is: 217 mm
+
+Result of mc: No Errors occurred!
+#End of mc
+*************************
+DiscBot connected to COM 4
+Started at: 18:56:51_01.03.2021 	Ended at: 18:57:40_01.03.2021
+68 Byte were recived & 94 Byte were sent!!
+
+
+##Completly test results: 0 Errors occurred!
+
+#Result of mc: No Errors occurred!
+#End of result mc
+
+#Result of mc: No Errors occurred!
+#End of result mc
+
+##End of Completly test results
+*************************
+******************************
+	Start
+******************************
+******************************
+	Start
+******************************
+******************************
+	Start
+******************************
+******************************
+	Start
+******************************
+******************************
+	Start
+******************************
+******************************
+	Start
+******************************
+******************************
+	Start
+******************************
+******************************
+	Start
+******************************
+******************************
+	Start
+******************************
+******************************
+	Start
+******************************
+******************************
+	Start
+******************************
+******************************
+	Start
+******************************
+******************************
+	Start
+******************************
+******************************
+	Start
+******************************
+******************************
+	Start
+******************************
+******************************
+	Start
+******************************
+******************************
+	Start
+******************************
+******************************
+	Start
+******************************
+******************************
+	Start
+******************************
+******************************
+	Start
+******************************
+******************************
+	Start
+******************************
+******************************
+	Start
+******************************
+******************************
+	Start
+******************************
+******************************
+	Start
+******************************
+******************************
+	Start
+******************************
+******************************
+	Start
+******************************
+******************************
+	Start
+******************************
+******************************
+	Start
+******************************
+******************************
+	Start
+******************************
+
+#Test category: ls
+*~jh
+
+Result of ls: 1 Error occurred
+~jh
+#End of ls
+******************************
+	Start
+******************************
+
+#Test category: ls
+******************************
+	Start
+******************************
+
+#Test category: ls
+******************************
+	Start
+******************************
+
+#Test category: ls
+******************************
+	Start
+******************************
+
+#Test category: ls
+******************************
+	Start
+******************************
+
+#Test category: ls
+******************************
+	Start
+******************************
+
+#Test category: ls
+******************************
+	Start
+******************************
+
+#Test category: ls
+******************************
+	Start
+******************************
+
+#Test category: ls
+******************************
+	Start
+******************************
+
+#Test category: ls
+******************************
+	Start
+******************************
+
+#Test category: ls
+******************************
+	Start
+******************************
+
+#Test category: ls
+******************************
+	Start
+******************************
+******************************
+	Start
+******************************
+
+#Test category: mc
+The circumference is: 217 mm
+******************************
+	Start
+******************************
+
+#Test category: mc
+The circumference is: 217 mm
+******************************
+	Start
+******************************
+
+#Test category: mc
+The circumference is: 217 mm
+******************************
+	Start
+******************************
+
+#Test category: mc
+The circumference is: 217 mm
+******************************
+	Start
+******************************
+
+#Test category: mc
+The circumference is: 217 mm
+******************************
+	Start
+******************************
+
+#Test category: mc
+The circumference is: 217 mm
+******************************
+	Start
+******************************
+
+#Test category: mc
+The circumference is: 217 mm
+For more information open file "Test        8" with the offline menue!!!******************************
+	Start
+******************************
+
+#Test category: mc
+The circumference is: 217 mm
+******************************
+	Start
+******************************
+
+#Test category: mc
+The circumference is: 217 mm
+******************************
+	Start
+******************************
+******************************
+	Start
+******************************
+******************************
+	Start
+******************************
+******************************
+	Start
+******************************
+******************************
+	Start
+******************************
+Error: Connection!
+*************************
+DiscBot connected to COM 16
+Started at: 13:40:49_10.03.2021 	Ended at: 13:41:01_10.03.2021
+0 Byte were recived & 0 Byte were sent!!
+
+
+##Completly test results: 0 Errors occurred!
+
+##End of Completly test results
+*************************
+******************************
+	Start
+******************************
+
+#Test category: bm
+The messurements are:
+	left: 91.37 (233 of 255)
+	right: 93.73(239 of 255)
+******************************
+	Start
+******************************
+
+#Test category: bm
+The messurements are:
+	left: 91.37 (233 of 255)
+	right: 93.73(239 of 255)
+******************************
+	Start
+******************************
+
+#Test category: bm
+The messurements are:
+	left: 90.98 (232 of 255)
+	right: 93.33(238 of 255)
+******************************
+	Start
+******************************
+
+#Test category: bm
+The messurements are:
+	left: 90.59 (231 of 255)
+	right: 93.33(238 of 255)
+******************************
+	Start
+******************************
+
+#Test category: bm
+The messurements are:
+	left: 87.84 (224 of 255)
+	right: 87.45(223 of 255)
+******************************
+	Start
+******************************
+
+#Test category: mc
+The circumference is: 217 mm
+
+Result of mc: No Errors occurred!
+#End of mc
+*************************
+DiscBot connected to COM 4
+Started at: 13:51:49_10.03.2021 	Ended at: 13:52:18_10.03.2021
+39 Byte were recived & 80 Byte were sent!!
+
+
+##Completly test results: 0 Errors occurred!
+
+#Result of mc: No Errors occurred!
+#End of result mc
+
+##End of Completly test results
+*************************
+******************************
+	Start
+******************************
+******************************
+	Start
+******************************
+
+#Test category: bm
+The messurements are:
+	left: 85.49 (218 of 255)
+	right: 92.16(235 of 255)
+******************************
+	Start
+******************************
+
+#Test category: bm
+The messurements are:
+	left: 85.10 (217 of 255)
+	right: 91.76(234 of 255)
+*~nnn
+
+Result of bm: 1 Error occurred
+~nnn
+#End of bm
+*************************
+DiscBot connected to COM 4
+Started at: 13:53:16_10.03.2021 	Ended at: 13:54:44_10.03.2021
+1898 Byte were recived & 1006 Byte were sent!!
+
+
+##Completly test results: 1 Error occurred!
+
+#Result of bm: 1 Error occurred
+~nnn
+#End of result bm
+
+##End of Completly test results
+*************************
+******************************
+	Start
+******************************
+******************************
+	Start
+******************************
+******************************
+	Start
+******************************
+
+#Test category: bt
+AT request works fine!
+******************************
+	Start
+******************************
+
+#Test category: bt
+AT request works fine!
+Parameter verified, written "Tullmann DB"
+AT request works fine!
+******************************
+	Start
+******************************
+******************************
+	Start
+******************************
+
+#Test category: mc
+The circumference is: 217 mm
+*The motor drive has some errors "ballance or other warnings"! Use "(null)" to generate analystics with preset "(null)"For more information open file "Test       15" with the offline menue!!!
+******************************
+	Start
+******************************
+******************************
+	Start
+******************************
+
+#Test category: bm
+The messurements are:
+	left: 90.98 (232 of 255)
+	right: 91.37(233 of 255)
+******************************
+	Start
+******************************
+******************************
+	Start
+******************************
+
+#Test category: bm
+The messurements are:
+	left: 51.76 (132 of 255)
+	right: 58.43(149 of 255)
+******************************
+	Start
+******************************
+
+#Test category: bm
+The messurements are:
+	left: 52.16 (133 of 255)
+	right: 61.18(156 of 255)
+******************************
+	Start
+******************************
+
+#Test category: bm
+The messurements are:
+	left: 49.02 (125 of 255)
+	right: 61.57(157 of 255)
+******************************
+	Start
+******************************
+
+#Test category: bm
+The messurements are:
+	left: 50.20 (128 of 255)
+	right: 63.53(162 of 255)
+******************************
+	Start
+******************************
+
+#Test category: bm
+The messurements are:
+	left: 49.80 (127 of 255)
+	right: 63.53(162 of 255)
+******************************
+	Start
+******************************
+
+#Test category: bm
+The messurements are:
+	left: 32.94 (84 of 255)
+	right: 56.86(145 of 255)
+******************************
+	Start
+******************************
+
+#Test category: bm
+The messurements are:
+	left: 35.69 (91 of 255)
+	right: 57.65(147 of 255)
+******************************
+	Start
+******************************
+
+#Test category: bm
+The messurements are:
+	left: 75.69 (193 of 255)
+	right: 65.10(166 of 255)
+******************************
+	Start
+******************************
+
+#Test category: uss
+*Front sensor is not connected or had to much distance to messure!
+*Back sensor is not connected or had to much distance to messure!
+*Left sensor is not connected or had to much distance to messure!
+*Right sensor is not connected or had to much distance to messure!
+~Everything worked fine
+
+Result of uss: 4 Errors occurred
+Front sensor is not connected or had to much distance to messure!
+Back sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+#End of uss
+******************************
+	Start
+******************************
+
+#Test category: irs
+******************************
+	Start
+******************************
+
+#Test category: irs
+******************************
+	Start
+******************************
+
+#Test category: irs
+******************************
+	Start
+******************************
+
+#Test category: irs
+******************************
+	Start
+******************************
+
+#Test category: irs
+******************************
+	Start
+******************************
+
+#Test category: irs
+******************************
+	Start
+******************************
+
+#Test category: irs
+******************************
+	Start
+******************************
+
+#Test category: irs
+*~nnnnnn
+
+Result of irs: 1 Error occurred
+~nnnnnn
+#End of irs
+*************************
+DiscBot connected to COM 4
+Started at: 09:03:05_21.04.2021 	Ended at: 09:12:46_21.04.2021
+10120 Byte were recived & 5117 Byte were sent!!
+
+
+##Completly test results: 1 Error occurred!
+
+#Result of irs: 1 Error occurred
+~nnnnnn
+#End of result irs
+
+##End of Completly test results
+*************************
+******************************
+	Start
+******************************
+
+#Test category: irs
+*~m
+
+Result of irs: 1 Error occurred
+~m
+#End of irs
+*************************
+DiscBot connected to COM 4
+Started at: 11:03:20_21.04.2021 	Ended at: 11:04:19_21.04.2021
+826 Byte were recived & 470 Byte were sent!!
+
+
+##Completly test results: 1 Error occurred!
+
+#Result of irs: 1 Error occurred
+~m
+#End of result irs
+
+##End of Completly test results
+*************************
+******************************
+	Start
+******************************
+
+#Test category: bm
+The messurements are:
+	left: 59.61 (152 of 255)
+	right: 71.37(182 of 255)
+*~nnnnnnn
+
+Result of bm: 1 Error occurred
+~nnnnnnn
+#End of bm
+******************************
+	Start
+******************************
+
+#Test category: bm
+The messurements are:
+	left: 80.00 (204 of 255)
+	right: 86.27(220 of 255)
+******************************
+	Start
+******************************
+
+#Test category: bm
+The messurements are:
+	left: 79.61 (203 of 255)
+	right: 85.49(218 of 255)
+*~nnnnn
+
+Result of bm: 1 Error occurred
+~nnnnn
+#End of bm
+*************************
+DiscBot connected to COM 4
+Started at: 11:07:12_21.04.2021 	Ended at: 11:07:23_21.04.2021
+78 Byte were recived & 96 Byte were sent!!
+
+
+##Completly test results: 1 Error occurred!
+
+#Result of bm: 1 Error occurred
+~nnnnn
+#End of result bm
+
+##End of Completly test results
+*************************
+******************************
+	Start
+******************************
+******************************
+	Start
+******************************
+
+#Test category: uss
+*Front sensor is not connected or had to much distance to messure!
+*Back sensor is not connected or had to much distance to messure!
+*Left sensor is not connected or had to much distance to messure!
+*Right sensor is not connected or had to much distance to messure!
+*Front sensor is not connected or had to much distance to messure!
+*Back sensor is not connected or had to much distance to messure!
+*Left sensor is not connected or had to much distance to messure!
+*Right sensor is not connected or had to much distance to messure!
+*Front sensor is not connected or had to much distance to messure!
+*Back sensor is not connected or had to much distance to messure!
+*Left sensor is not connected or had to much distance to messure!
+*Right sensor is not connected or had to much distance to messure!
+******************************
+	Start
+******************************
+
+#Test category: uss
+Sensor front was messureing 11 cm
+*Back sensor is not connected or had to much distance to messure!
+*Left sensor is not connected or had to much distance to messure!
+Sensor right was messureing 15 cm
+~Everything worked fine
+
+Result of uss: 2 Errors occurred
+Back sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+#End of uss
+*************************
+DiscBot connected to COM 4
+Started at: 13:37:31_05.05.2021 	Ended at: 13:38:01_05.05.2021
+450 Byte were recived & 506 Byte were sent!!
+
+
+##Completly test results: 2 Errors occurred!
+
+#Result of uss: 2 Errors occurred
+Back sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+#End of result uss
+
+##End of Completly test results
+*************************
+******************************
+	Start
+******************************
+
+#Test category: uss
+*Front sensor is not connected or had to much distance to messure!
+*Back sensor is not connected or had to much distance to messure!
+*Left sensor is not connected or had to much distance to messure!
+*Right sensor is not connected or had to much distance to messure!
+******************************
+	Start
+******************************
+
+#Test category: uss
+Sensor front was messureing 11 cm
+Sensor back was messureing 6 cm
+*Left sensor is not connected or had to much distance to messure!
+*Right sensor is not connected or had to much distance to messure!
+******************************
+	Start
+******************************
+
+#Test category: uss
+Sensor front was messureing 11 cm
+*Back sensor is not connected or had to much distance to messure!
+*Left sensor is not connected or had to much distance to messure!
+*Right sensor is not connected or had to much distance to messure!
+******************************
+	Start
+******************************
+
+#Test category: uss
+Sensor front was messureing 6 cm
+*Back sensor is not connected or had to much distance to messure!
+*Left sensor is not connected or had to much distance to messure!
+*Right sensor is not connected or had to much distance to messure!
+******************************
+	Start
+******************************
+
+#Test category: uss
+Sensor front was messureing 6 cm
+Sensor back was messureing 18 cm
+Sensor left was messureing 11 cm
+*Right sensor is not connected or had to much distance to messure!
+******************************
+	Start
+******************************
+
+#Test category: uss
+Sensor front was messureing 7 cm
+Sensor back was messureing 54 cm
+*Left sensor is not connected or had to much distance to messure!
+*Right sensor is not connected or had to much distance to messure!
+******************************
+	Start
+******************************
+
+#Test category: uss
+Sensor front was messureing 21 cm
+Sensor back was messureing 42 cm
+Sensor left was messureing 45 cm
+Sensor right was messureing 14 cm
+******************************
+	Start
+******************************
+
+#Test category: uss
+******************************
+	Start
+******************************
+
+#Test category: uss
+Sensor front was messureing 21 cm
+Sensor back was messureing 39 cm
+*Left sensor is not connected or had to much distance to messure!
+*Right sensor is not connected or had to much distance to messure!
+******************************
+	Start
+******************************
+
+#Test category: uss
+*Front sensor is not connected or had to much distance to messure!
+*Back sensor is not connected or had to much distance to messure!
+*Left sensor is not connected or had to much distance to messure!
+*Right sensor is not connected or had to much distance to messure!
+******************************
+	Start
+******************************
+
+#Test category: uss
+*Front sensor is not connected or had to much distance to messure!
+*Back sensor is not connected or had to much distance to messure!
+*Left sensor is not connected or had to much distance to messure!
+*Right sensor is not connected or had to much distance to messure!
+******************************
+	Start
+******************************
+
+#Test category: uss
+*Front sensor is not connected or had to much distance to messure!
+*Back sensor is not connected or had to much distance to messure!
+*Left sensor is not connected or had to much distance to messure!
+*Right sensor is not connected or had to much distance to messure!
+*~n
+
+Result of uss: 5 Errors occurred
+Front sensor is not connected or had to much distance to messure!
+Back sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+~n
+#End of uss
+*************************
+DiscBot connected to COM 16
+Started at: 02:03:53_20.05.2021 	Ended at: 02:05:14_20.05.2021
+2870 Byte were recived & 3494 Byte were sent!!
+
+
+##Completly test results: 5 Errors occurred!
+
+#Result of uss: 5 Errors occurred
+Front sensor is not connected or had to much distance to messure!
+Back sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+~n
+#End of result uss
+
+##End of Completly test results
+*************************
+******************************
+	Start
+******************************
+
+#Test category: uss
+*Front sensor is not connected or had to much distance to messure!
+*Back sensor is not connected or had to much distance to messure!
+*Left sensor is not connected or had to much distance to messure!
+*Right sensor is not connected or had to much distance to messure!
+******************************
+	Start
+******************************
+
+#Test category: uss
+*Front sensor is not connected or had to much distance to messure!
+*Back sensor is not connected or had to much distance to messure!
+*Left sensor is not connected or had to much distance to messure!
+*Right sensor is not connected or had to much distance to messure!
+*Front sensor is not connected or had to much distance to messure!
+*Back sensor is not connected or had to much distance to messure!
+*Left sensor is not connected or had to much distance to messure!
+*Right sensor is not connected or had to much distance to messure!
+*Front sensor is not connected or had to much distance to messure!
+*Back sensor is not connected or had to much distance to messure!
+*Left sensor is not connected or had to much distance to messure!
+*Right sensor is not connected or had to much distance to messure!
+*~j
+
+Result of uss: 13 Errors occurred
+Front sensor is not connected or had to much distance to messure!
+Back sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Back sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Back sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+~j
+#End of uss
+*************************
+DiscBot connected to COM 16
+Started at: 02:10:31_20.05.2021 	Ended at: 02:12:08_20.05.2021
+2650 Byte were recived & 3230 Byte were sent!!
+
+
+##Completly test results: 13 Errors occurred!
+
+#Result of uss: 13 Errors occurred
+Front sensor is not connected or had to much distance to messure!
+Back sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Back sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Back sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+~j
+#End of result uss
+
+##End of Completly test results
+*************************
+******************************
+	Start
+******************************
+Error: Connection!
+*************************
+DiscBot connected to COM 16
+Started at: 16:19:17_28.06.2021 	Ended at: 16:23:04_28.06.2021
+0 Byte were recived & 0 Byte were sent!!
+
+
+##Completly test results: 0 Errors occurred!
+
+##End of Completly test results
+*************************
+******************************
+	Start
+******************************
+******************************
+	Start
+******************************
+******************************
+	Start
+******************************
+******************************
+	Start
+******************************
+******************************
+	Start
+******************************
+******************************
+	Start
+******************************
+Error: Connection!
+*************************
+DiscBot connected to COM 4
+Started at: 13:14:37_08.09.2021 	Ended at: 13:14:39_08.09.2021
+0 Byte were recived & 0 Byte were sent!!
+
+
+##Completly test results: 0 Errors occurred!
+
+##End of Completly test results
+*************************
+******************************
+	Start
+******************************
+******************************
+	Start
+******************************
+******************************
+	Start
+******************************
+******************************
+	Start
+******************************
+******************************
+	Start
+******************************
+******************************
+	Start
+******************************
+******************************
+	Start
+******************************
+******************************
+	Start
+******************************
+******************************
+	Start
+******************************
+******************************
+	Start
+******************************
+******************************
+	Start
+******************************
+******************************
+	Start
+******************************
+******************************
+	Start
+******************************
+******************************
+	Start
+******************************
+******************************
+	Start
+******************************
+******************************
+	Start
+******************************
+Error: Connection!
+*************************
+DiscBot connected to COM 4
+Started at: 08:29:00_09.09.2021 	Ended at: 08:29:06_09.09.2021
+0 Byte were recived & 0 Byte were sent!!
+
+
+##Completly test results: 0 Errors occurred!
+
+##End of Completly test results
+*************************
+******************************
+	Start
+******************************
+******************************
+	Start
+******************************
+Name: untitled
+******************************
+	Start
+******************************
+Name: untitled
+******************************
+	Start
+******************************
+Name: untitled
+******************************
+	Start
+******************************
+Name: untitled
+******************************
+	Start
+******************************
+Name: untitled
+******************************
+	Start
+******************************
+Name: untitled
+******************************
+	Start
+******************************
+Name: untitled
+******************************
+	Start
+******************************
+Name: untitled
+******************************
+	Start
+******************************
+Name: untitled
+******************************
+	Start
+******************************
+Name: untitled
+******************************
+	Start
+******************************
+Name: untitled
+******************************
+	Start
+******************************
+Name: untitled
+******************************
+	Start
+******************************
+Name: untitled
+******************************
+	Start
+******************************
+Name: untitled
+******************************
+	Start
+******************************
+Name: untitled
+******************************
+	Start
+******************************
+Name: untitled
+******************************
+	Start
+******************************
+Name: untitled
+******************************
+	Start
+******************************
+Name: untitled
+******************************
+	Start
+******************************
+Name: untitled
+******************************
+	Start
+******************************
+Name: untitled
+******************************
+	Start
+******************************
+Name: untitled
+******************************
+	Start
+******************************
+Name: untitled
+******************************
+	Start
+******************************
+Name: untitled
+******************************
+	Start
+******************************
+Name: untitled
+******************************
+	Start
+******************************
+Name: untitled
+******************************
+	Start
+******************************
+Name: untitled
+******************************
+	Start
+******************************
+Name: untitled
+******************************
+	Start
+******************************
+Name: untitled
+******************************
+	Start
+******************************
+Name: untitled
+******************************
+	Start
+******************************
+Name: untitled
+******************************
+	Start
+******************************
+Name: untitled
+******************************
+	Start
+******************************
+Name: untitled
+******************************
+	Start
+******************************
+Name: untitled
+******************************
+	Start
+******************************
+Name: untitled
+******************************
+	Start
+******************************
+Name: untitled
+******************************
+	Start
+******************************
+Name: untitled
+******************************
+	Start
+******************************
+Name: untitled
+******************************
+	Start
+******************************
+Name: untitled
+******************************
+	Start
+******************************
+Name: untitled
+******************************
+	Start
+******************************
+Name: untitled
+******************************
+	Start
+******************************
+Name: untitled
+******************************
+	Start
+******************************
+Name: untitled
+******************************
+	Start
+******************************
+Name: untitled
+******************************
+	Start
+******************************
+Name: untitled
+******************************
+	Start
+******************************
+Name: untitled
+******************************
+	Start
+******************************
+Name: untitled
+******************************
+	Start
+******************************
+Name: untitled
+******************************
+	Start
+******************************
+Name: untitled
+******************************
+	Start
+******************************
+Name: untitled
+******************************
+	Start
+******************************
+Name: untitled
+******************************
+	Start
+******************************
+Name: untitled
+******************************
+	Start
+******************************
+Name: untitled
+******************************
+	Start
+******************************
+Name: untitled
+******************************
+	Start
+******************************
+Name: untitled
+******************************
+	Start
+******************************
+Name: untitled
+******************************
+	Start
+******************************
+Name: untitled
+******************************
+	Start
+******************************
+Name: untitled
+******************************
+	Start
+******************************
+Name: untitled
+******************************
+	Start
+******************************
+Name: untitled
+******************************
+	Start
+******************************
+Name: untitled
+******************************
+	Start
+******************************
+Name: untitled
+******************************
+	Start
+******************************
+Name: untitled
+******************************
+	Start
+******************************
+Name: untitled
+******************************
+	Start
+******************************
+Name: untitled
+******************************
+	Start
+******************************
+Name: FirstRealTest
+
+#Test category: mc
+The circumference is: 217 mm
+*The motor drive has some errors "connection errors by DiscBot's wireing"! Use "(null)" to generate analystics with preset "(null)"For more information open file "Test       17" with the offline menue!!!
+
+Result of mc: 1 Error occurred
+The motor drive has some errors "connection errors by DiscBot's wireing"! Use "(null)" to generate analystics with preset "(null)"#End of mc
+
+#Test category: cs
+~Everything worked fine
+
+Result of cs: No Errors occurred!
+#End of cs
+
+#Test category: gs
+
+Result of gs: No Errors occurred!
+#End of gs
+
+#Test category: irs
+~Everything worked fine
+
+Result of irs: No Errors occurred!
+#End of irs
+
+#Test category: led
+~Everything worked fine
+
+Result of led: No Errors occurred!
+#End of led
+
+#Test category: ls
+~Everything worked fine
+
+Result of ls: No Errors occurred!
+#End of ls
+
+#Test category: bt
+AT request works fine!
+~Everything worked fine
+
+Result of bt: No Errors occurred!
+#End of bt
+
+#Test category: bm
+The messurements are:
+	left: 88.24 (225 of 255)
+	right: 81.96(209 of 255)
+~Everything worked fine
+
+Result of bm: No Errors occurred!
+#End of bm
+
+#Test category: uss
+*Front sensor is not connected or had to much distance to messure!
+*Back sensor is not connected or had to much distance to messure!
+*Left sensor is not connected or had to much distance to messure!
+*Right sensor is not connected or had to much distance to messure!
+~Everything worked fine
+
+Result of uss: 4 Errors occurred
+Front sensor is not connected or had to much distance to messure!
+Back sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+#End of uss
+*************************
+DiscBot connected to COM 4
+Started at: 08:29:56_10.09.2021 	Ended at: 08:37:53_10.09.2021
+5640 Byte were recived & 6294 Byte were sent!!
+
+
+##Completly test results: 5 Errors occurred!
+
+#Result of mc: 1 Error occurred
+The motor drive has some errors "connection errors by DiscBot's wireing"! Use "(null)" to generate analystics with preset "(null)"#End of result mc
+
+#Result of cs: No Errors occurred!
+#End of result cs
+
+#Result of gs: No Errors occurred!
+#End of result gs
+
+#Result of irs: No Errors occurred!
+#End of result irs
+
+#Result of led: No Errors occurred!
+#End of result led
+
+#Result of ls: No Errors occurred!
+#End of result ls
+
+#Result of bt: No Errors occurred!
+#End of result bt
+
+#Result of bm: No Errors occurred!
+#End of result bm
+
+#Result of uss: 4 Errors occurred
+Front sensor is not connected or had to much distance to messure!
+Back sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+#End of result uss
+
+##End of Completly test results
+*************************
+******************************
+	Start
+******************************
+Name: Mussy1
+
+#Test category: bm
+The messurements are:
+	left: 84.71 (216 of 255)
+	right: 82.35(210 of 255)
+******************************
+	Start
+******************************
+Name: Mussy2
+
+#Test category: bm
+The messurements are:
+	left: 82.35 (210 of 255)
+	right: 81.96(209 of 255)
+******************************
+	Start
+******************************
+Name: untitled
+******************************
+	Start
+******************************
+Name: untitled
+******************************
+	Start
+******************************
+Name: no name
+
+#Test category: bm
+The messurements are:
+	left: 86.67 (221 of 255)
+	right: 89.80(229 of 255)
+~Everything worked fine
+
+Result of bm: No Errors occurred!
+#End of bm
+
+#Test category: uss
+*Front sensor is not connected or had to much distance to messure!
+*Back sensor is not connected or had to much distance to messure!
+*Left sensor is not connected or had to much distance to messure!
+*Right sensor is not connected or had to much distance to messure!
+~Everything worked fine
+
+Result of uss: 4 Errors occurred
+Front sensor is not connected or had to much distance to messure!
+Back sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+#End of uss
+
+#Test category: irs
+~Everything worked fine
+
+Result of irs: No Errors occurred!
+#End of irs
+*************************
+DiscBot connected to COM 4
+Started at: 14:06:07_16.09.2021 	Ended at: 14:07:57_16.09.2021
+1754 Byte were recived & 2796 Byte were sent!!
+
+
+##Completly test results: 4 Errors occurred!
+
+#Result of bm: No Errors occurred!
+#End of result bm
+
+#Result of uss: 4 Errors occurred
+Front sensor is not connected or had to much distance to messure!
+Back sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+#End of result uss
+
+#Result of irs: No Errors occurred!
+#End of result irs
+
+##End of Completly test results
+*************************
+******************************
+	Start
+******************************
+Name: Žrgere dich nicht
+
+#Test category: ls
+~Everything worked fine
+
+Result of ls: No Errors occurred!
+#End of ls
+
+#Test category: ls
+******************************
+	Start
+******************************
+Name: untitled
+
+#Test category: ls
+******************************
+	Start
+******************************
+Name: untitled
+
+#Test category: ls
+~Everything worked fine
+
+Result of ls: No Errors occurred!
+#End of ls
+
+#Test category: ls
+~Everything worked fine
+
+Result of ls: No Errors occurred!
+#End of ls
+*************************
+DiscBot connected to COM 4
+Started at: 14:24:10_16.09.2021 	Ended at: 14:25:20_16.09.2021
+28 Byte were recived & 170 Byte were sent!!
+
+
+##Completly test results: 0 Errors occurred!
+
+#Result of ls: No Errors occurred!
+#End of result ls
+
+#Result of ls: No Errors occurred!
+#End of result ls
+
+##End of Completly test results
+*************************
+******************************
+	Start
+******************************
+Name: untitled
+
+#Test category: bt
+******************************
+	Start
+******************************
+Name: untitled
+
+#Test category: bt
+******************************
+	Start
+******************************
+Name: untitled
+
+#Test category: bt
+AT request works fine!
+~Everything worked fine
+
+Result of bt: No Errors occurred!
+#End of bt
+*************************
+DiscBot connected to COM 16
+Started at: 01:20:07_19.09.2021 	Ended at: 01:27:11_19.09.2021
+314 Byte were recived & 188 Byte were sent!!
+
+
+##Completly test results: 0 Errors occurred!
+
+#Result of bt: No Errors occurred!
+#End of result bt
+
+##End of Completly test results
+*************************
+******************************
+	Start
+******************************
+Name: untitled
+
+#Test category: bt
+AT request works fine!
+******************************
+	Start
+******************************
+Name: untitled
+
+#Test category: bt
+AT request works fine!
+******************************
+	Start
+******************************
+Name: untitled
+
+#Test category: bt
+AT request works fine!
+******************************
+	Start
+******************************
+Name: untitled
+
+#Test category: bt
+AT request works fine!
+******************************
+	Start
+******************************
+Name: untitled
+
+#Test category: bt
+AT request works fine!
+******************************
+	Start
+******************************
+Name: untitled
+
+#Test category: bt
+AT request works fine!
+******************************
+	Start
+******************************
+Name: untitled
+
+#Test category: bt
+AT request works fine!
+******************************
+	Start
+******************************
+Name: untitled
+
+#Test category: bt
+AT request works fine!
+******************************
+	Start
+******************************
+Name: untitled
+
+#Test category: bt
+AT request works fine!
+******************************
+	Start
+******************************
+Name: untitled
+
+#Test category: bt
+*AT request works not fine (wrong/no request)!
+******************************
+	Start
+******************************
+Name: untitled
+
+#Test category: bt
+*AT request works not fine (wrong/no request)!
+******************************
+	Start
+******************************
+Name: untitled
+
+#Test category: bt
+******************************
+	Start
+******************************
+Name: untitled
+
+#Test category: bt
+*AT request works not fine (wrong/no request)!
+~Everything worked fine
+
+Result of bt: 1 Error occurred
+AT request works not fine (wrong/no request)!
+#End of bt
+*************************
+DiscBot connected to COM 16
+Started at: 01:54:26_19.09.2021 	Ended at: 01:55:51_19.09.2021
+69 Byte were recived & 87 Byte were sent!!
+
+
+##Completly test results: 1 Error occurred!
+
+#Result of bt: 1 Error occurred
+AT request works not fine (wrong/no request)!
+#End of result bt
+
+##End of Completly test results
+*************************
+******************************
+	Start
+******************************
+Name: untitled
+
+#Test category: bt
+******************************
+	Start
+******************************
+Name: untitled
+
+#Test category: bt
+******************************
+	Start
+******************************
+Name: untitled
+
+#Test category: bt
+******************************
+	Start
+******************************
+Name: untitled
+
+#Test category: bt
+AT request works fine!
+Parameter verified, written "DB Martin"
+AT request works fine!
+~Everything worked fine
+
+Result of bt: No Errors occurred!
+#End of bt
+*************************
+DiscBot connected to COM 16
+Started at: 02:01:05_19.09.2021 	Ended at: 02:02:42_19.09.2021
+761 Byte were recived & 408 Byte were sent!!
+
+
+##Completly test results: 0 Errors occurred!
+
+#Result of bt: No Errors occurred!
+#End of result bt
+
+##End of Completly test results
+*************************
+******************************
+	Start
+******************************
+Name: untitled
+
+#Test category: bt
+AT request works fine!
+~Everything worked fine
+
+Result of bt: No Errors occurred!
+#End of bt
+*************************
+DiscBot connected to COM 16
+Started at: 02:02:50_19.09.2021 	Ended at: 02:06:26_19.09.2021
+1330 Byte were recived & 832 Byte were sent!!
+
+
+##Completly test results: 0 Errors occurred!
+
+#Result of bt: No Errors occurred!
+#End of result bt
+
+##End of Completly test results
+*************************
+******************************
+	Start
+******************************
+Name: untitled
+
+#Test category: bt
+******************************
+	Start
+******************************
+Name: untitled
+
+#Test category: bt
+******************************
+	Start
+******************************
+Name: untitled
+
+#Test category: bt
+******************************
+	Start
+******************************
+Name: untitled
+
+#Test category: bt
+******************************
+	Start
+******************************
+Name: untitled
+
+#Test category: bt
+******************************
+	Start
+******************************
+Name: untitled
+
+#Test category: bt
+******************************
+	Start
+******************************
+Name: untitled
+******************************
+	Start
+******************************
+Name: untitled
+******************************
+	Start
+******************************
+Name: untitled
+
+#Test category: bt
+******************************
+	Start
+******************************
+Name: untitled
+
+#Test category: bt
+AT request works fine!
+******************************
+	Start
+******************************
+Name: untitled
+
+#Test category: mc
+The circumference is: 217 mm
+*The motor drive has some errors "connection errors by DiscBot's wireing"! Open the last file in the offline menue.
+For more information open file "Test       18" with the offline menue!!!
+
+Result of mc: 1 Error occurred
+The motor drive has some errors "connection errors by DiscBot's wireing"! Open the last file in the offline menue.
+#End of mc
+*************************
+DiscBot connected to COM 4
+Started at: 11:51:45_20.09.2021 	Ended at: 11:53:10_20.09.2021
+62 Byte were recived & 74 Byte were sent!!
+
+
+##Completly test results: 1 Error occurred!
+
+#Result of mc: 1 Error occurred
+The motor drive has some errors "connection errors by DiscBot's wireing"! Open the last file in the offline menue.
+#End of result mc
+
+##End of Completly test results
+*************************
+******************************
+	Start
+******************************
+Name: untitled
+
+#Test category: mc
+The circumference is: 217 mm
+*The motor drive has some errors "connection errors by DiscBot's wireing"! Open the last file in the offline menue.
+For more information open file "Test       19" with the offline menue!!!
+
+Result of mc: 1 Error occurred
+The motor drive has some errors "connection errors by DiscBot's wireing"! Open the last file in the offline menue.
+#End of mc
+*************************
+DiscBot connected to COM 4
+Started at: 11:53:51_20.09.2021 	Ended at: 11:55:26_20.09.2021
+62 Byte were recived & 74 Byte were sent!!
+
+
+##Completly test results: 1 Error occurred!
+
+#Result of mc: 1 Error occurred
+The motor drive has some errors "connection errors by DiscBot's wireing"! Open the last file in the offline menue.
+#End of result mc
+
+##End of Completly test results
+*************************

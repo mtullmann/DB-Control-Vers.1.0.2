@@ -1,0 +1,6 @@
+Dietmar Scheiblhofer (microcontroller software, sound)
+Jakob Faltisek (DiscBot hardware)
+Manuel Hackl (DiscBot hardware)
+Mario Schantl (DiscBot hardware)
+Hans-Günter Heumann (sound)
+Martin Tullmann (computer software, microcontroller software, sound, debuging, spelling, configuration)

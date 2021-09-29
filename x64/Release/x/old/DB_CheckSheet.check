@@ -1,0 +1,2618 @@
+******************************
+Start
+******************************
+
+#Test category: btn
+The red button was pushed
+The green button was pushed
+The blue button was pushed
+
+Result of btn: No Errors occurred!
+#End of btn
+
+#Test category: rfid
+******************************
+Start
+******************************
+******************************
+Start
+******************************
+******************************
+Start
+******************************
+******************************
+Start
+******************************
+
+#Test category: mc
+The circumference is: 217 mm
+
+***	Spin forward
+*Receive as forward left:	   0 ticks	(turn  0.0 mm)
+Receive as backward left:	   2 ticks	(turn  0.0 mm)
+Receive as general left:	   2 ticks	(turn  0.0 mm)
+
+*Receive as forward right:	   0 ticks	(turn  0.0 mm)
+Receive as backward right:	   0 ticks	(turn  0.0 mm)
+Receive as general right:	   0 ticks	(turn  0.0 mm)
+
+***	Spin backward
+Receive as forward left:	   0 ticks	(turn  0.0 mm)
+Receive as backward left:	   9 ticks	(turn  0.0 mm)
+Receive as general left:	   9 ticks	(turn  0.0 mm)
+
+Receive as forward right:	   0 ticks	(turn  0.0 mm)
+*Receive as backward right:	   0 ticks	(turn  0.0 mm)
+Receive as general right:	   0 ticks	(turn  0.0 mm)
+*The motor right was not turning!
+*Backward left drive 100.000% (should be a low value, under 50)
+Backward right drive 0.000% (should be a low value, under 50)
+*The motor right was not turning!
+Forward left drive 0.000% (should be a low value, under 50)
+Forward right drive 0.000% (should be a low value, under 50)
+
+***	Spin forward
+*Receive as forward left:	   0 ticks	(turn  0.0 mm)
+Receive as backward left:	   0 ticks	(turn  0.0 mm)
+Receive as general left:	   0 ticks	(turn  0.0 mm)
+
+*Receive as forward right:	   0 ticks	(turn  0.0 mm)
+Receive as backward right:	   5 ticks	(turn  0.0 mm)
+Receive as general right:	   5 ticks	(turn  0.0 mm)
+
+***	Spin backward
+Receive as forward left:	   0 ticks	(turn  0.0 mm)
+*Receive as backward left:	   0 ticks	(turn  0.0 mm)
+Receive as general left:	   0 ticks	(turn  0.0 mm)
+
+Receive as forward right:	   0 ticks	(turn  0.0 mm)
+Receive as backward right:	  48 ticks	(turn  0.0 mm)
+Receive as general right:	  48 ticks	(turn  0.0 mm)
+*The motor left was not turning!
+Backward left drive 0.000% (should be a low value, under 50)
+*Backward right drive 100.000% (should be a low value, under 50)
+*The motor left was not turning!
+Forward left drive 0.000% (should be a low value, under 50)
+Forward right drive 0.000% (should be a low value, under 50)
+******************************
+Start
+******************************
+******************************
+Start
+******************************
+
+#Test category: btn
+The red button was pushed
+The green button was pushed
+The blue button was pushed
+
+Result of btn: No Errors occurred!
+#End of btn
+
+#Test category: rfid
+No card found yet!
+Card found	UUID :  7B  7F  AF  1B 
+No card found yet!
+Card found	UUID :  7B  7F  AF  1B 
+No card found yet!
+Card found	UUID :  7B  7F  AF  1B 
+No card found yet!
+Card found	UUID :  7B  7F  AF  1B 
+No card found yet!
+~Everything worked fine
+
+Result of rfid: No Errors occurred!
+#End of rfid
+
+#Test category: irc
+*Connection Error from DiscBot!!
+
+Result of irc: 1 Error occurred
+Connection Error from DiscBot!!
+#End of irc
+
+#Test category: mc
+The circumference is: 217 mm
+
+***	Spin forward
+*Receive as forward left:	   0 ticks	(turn  0.0 mm)
+Receive as backward left:	   0 ticks	(turn  0.0 mm)
+Receive as general left:	   0 ticks	(turn  0.0 mm)
+
+*Receive as forward right:	   0 ticks	(turn  0.0 mm)
+Receive as backward right:	   0 ticks	(turn  0.0 mm)
+Receive as general right:	   0 ticks	(turn  0.0 mm)
+
+***	Spin backward
+Receive as forward left:	   0 ticks	(turn  0.0 mm)
+*Receive as backward left:	   0 ticks	(turn  0.0 mm)
+Receive as general left:	   0 ticks	(turn  0.0 mm)
+
+Receive as forward right:	   0 ticks	(turn  0.0 mm)
+*Receive as backward right:	   0 ticks	(turn  0.0 mm)
+Receive as general right:	   0 ticks	(turn  0.0 mm)
+*The motor left was not turning!
+*The motor right was not turning!
+Backward left drive 0.000% (should be a low value, under 50)
+Backward right drive 0.000% (should be a low value, under 50)
+*The motor left was not turning!
+*The motor right was not turning!
+Forward left drive 0.000% (should be a low value, under 50)
+Forward right drive 0.000% (should be a low value, under 50)
+
+***	Spin forward
+*Receive as forward left:	   0 ticks	(turn  0.0 mm)
+Receive as backward left:	   0 ticks	(turn  0.0 mm)
+Receive as general left:	   0 ticks	(turn  0.0 mm)
+
+*Receive as forward right:	   0 ticks	(turn  0.0 mm)
+Receive as backward right:	   0 ticks	(turn  0.0 mm)
+Receive as general right:	   0 ticks	(turn  0.0 mm)
+
+***	Spin backward
+Receive as forward left:	   0 ticks	(turn  0.0 mm)
+*Receive as backward left:	   0 ticks	(turn  0.0 mm)
+Receive as general left:	   0 ticks	(turn  0.0 mm)
+
+Receive as forward right:	   0 ticks	(turn  0.0 mm)
+*Receive as backward right:	   0 ticks	(turn  0.0 mm)
+Receive as general right:	   0 ticks	(turn  0.0 mm)
+*The motor left was not turning!
+*The motor right was not turning!
+Backward left drive 0.000% (should be a low value, under 50)
+Backward right drive 0.000% (should be a low value, under 50)
+*The motor left was not turning!
+*The motor right was not turning!
+Forward left drive 0.000% (should be a low value, under 50)
+Forward right drive 0.000% (should be a low value, under 50)
+
+Result of mc: 16 Errors occurred
+Receive as forward left:	   0 ticks	(turn  0.0 mm)
+Receive as forward right:	   0 ticks	(turn  0.0 mm)
+Receive as backward left:	   0 ticks	(turn  0.0 mm)
+Receive as backward right:	   0 ticks	(turn  0.0 mm)
+The motor left was not turning!
+The motor right was not turning!
+The motor left was not turning!
+The motor right was not turning!
+Receive as forward left:	   0 ticks	(turn  0.0 mm)
+Receive as forward right:	   0 ticks	(turn  0.0 mm)
+Receive as backward left:	   0 ticks	(turn  0.0 mm)
+Receive as backward right:	   0 ticks	(turn  0.0 mm)
+The motor left was not turning!
+The motor right was not turning!
+The motor left was not turning!
+The motor right was not turning!
+#End of mc
+
+#Test category: cs
+~Everything worked fine
+
+Result of cs: No Errors occurred!
+#End of cs
+
+#Test category: gs
+
+Result of gs: No Errors occurred!
+#End of gs
+
+#Test category: irs
+~Everything worked fine
+
+Result of irs: No Errors occurred!
+#End of irs
+
+#Test category: led
+~Everything worked fine
+
+Result of led: No Errors occurred!
+#End of led
+
+#Test category: ls
+*Connection Error from DiscBot!!
+
+Result of ls: 1 Error occurred
+Connection Error from DiscBot!!
+#End of ls
+
+#Test category: bt
+*AT request works not fine (wrong/no request)!
+~Everything worked fine
+
+Result of bt: 1 Error occurred
+AT request works not fine (wrong/no request)!
+#End of bt
+
+#Test category: bm
+The messurements are:
+	left: 78.82 (201 of 255)
+	right: 79.61(203 of 255)
+The messurements are:
+	left: 66.67 (170 of 255)
+	right: 0.00(0 of 255)
+The messurements are:
+	left: 8.24 (21 of 255)
+	right: 80.39(205 of 255)
+~Everything worked fine
+
+Result of bm: No Errors occurred!
+#End of bm
+
+#Test category: uss
+*Front sensor is not connected or had to much distance to messure!
+Sensor back was messureing 12 cm
+*Left sensor is not connected or had to much distance to messure!
+Sensor right was messureing 12 cm
+*Front sensor is not connected or had to much distance to messure!
+Sensor back was messureing 12 cm
+*Left sensor is not connected or had to much distance to messure!
+Sensor right was messureing 12 cm
+*Front sensor is not connected or had to much distance to messure!
+Sensor back was messureing 12 cm
+*Left sensor is not connected or had to much distance to messure!
+Sensor right was messureing 12 cm
+*Front sensor is not connected or had to much distance to messure!
+Sensor back was messureing 12 cm
+*Left sensor is not connected or had to much distance to messure!
+Sensor right was messureing 12 cm
+*Front sensor is not connected or had to much distance to messure!
+Sensor back was messureing 11 cm
+*Left sensor is not connected or had to much distance to messure!
+Sensor right was messureing 11 cm
+*Front sensor is not connected or had to much distance to messure!
+Sensor back was messureing 11 cm
+*Left sensor is not connected or had to much distance to messure!
+Sensor right was messureing 11 cm
+*Front sensor is not connected or had to much distance to messure!
+Sensor back was messureing 19 cm
+*Left sensor is not connected or had to much distance to messure!
+Sensor right was messureing 19 cm
+*Front sensor is not connected or had to much distance to messure!
+Sensor back was messureing 19 cm
+*Left sensor is not connected or had to much distance to messure!
+Sensor right was messureing 19 cm
+*Front sensor is not connected or had to much distance to messure!
+Sensor back was messureing 20 cm
+*Left sensor is not connected or had to much distance to messure!
+Sensor right was messureing 20 cm
+*Front sensor is not connected or had to much distance to messure!
+Sensor back was messureing 12 cm
+*Left sensor is not connected or had to much distance to messure!
+Sensor right was messureing 12 cm
+*Front sensor is not connected or had to much distance to messure!
+Sensor back was messureing 21 cm
+*Left sensor is not connected or had to much distance to messure!
+Sensor right was messureing 20 cm
+*Front sensor is not connected or had to much distance to messure!
+Sensor back was messureing 21 cm
+*Left sensor is not connected or had to much distance to messure!
+Sensor right was messureing 21 cm
+~Everything worked fine
+
+Result of uss: 24 Errors occurred
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+#End of uss
+*************************
+DiscBot connected to COM 12
+Started at: 09:17:55_29.09.2020 	Ended at: 09:25:47_29.09.2020
+3325 Byte were recived & 5326 Byte were sent!!
+
+
+##Completly test results: 43 Errors occurred!
+
+#Result of btn: No Errors occurred!
+#End of result btn
+
+#Result of rfid: No Errors occurred!
+#End of result rfid
+
+#Result of irc: 1 Error occurred
+Connection Error from DiscBot!!
+#End of result irc
+
+#Result of mc: 16 Errors occurred
+Receive as forward left:	   0 ticks	(turn  0.0 mm)
+Receive as forward right:	   0 ticks	(turn  0.0 mm)
+Receive as backward left:	   0 ticks	(turn  0.0 mm)
+Receive as backward right:	   0 ticks	(turn  0.0 mm)
+The motor left was not turning!
+The motor right was not turning!
+The motor left was not turning!
+The motor right was not turning!
+Receive as forward left:	   0 ticks	(turn  0.0 mm)
+Receive as forward right:	   0 ticks	(turn  0.0 mm)
+Receive as backward left:	   0 ticks	(turn  0.0 mm)
+Receive as backward right:	   0 ticks	(turn  0.0 mm)
+The motor left was not turning!
+The motor right was not turning!
+The motor left was not turning!
+The motor right was not turning!
+#End of result mc
+
+#Result of cs: No Errors occurred!
+#End of result cs
+
+#Result of gs: No Errors occurred!
+#End of result gs
+
+#Result of irs: No Errors occurred!
+#End of result irs
+
+#Result of led: No Errors occurred!
+#End of result led
+
+#Result of ls: 1 Error occurred
+Connection Error from DiscBot!!
+#End of result ls
+
+#Result of bt: 1 Error occurred
+AT request works not fine (wrong/no request)!
+#End of result bt
+
+#Result of bm: No Errors occurred!
+#End of result bm
+
+#Result of uss: 24 Errors occurred
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+#End of result uss
+
+##End of Completly test results
+*************************
+******************************
+Start
+******************************
+
+#Test category: ls
+******************************
+Start
+******************************
+******************************
+Start
+******************************
+
+#Test category: btn
+******************************
+Start
+******************************
+
+#Test category: btn
+The red button was pushed
+The green button was pushed
+The blue button was pushed
+
+Result of btn: No Errors occurred!
+#End of btn
+
+#Test category: rfid
+No card found yet!
+*~tzu
+
+Result of rfid: 1 Error occurred
+~tzu
+#End of rfid
+
+#Test category: irc
+*Connection Error from DiscBot!!
+
+Result of irc: 1 Error occurred
+Connection Error from DiscBot!!
+#End of irc
+
+#Test category: mc
+The circumference is: 217 mm
+
+***	Spin forward
+Receive as forward left:	2047 ticks	(turn 868.0 mm)
+Receive as backward left:	   1 ticks	(turn  0.0 mm)
+Receive as general left:	2048 ticks	(turn 868.0 mm)
+
+Receive as forward right:	2154 ticks	(turn 868.0 mm)
+Receive as backward right:	   1 ticks	(turn  0.0 mm)
+Receive as general right:	2155 ticks	(turn 868.0 mm)
+
+***	Spin backward
+Receive as forward left:	   5 ticks	(turn  0.0 mm)
+Receive as backward left:	 192 ticks	(turn  0.0 mm)
+Receive as general left:	 197 ticks	(turn  0.0 mm)
+
+Receive as forward right:	  12 ticks	(turn  0.0 mm)
+Receive as backward right:	 963 ticks	(turn 434.0 mm)
+Receive as general right:	 975 ticks	(turn 434.0 mm)
+Backward left drive 0.049% (should be a low value, under 50)
+Backward right drive 0.046% (should be a low value, under 50)
+Forward left drive 2.538% (should be a low value, under 50)
+Forward right drive 1.231% (should be a low value, under 50)
+
+***	Spin forward
+Receive as forward left:	2054 ticks	(turn 868.0 mm)
+Receive as backward left:	   0 ticks	(turn  0.0 mm)
+Receive as general left:	2054 ticks	(turn 868.0 mm)
+
+Receive as forward right:	2111 ticks	(turn 868.0 mm)
+Receive as backward right:	   2 ticks	(turn  0.0 mm)
+Receive as general right:	2113 ticks	(turn 868.0 mm)
+
+***	Spin backward
+Receive as forward left:	   6 ticks	(turn  0.0 mm)
+Receive as backward left:	1519 ticks	(turn 651.0 mm)
+Receive as general left:	1525 ticks	(turn 651.0 mm)
+
+Receive as forward right:	   7 ticks	(turn  0.0 mm)
+Receive as backward right:	1536 ticks	(turn 651.0 mm)
+Receive as general right:	1543 ticks	(turn 651.0 mm)
+Backward left drive 0.000% (should be a low value, under 50)
+Backward right drive 0.095% (should be a low value, under 50)
+Forward left drive 0.393% (should be a low value, under 50)
+Forward right drive 0.454% (should be a low value, under 50)
+
+Result of mc: No Errors occurred!
+#End of mc
+
+#Test category: cs
+*~eresfc
+
+Result of cs: 1 Error occurred
+~eresfc
+#End of cs
+
+#Test category: gs
+
+Result of gs: No Errors occurred!
+#End of gs
+
+#Test category: irs
+~Everything worked fine
+
+Result of irs: No Errors occurred!
+#End of irs
+
+#Test category: led
+~Everything worked fine
+
+Result of led: No Errors occurred!
+#End of led
+
+#Test category: ls
+~Everything worked fine
+
+Result of ls: No Errors occurred!
+#End of ls
+
+#Test category: bt
+AT request works fine!
+~Everything worked fine
+
+Result of bt: No Errors occurred!
+#End of bt
+
+#Test category: bm
+The messurements are:
+	left: 87.45 (223 of 255)
+	right: 85.49(218 of 255)
+The messurements are:
+	left: 85.49 (218 of 255)
+	right: 84.31(215 of 255)
+The messurements are:
+	left: 85.49 (218 of 255)
+	right: 84.71(216 of 255)
+The messurements are:
+	left: 16.86 (43 of 255)
+	right: 83.92(214 of 255)
+~Everything worked fine
+
+Result of bm: No Errors occurred!
+#End of bm
+
+#Test category: uss
+*Front sensor is not connected or had to much distance to messure!
+*Back sensor is not connected or had to much distance to messure!
+*Left sensor is not connected or had to much distance to messure!
+*Right sensor is not connected or had to much distance to messure!
+*Front sensor is not connected or had to much distance to messure!
+Sensor back was messureing 55 cm
+*Left sensor is not connected or had to much distance to messure!
+*Right sensor is not connected or had to much distance to messure!
+*Front sensor is not connected or had to much distance to messure!
+Sensor back was messureing 6 cm
+*Left sensor is not connected or had to much distance to messure!
+*Right sensor is not connected or had to much distance to messure!
+*Front sensor is not connected or had to much distance to messure!
+Sensor back was messureing 55 cm
+*Left sensor is not connected or had to much distance to messure!
+*Right sensor is not connected or had to much distance to messure!
+*Front sensor is not connected or had to much distance to messure!
+Sensor back was messureing 12 cm
+*Left sensor is not connected or had to much distance to messure!
+*Right sensor is not connected or had to much distance to messure!
+*Front sensor is not connected or had to much distance to messure!
+*Back sensor is not connected or had to much distance to messure!
+*Left sensor is not connected or had to much distance to messure!
+*Right sensor is not connected or had to much distance to messure!
+*Front sensor is not connected or had to much distance to messure!
+Sensor back was messureing 12 cm
+*Left sensor is not connected or had to much distance to messure!
+*Right sensor is not connected or had to much distance to messure!
+*Front sensor is not connected or had to much distance to messure!
+Sensor back was messureing 12 cm
+*Left sensor is not connected or had to much distance to messure!
+*Right sensor is not connected or had to much distance to messure!
+*Front sensor is not connected or had to much distance to messure!
+Sensor back was messureing 75 cm
+*Left sensor is not connected or had to much distance to messure!
+*Right sensor is not connected or had to much distance to messure!
+*Front sensor is not connected or had to much distance to messure!
+Sensor back was messureing 11 cm
+*Left sensor is not connected or had to much distance to messure!
+*Right sensor is not connected or had to much distance to messure!
+*Front sensor is not connected or had to much distance to messure!
+Sensor back was messureing 56 cm
+*Left sensor is not connected or had to much distance to messure!
+*Right sensor is not connected or had to much distance to messure!
+*Front sensor is not connected or had to much distance to messure!
+Sensor back was messureing 56 cm
+*Left sensor is not connected or had to much distance to messure!
+*Right sensor is not connected or had to much distance to messure!
+*Front sensor is not connected or had to much distance to messure!
+Sensor back was messureing 12 cm
+*Left sensor is not connected or had to much distance to messure!
+*Right sensor is not connected or had to much distance to messure!
+*Front sensor is not connected or had to much distance to messure!
+Sensor back was messureing 55 cm
+*Left sensor is not connected or had to much distance to messure!
+*Right sensor is not connected or had to much distance to messure!
+*Front sensor is not connected or had to much distance to messure!
+Sensor back was messureing 11 cm
+*Left sensor is not connected or had to much distance to messure!
+*Right sensor is not connected or had to much distance to messure!
+*Front sensor is not connected or had to much distance to messure!
+Sensor back was messureing 19 cm
+*Left sensor is not connected or had to much distance to messure!
+*Right sensor is not connected or had to much distance to messure!
+*Front sensor is not connected or had to much distance to messure!
+Sensor back was messureing 28 cm
+*Left sensor is not connected or had to much distance to messure!
+*Right sensor is not connected or had to much distance to messure!
+*Front sensor is not connected or had to much distance to messure!
+Sensor back was messureing 25 cm
+*Left sensor is not connected or had to much distance to messure!
+*Right sensor is not connected or had to much distance to messure!
+~Everything worked fine
+
+Result of uss: 56 Errors occurred
+Front sensor is not connected or had to much distance to messure!
+Back sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Back sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+#End of uss
+*************************
+DiscBot connected to COM 4
+Started at: 10:22:51_29.09.2020 	Ended at: 10:32:05_29.09.2020
+2872 Byte were recived & 3962 Byte were sent!!
+
+
+##Completly test results: 59 Errors occurred!
+
+#Result of btn: No Errors occurred!
+#End of result btn
+
+#Result of rfid: 1 Error occurred
+~tzu
+#End of result rfid
+
+#Result of irc: 1 Error occurred
+Connection Error from DiscBot!!
+#End of result irc
+
+#Result of mc: No Errors occurred!
+#End of result mc
+
+#Result of cs: 1 Error occurred
+~eresfc
+#End of result cs
+
+#Result of gs: No Errors occurred!
+#End of result gs
+
+#Result of irs: No Errors occurred!
+#End of result irs
+
+#Result of led: No Errors occurred!
+#End of result led
+
+#Result of ls: No Errors occurred!
+#End of result ls
+
+#Result of bt: No Errors occurred!
+#End of result bt
+
+#Result of bm: No Errors occurred!
+#End of result bm
+
+#Result of uss: 56 Errors occurred
+Front sensor is not connected or had to much distance to messure!
+Back sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Back sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+#End of result uss
+
+##End of Completly test results
+*************************
+******************************
+Start
+******************************
+******************************
+Start
+******************************
+
+#Test category: irc
+*Connection Error from DiscBot!!
+
+Result of irc: 1 Error occurred
+Connection Error from DiscBot!!
+#End of irc
+******************************
+Start
+******************************
+******************************
+Start
+******************************
+******************************
+Start
+******************************
+******************************
+Start
+******************************
+******************************
+Start
+******************************
+******************************
+Start
+******************************
+******************************
+Start
+******************************
+Error: Connection!
+*************************
+DiscBot connected to COM 4
+Started at: 10:25:14_01.10.2020 	Ended at: 10:25:30_01.10.2020
+0 Byte were recived & 0 Byte were sent!!
+
+
+##Completly test results: 0 Errors occurred!
+
+##End of Completly test results
+*************************
+******************************
+Start
+******************************
+******************************
+Start
+******************************
+******************************
+Start
+******************************
+******************************
+Start
+******************************
+
+#Test category: irc
+~Everything worked fine
+
+Result of irc: No Errors occurred!
+#End of irc
+******************************
+Start
+******************************
+
+#Test category: irc
+******************************
+Start
+******************************
+
+#Test category: btn
+******************************
+Start
+******************************
+
+#Test category: btn
+The red button was pushed
+The green button was pushed
+The blue button was pushed
+******************************
+Start
+******************************
+
+#Test category: rfid
+No card found yet!
+Card found	UUID :  7B  7F  AF  1B 
+No card found yet!
+Card found	UUID :  7B  7F  AF  1B 
+No card found yet!
+Card found	UUID :  7B  7F  AF  1B 
+No card found yet!
+******************************
+Start
+******************************
+
+#Test category: rfid
+No card found yet!
+Card found	UUID :  7B  7F  AF  1B 
+No card found yet!
+*Connection Error from DiscBot!!
+
+Result of rfid: 1 Error occurred
+Connection Error from DiscBot!!
+#End of rfid
+*************************
+DiscBot connected to COM 4
+Started at: 11:05:39_01.10.2020 	Ended at: 11:07:00_01.10.2020
+349 Byte were recived & 311 Byte were sent!!
+
+
+##Completly test results: 1 Error occurred!
+
+#Result of rfid: 1 Error occurred
+Connection Error from DiscBot!!
+#End of result rfid
+
+##End of Completly test results
+*************************
+******************************
+Start
+******************************
+
+#Test category: rfid
+No card found yet!
+Card found	UUID :  7B  7F  AF  1B 
+No card found yet!
+Card found	UUID :  7B  7F  AF  1B 
+No card found yet!
+Card found	UUID :  7B  7F  AF  1B 
+No card found yet!
+~Everything worked fine
+
+Result of rfid: No Errors occurred!
+#End of rfid
+*************************
+DiscBot connected to COM 4
+Started at: 11:07:34_01.10.2020 	Ended at: 11:08:53_01.10.2020
+619 Byte were recived & 415 Byte were sent!!
+
+
+##Completly test results: 0 Errors occurred!
+
+#Result of rfid: No Errors occurred!
+#End of result rfid
+
+##End of Completly test results
+*************************
+******************************
+Start
+******************************
+
+#Test category: ls
+*Connection Error from DiscBot!!
+
+Result of ls: 1 Error occurred
+Connection Error from DiscBot!!
+#End of ls
+*************************
+DiscBot connected to COM 4
+Started at: 11:09:09_01.10.2020 	Ended at: 11:11:05_01.10.2020
+18781 Byte were recived & 1252 Byte were sent!!
+
+
+##Completly test results: 1 Error occurred!
+
+#Result of ls: 1 Error occurred
+Connection Error from DiscBot!!
+#End of result ls
+
+##End of Completly test results
+*************************
+******************************
+Start
+******************************
+******************************
+Start
+******************************
+******************************
+Start
+******************************
+
+#Test category: btn
+The red button was pushed
+The green button was pushed
+The blue button was pushed
+
+Result of btn: No Errors occurred!
+#End of btn
+
+#Test category: rfid
+No card found yet!
+Card found	UUID :  7B  7F  AF  1B 
+No card found yet!
+~Everything worked fine
+
+Result of rfid: No Errors occurred!
+#End of rfid
+
+#Test category: irc
+~Everything worked fine
+
+Result of irc: No Errors occurred!
+#End of irc
+
+#Test category: mc
+The circumference is: 217 mm
+
+***	Spin forward
+*Receive as forward left:	   0 ticks	(turn  0.0 mm)
+Receive as backward left:	   0 ticks	(turn  0.0 mm)
+Receive as general left:	   0 ticks	(turn  0.0 mm)
+
+*Receive as forward right:	   0 ticks	(turn  0.0 mm)
+Receive as backward right:	   0 ticks	(turn  0.0 mm)
+Receive as general right:	   0 ticks	(turn  0.0 mm)
+
+***	Spin backward
+Receive as forward left:	   0 ticks	(turn  0.0 mm)
+*Receive as backward left:	   0 ticks	(turn  0.0 mm)
+Receive as general left:	   0 ticks	(turn  0.0 mm)
+
+Receive as forward right:	   0 ticks	(turn  0.0 mm)
+*Receive as backward right:	   0 ticks	(turn  0.0 mm)
+Receive as general right:	   0 ticks	(turn  0.0 mm)
+*The motor left was not turning!
+*The motor right was not turning!
+Backward left drive 0.000% (should be a low value, under 50)
+Backward right drive 0.000% (should be a low value, under 50)
+*The motor left was not turning!
+*The motor right was not turning!
+Forward left drive 0.000% (should be a low value, under 50)
+Forward right drive 0.000% (should be a low value, under 50)
+******************************
+Start
+******************************
+
+#Test category: mc
+The circumference is: 217 mm
+
+***	Spin forward
+*Receive as forward left:	   0 ticks	(turn  0.0 mm)
+Receive as backward left:	   0 ticks	(turn  0.0 mm)
+Receive as general left:	   0 ticks	(turn  0.0 mm)
+
+*Receive as forward right:	   0 ticks	(turn  0.0 mm)
+Receive as backward right:	   0 ticks	(turn  0.0 mm)
+Receive as general right:	   0 ticks	(turn  0.0 mm)
+
+***	Spin backward
+Receive as forward left:	   0 ticks	(turn  0.0 mm)
+*Receive as backward left:	   0 ticks	(turn  0.0 mm)
+Receive as general left:	   0 ticks	(turn  0.0 mm)
+
+Receive as forward right:	   0 ticks	(turn  0.0 mm)
+*Receive as backward right:	   0 ticks	(turn  0.0 mm)
+Receive as general right:	   0 ticks	(turn  0.0 mm)
+*The motor left was not turning!
+*The motor right was not turning!
+Backward left drive 0.000% (should be a low value, under 50)
+Backward right drive 0.000% (should be a low value, under 50)
+*The motor left was not turning!
+*The motor right was not turning!
+Forward left drive 0.000% (should be a low value, under 50)
+Forward right drive 0.000% (should be a low value, under 50)
+*Connection Error from DiscBot!!
+
+Result of mc: 9 Errors occurred
+Receive as forward left:	   0 ticks	(turn  0.0 mm)
+Receive as forward right:	   0 ticks	(turn  0.0 mm)
+Receive as backward left:	   0 ticks	(turn  0.0 mm)
+Receive as backward right:	   0 ticks	(turn  0.0 mm)
+The motor left was not turning!
+The motor right was not turning!
+The motor left was not turning!
+The motor right was not turning!
+Connection Error from DiscBot!!
+#End of mc
+
+#Test category: cs
+~Everything worked fine
+
+Result of cs: No Errors occurred!
+#End of cs
+
+#Test category: gs
+
+Result of gs: No Errors occurred!
+#End of gs
+
+#Test category: irs
+~Everything worked fine
+
+Result of irs: No Errors occurred!
+#End of irs
+
+#Test category: led
+~Everything worked fine
+
+Result of led: No Errors occurred!
+#End of led
+
+#Test category: ls
+******************************
+Start
+******************************
+
+#Test category: ls
+******************************
+Start
+******************************
+
+#Test category: btn
+The red button was pushed
+The green button was pushed
+The blue button was pushed
+
+Result of btn: No Errors occurred!
+#End of btn
+
+#Test category: rfid
+No card found yet!
+Card found	UUID :  7B  7F  AF  1B 
+No card found yet!
+~Everything worked fine
+
+Result of rfid: No Errors occurred!
+#End of rfid
+
+#Test category: irc
+~Everything worked fine
+
+Result of irc: No Errors occurred!
+#End of irc
+
+#Test category: cs
+~Everything worked fine
+
+Result of cs: No Errors occurred!
+#End of cs
+
+#Test category: gs
+
+Result of gs: No Errors occurred!
+#End of gs
+
+#Test category: irs
+~Everything worked fine
+
+Result of irs: No Errors occurred!
+#End of irs
+
+#Test category: led
+~Everything worked fine
+
+Result of led: No Errors occurred!
+#End of led
+
+#Test category: ls
+~Everything worked fine
+
+Result of ls: No Errors occurred!
+#End of ls
+
+#Test category: bt
+AT request works fine!
+~Everything worked fine
+
+Result of bt: No Errors occurred!
+#End of bt
+
+#Test category: bm
+The messurements are:
+	left: 89.02 (227 of 255)
+	right: 91.76(234 of 255)
+The messurements are:
+	left: 87.45 (223 of 255)
+	right: 90.98(232 of 255)
+The messurements are:
+	left: 58.82 (150 of 255)
+	right: 90.98(232 of 255)
+The messurements are:
+	left: 86.67 (221 of 255)
+	right: 83.53(213 of 255)
+~Everything worked fine
+
+Result of bm: No Errors occurred!
+#End of bm
+
+#Test category: uss
+*Front sensor is not connected or had to much distance to messure!
+*Back sensor is not connected or had to much distance to messure!
+*Left sensor is not connected or had to much distance to messure!
+*Right sensor is not connected or had to much distance to messure!
+*Front sensor is not connected or had to much distance to messure!
+*Back sensor is not connected or had to much distance to messure!
+*Left sensor is not connected or had to much distance to messure!
+*Right sensor is not connected or had to much distance to messure!
+~Everything worked fine
+
+Result of uss: 8 Errors occurred
+Front sensor is not connected or had to much distance to messure!
+Back sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Back sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+#End of uss
+*************************
+DiscBot connected to COM 4
+Started at: 12:09:24_01.10.2020 	Ended at: 12:14:34_01.10.2020
+4504 Byte were recived & 10028 Byte were sent!!
+
+
+##Completly test results: 8 Errors occurred!
+
+#Result of btn: No Errors occurred!
+#End of result btn
+
+#Result of rfid: No Errors occurred!
+#End of result rfid
+
+#Result of irc: No Errors occurred!
+#End of result irc
+
+#Result of cs: No Errors occurred!
+#End of result cs
+
+#Result of gs: No Errors occurred!
+#End of result gs
+
+#Result of irs: No Errors occurred!
+#End of result irs
+
+#Result of led: No Errors occurred!
+#End of result led
+
+#Result of ls: No Errors occurred!
+#End of result ls
+
+#Result of bt: No Errors occurred!
+#End of result bt
+
+#Result of bm: No Errors occurred!
+#End of result bm
+
+#Result of uss: 8 Errors occurred
+Front sensor is not connected or had to much distance to messure!
+Back sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Back sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+#End of result uss
+
+##End of Completly test results
+*************************
+******************************
+Start
+******************************
+
+#Test category: ls
+******************************
+Start
+******************************
+******************************
+Start
+******************************
+******************************
+Start
+******************************
+******************************
+Start
+******************************
+******************************
+Start
+******************************
+******************************
+Start
+******************************
+******************************
+Start
+******************************
+******************************
+Start
+******************************
+******************************
+Start
+******************************
+******************************
+Start
+******************************
+******************************
+Start
+******************************
+******************************
+Start
+******************************
+******************************
+Start
+******************************
+******************************
+Start
+******************************
+******************************
+Start
+******************************
+******************************
+Start
+******************************
+******************************
+Start
+******************************
+******************************
+Start
+******************************
+******************************
+Start
+******************************
+******************************
+Start
+******************************
+Error: Connection!
+*************************
+DiscBot connected to COM 4
+Started at: 11:41:22_02.10.2020 	Ended at: 11:43:17_02.10.2020
+0 Byte were recived & 0 Byte were sent!!
+
+
+##Completly test results: 0 Errors occurred!
+
+##End of Completly test results
+*************************
+******************************
+Start
+******************************
+******************************
+Start
+******************************
+Error: Connection!
+*************************
+DiscBot connected to COM 4
+Started at: 11:43:49_02.10.2020 	Ended at: 11:45:09_02.10.2020
+0 Byte were recived & 0 Byte were sent!!
+
+
+##Completly test results: 0 Errors occurred!
+
+##End of Completly test results
+*************************
+******************************
+Start
+******************************
+******************************
+Start
+******************************
+******************************
+Start
+******************************
+******************************
+Start
+******************************
+******************************
+Start
+******************************
+******************************
+Start
+******************************
+******************************
+Start
+******************************
+******************************
+Start
+******************************
+******************************
+Start
+******************************
+******************************
+Start
+******************************
+******************************
+Start
+******************************
+******************************
+Start
+******************************
+******************************
+Start
+******************************
+******************************
+Start
+******************************
+******************************
+Start
+******************************
+******************************
+Start
+******************************
+******************************
+Start
+******************************
+******************************
+Start
+******************************
+******************************
+Start
+******************************
+******************************
+Start
+******************************
+******************************
+Start
+******************************
+Error: Connection!
+*************************
+DiscBot connected to COM 4
+Started at: 12:09:54_02.10.2020 	Ended at: 12:10:00_02.10.2020
+0 Byte were recived & 0 Byte were sent!!
+
+
+##Completly test results: 0 Errors occurred!
+
+##End of Completly test results
+*************************
+******************************
+Start
+******************************
+******************************
+Start
+******************************
+******************************
+Start
+******************************
+******************************
+Start
+******************************
+******************************
+Start
+******************************
+Error: Connection!
+*************************
+DiscBot connected to COM 4
+Started at: 12:11:27_02.10.2020 	Ended at: 12:11:32_02.10.2020
+0 Byte were recived & 0 Byte were sent!!
+
+
+##Completly test results: 0 Errors occurred!
+
+##End of Completly test results
+*************************
+******************************
+Start
+******************************
+******************************
+Start
+******************************
+Error: Connection!
+*************************
+DiscBot connected to COM 4
+Started at: 12:15:44_02.10.2020 	Ended at: 12:16:00_02.10.2020
+0 Byte were recived & 0 Byte were sent!!
+
+
+##Completly test results: 0 Errors occurred!
+
+##End of Completly test results
+*************************
+******************************
+Start
+******************************
+******************************
+Start
+******************************
+******************************
+Start
+******************************
+******************************
+Start
+******************************
+******************************
+Start
+******************************
+******************************
+Start
+******************************
+Error: Connection!
+*************************
+DiscBot connected to COM 4
+Started at: 12:23:03_02.10.2020 	Ended at: 12:23:05_02.10.2020
+0 Byte were recived & 0 Byte were sent!!
+
+
+##Completly test results: 0 Errors occurred!
+
+##End of Completly test results
+*************************
+******************************
+Start
+******************************
+******************************
+Start
+******************************
+Error: Connection!
+*************************
+DiscBot connected to COM 4
+Started at: 12:31:36_02.10.2020 	Ended at: 12:31:40_02.10.2020
+0 Byte were recived & 0 Byte were sent!!
+
+
+##Completly test results: 0 Errors occurred!
+
+##End of Completly test results
+*************************
+******************************
+Start
+******************************
+******************************
+Start
+******************************
+Error: Connection!
+*************************
+DiscBot connected to COM 4
+Started at: 12:36:11_02.10.2020 	Ended at: 12:36:17_02.10.2020
+0 Byte were recived & 0 Byte were sent!!
+
+
+##Completly test results: 0 Errors occurred!
+
+##End of Completly test results
+*************************
+******************************
+Start
+******************************
+******************************
+Start
+******************************
+
+#Test category: rfid
+No card found yet!
+*~dfghz
+
+Result of rfid: 1 Error occurred
+~dfghz
+#End of rfid
+
+#Test category: cs
+*~j
+
+Result of cs: 1 Error occurred
+~j
+#End of cs
+*************************
+DiscBot connected to COM 4
+Started at: 07:56:41_06.10.2020 	Ended at: 07:59:17_06.10.2020
+687 Byte were recived & 1143 Byte were sent!!
+
+
+##Completly test results: 2 Errors occurred!
+
+#Result of rfid: 1 Error occurred
+~dfghz
+#End of result rfid
+
+#Result of cs: 1 Error occurred
+~j
+#End of result cs
+
+##End of Completly test results
+*************************
+******************************
+Start
+******************************
+******************************
+Start
+******************************
+******************************
+Start
+******************************
+
+#Test category: mc
+The circumference is: 217 mm
+
+***	Spin forward
+*Receive as forward left:	   0 ticks	(turn  0.0 mm)
+Receive as backward left:	   0 ticks	(turn  0.0 mm)
+Receive as general left:	   0 ticks	(turn  0.0 mm)
+
+*Receive as forward right:	   0 ticks	(turn  0.0 mm)
+Receive as backward right:	   0 ticks	(turn  0.0 mm)
+Receive as general right:	   0 ticks	(turn  0.0 mm)
+
+***	Spin backward
+Receive as forward left:	   0 ticks	(turn  0.0 mm)
+*Receive as backward left:	   0 ticks	(turn  0.0 mm)
+Receive as general left:	   0 ticks	(turn  0.0 mm)
+
+Receive as forward right:	   0 ticks	(turn  0.0 mm)
+*Receive as backward right:	   0 ticks	(turn  0.0 mm)
+Receive as general right:	   0 ticks	(turn  0.0 mm)
+*The motor left was not turning!
+*The motor right was not turning!
+Backward left drive 0.000% (should be a low value, under 50)
+Backward right drive 0.000% (should be a low value, under 50)
+*The motor left was not turning!
+*The motor right was not turning!
+Forward left drive 0.000% (should be a low value, under 50)
+Forward right drive 0.000% (should be a low value, under 50)
+
+***	Spin forward
+*Receive as forward left:	   0 ticks	(turn  0.0 mm)
+Receive as backward left:	   0 ticks	(turn  0.0 mm)
+Receive as general left:	   0 ticks	(turn  0.0 mm)
+
+*Receive as forward right:	   0 ticks	(turn  0.0 mm)
+Receive as backward right:	   0 ticks	(turn  0.0 mm)
+Receive as general right:	   0 ticks	(turn  0.0 mm)
+
+***	Spin backward
+Receive as forward left:	   0 ticks	(turn  0.0 mm)
+*Receive as backward left:	   0 ticks	(turn  0.0 mm)
+Receive as general left:	   0 ticks	(turn  0.0 mm)
+
+Receive as forward right:	   0 ticks	(turn  0.0 mm)
+*Receive as backward right:	   0 ticks	(turn  0.0 mm)
+Receive as general right:	   0 ticks	(turn  0.0 mm)
+*The motor left was not turning!
+*The motor right was not turning!
+Backward left drive 0.000% (should be a low value, under 50)
+Backward right drive 0.000% (should be a low value, under 50)
+*The motor left was not turning!
+*The motor right was not turning!
+Forward left drive 0.000% (should be a low value, under 50)
+Forward right drive 0.000% (should be a low value, under 50)
+
+Result of mc: 16 Errors occurred
+Receive as forward left:	   0 ticks	(turn  0.0 mm)
+Receive as forward right:	   0 ticks	(turn  0.0 mm)
+Receive as backward left:	   0 ticks	(turn  0.0 mm)
+Receive as backward right:	   0 ticks	(turn  0.0 mm)
+The motor left was not turning!
+The motor right was not turning!
+The motor left was not turning!
+The motor right was not turning!
+Receive as forward left:	   0 ticks	(turn  0.0 mm)
+Receive as forward right:	   0 ticks	(turn  0.0 mm)
+Receive as backward left:	   0 ticks	(turn  0.0 mm)
+Receive as backward right:	   0 ticks	(turn  0.0 mm)
+The motor left was not turning!
+The motor right was not turning!
+The motor left was not turning!
+The motor right was not turning!
+#End of mc
+*************************
+DiscBot connected to COM 12
+Started at: 08:13:00_06.10.2020 	Ended at: 08:26:25_06.10.2020
+72 Byte were recived & 78 Byte were sent!!
+
+
+##Completly test results: 16 Errors occurred!
+
+#Result of mc: 16 Errors occurred
+Receive as forward left:	   0 ticks	(turn  0.0 mm)
+Receive as forward right:	   0 ticks	(turn  0.0 mm)
+Receive as backward left:	   0 ticks	(turn  0.0 mm)
+Receive as backward right:	   0 ticks	(turn  0.0 mm)
+The motor left was not turning!
+The motor right was not turning!
+The motor left was not turning!
+The motor right was not turning!
+Receive as forward left:	   0 ticks	(turn  0.0 mm)
+Receive as forward right:	   0 ticks	(turn  0.0 mm)
+Receive as backward left:	   0 ticks	(turn  0.0 mm)
+Receive as backward right:	   0 ticks	(turn  0.0 mm)
+The motor left was not turning!
+The motor right was not turning!
+The motor left was not turning!
+The motor right was not turning!
+#End of result mc
+
+##End of Completly test results
+*************************
+******************************
+Start
+******************************
+
+#Test category: rfid
+No card found yet!
+*~hg
+
+Result of rfid: 1 Error occurred
+~hg
+#End of rfid
+
+#Test category: cs
+~Everything worked fine
+
+Result of cs: No Errors occurred!
+#End of cs
+*************************
+DiscBot connected to COM 4
+Started at: 08:27:08_06.10.2020 	Ended at: 08:37:47_06.10.2020
+5089 Byte were recived & 5613 Byte were sent!!
+
+
+##Completly test results: 1 Error occurred!
+
+#Result of rfid: 1 Error occurred
+~hg
+#End of result rfid
+
+#Result of cs: No Errors occurred!
+#End of result cs
+
+##End of Completly test results
+*************************
+******************************
+Start
+******************************
+
+#Test category: rfid
+No card found yet!
+Card found	UUID :  F9  AE  03  C3 
+No card found yet!
+Card found	UUID :  F9  AE  03  C3 
+No card found yet!
+Card found	UUID :  E4  87  F2  89 
+No card found yet!
+Card found	UUID :  F9  AE  03  C3 
+No card found yet!
+Card found	UUID :  F9  AE  03  C3 
+No card found yet!
+Card found	UUID :  E4  87  F2  89 
+No card found yet!
+Card found	UUID :  E4  87  F2  89 
+No card found yet!
+Card found	UUID :  E4  87  F2  89 
+No card found yet!
+Card found	UUID :  E4  87  F2  89 
+No card found yet!
+Card found	UUID :  F9  AE  03  C3 
+No card found yet!
+Card found	UUID :  F9  AE  03  C3 
+No card found yet!
+~Everything worked fine
+
+Result of rfid: No Errors occurred!
+#End of rfid
+
+#Test category: cs
+~Everything worked fine
+
+Result of cs: No Errors occurred!
+#End of cs
+*************************
+DiscBot connected to COM 4
+Started at: 08:42:35_06.10.2020 	Ended at: 08:54:28_06.10.2020
+9115 Byte were recived & 9382 Byte were sent!!
+
+
+##Completly test results: 0 Errors occurred!
+
+#Result of rfid: No Errors occurred!
+#End of result rfid
+
+#Result of cs: No Errors occurred!
+#End of result cs
+
+##End of Completly test results
+*************************
+******************************
+Start
+******************************
+******************************
+Start
+******************************
+
+#Test category: mc
+*Circumference connection error
+******************************
+Start
+******************************
+******************************
+Start
+******************************
+
+#Test category: mc
+The circumference is: 217 mm
+
+***	Spin forward
+*Receive as forward left:	   0 ticks	(turn  0.0 mm)
+Receive as backward left:	   0 ticks	(turn  0.0 mm)
+Receive as general left:	   0 ticks	(turn  0.0 mm)
+
+*Receive as forward right:	   0 ticks	(turn  0.0 mm)
+Receive as backward right:	   0 ticks	(turn  0.0 mm)
+Receive as general right:	   0 ticks	(turn  0.0 mm)
+
+***	Spin backward
+Receive as forward left:	   0 ticks	(turn  0.0 mm)
+*Receive as backward left:	   0 ticks	(turn  0.0 mm)
+Receive as general left:	   0 ticks	(turn  0.0 mm)
+
+Receive as forward right:	   0 ticks	(turn  0.0 mm)
+*Receive as backward right:	   0 ticks	(turn  0.0 mm)
+Receive as general right:	   0 ticks	(turn  0.0 mm)
+*The motor left was not turning!
+*The motor right was not turning!
+Backward left drive 0.000% (should be a low value, under 50)
+Backward right drive 0.000% (should be a low value, under 50)
+*The motor left was not turning!
+*The motor right was not turning!
+Forward left drive 0.000% (should be a low value, under 50)
+Forward right drive 0.000% (should be a low value, under 50)
+
+***	Spin forward
+*Receive as forward left:	   0 ticks	(turn  0.0 mm)
+Receive as backward left:	   0 ticks	(turn  0.0 mm)
+Receive as general left:	   0 ticks	(turn  0.0 mm)
+
+*Receive as forward right:	   0 ticks	(turn  0.0 mm)
+Receive as backward right:	   0 ticks	(turn  0.0 mm)
+Receive as general right:	   0 ticks	(turn  0.0 mm)
+
+***	Spin backward
+Receive as forward left:	   0 ticks	(turn  0.0 mm)
+*Receive as backward left:	   0 ticks	(turn  0.0 mm)
+Receive as general left:	   0 ticks	(turn  0.0 mm)
+
+Receive as forward right:	   0 ticks	(turn  0.0 mm)
+*Receive as backward right:	   0 ticks	(turn  0.0 mm)
+Receive as general right:	   0 ticks	(turn  0.0 mm)
+*The motor left was not turning!
+*The motor right was not turning!
+Backward left drive 0.000% (should be a low value, under 50)
+Backward right drive 0.000% (should be a low value, under 50)
+*The motor left was not turning!
+*The motor right was not turning!
+Forward left drive 0.000% (should be a low value, under 50)
+Forward right drive 0.000% (should be a low value, under 50)
+
+Result of mc: 16 Errors occurred
+Receive as forward left:	   0 ticks	(turn  0.0 mm)
+Receive as forward right:	   0 ticks	(turn  0.0 mm)
+Receive as backward left:	   0 ticks	(turn  0.0 mm)
+Receive as backward right:	   0 ticks	(turn  0.0 mm)
+The motor left was not turning!
+The motor right was not turning!
+The motor left was not turning!
+The motor right was not turning!
+Receive as forward left:	   0 ticks	(turn  0.0 mm)
+Receive as forward right:	   0 ticks	(turn  0.0 mm)
+Receive as backward left:	   0 ticks	(turn  0.0 mm)
+Receive as backward right:	   0 ticks	(turn  0.0 mm)
+The motor left was not turning!
+The motor right was not turning!
+The motor left was not turning!
+The motor right was not turning!
+#End of mc
+*************************
+DiscBot connected to COM 12
+Started at: 09:11:45_06.10.2020 	Ended at: 09:15:50_06.10.2020
+72 Byte were recived & 78 Byte were sent!!
+
+
+##Completly test results: 16 Errors occurred!
+
+#Result of mc: 16 Errors occurred
+Receive as forward left:	   0 ticks	(turn  0.0 mm)
+Receive as forward right:	   0 ticks	(turn  0.0 mm)
+Receive as backward left:	   0 ticks	(turn  0.0 mm)
+Receive as backward right:	   0 ticks	(turn  0.0 mm)
+The motor left was not turning!
+The motor right was not turning!
+The motor left was not turning!
+The motor right was not turning!
+Receive as forward left:	   0 ticks	(turn  0.0 mm)
+Receive as forward right:	   0 ticks	(turn  0.0 mm)
+Receive as backward left:	   0 ticks	(turn  0.0 mm)
+Receive as backward right:	   0 ticks	(turn  0.0 mm)
+The motor left was not turning!
+The motor right was not turning!
+The motor left was not turning!
+The motor right was not turning!
+#End of result mc
+
+##End of Completly test results
+*************************
+******************************
+Start
+******************************
+
+#Test category: btn
+The red button was pushed
+The green button was pushed
+The blue button was pushed
+
+Result of btn: No Errors occurred!
+#End of btn
+
+#Test category: rfid
+No card found yet!
+Card found	UUID :  F9  AE  03  C3 
+No card found yet!
+Card found	UUID :  F9  AE  03  C3 
+No card found yet!
+~Everything worked fine
+
+Result of rfid: No Errors occurred!
+#End of rfid
+
+#Test category: irc
+~Everything worked fine
+
+Result of irc: No Errors occurred!
+#End of irc
+
+#Test category: mc
+The circumference is: 217 mm
+
+***	Spin forward
+Receive as forward left:	1339 ticks	(turn 434.0 mm)
+Receive as backward left:	   1 ticks	(turn  0.0 mm)
+Receive as general left:	1340 ticks	(turn 434.0 mm)
+
+Receive as forward right:	1486 ticks	(turn 651.0 mm)
+Receive as backward right:	   0 ticks	(turn  0.0 mm)
+Receive as general right:	1486 ticks	(turn 651.0 mm)
+
+***	Spin backward
+Receive as forward left:	  13 ticks	(turn  0.0 mm)
+Receive as backward left:	1488 ticks	(turn 651.0 mm)
+Receive as general left:	1501 ticks	(turn 651.0 mm)
+
+Receive as forward right:	  13 ticks	(turn  0.0 mm)
+Receive as backward right:	1533 ticks	(turn 651.0 mm)
+Receive as general right:	1546 ticks	(turn 651.0 mm)
+Backward left drive 0.075% (should be a low value, under 50)
+Backward right drive 0.000% (should be a low value, under 50)
+Forward left drive 0.866% (should be a low value, under 50)
+Forward right drive 0.841% (should be a low value, under 50)
+
+***	Spin forward
+Receive as forward left:	2160 ticks	(turn 868.0 mm)
+Receive as backward left:	   0 ticks	(turn  0.0 mm)
+Receive as general left:	2160 ticks	(turn 868.0 mm)
+
+Receive as forward right:	2130 ticks	(turn 868.0 mm)
+Receive as backward right:	   2 ticks	(turn  0.0 mm)
+Receive as general right:	2132 ticks	(turn 868.0 mm)
+
+***	Spin backward
+Receive as forward left:	  13 ticks	(turn  0.0 mm)
+Receive as backward left:	1514 ticks	(turn 651.0 mm)
+Receive as general left:	1527 ticks	(turn 651.0 mm)
+
+Receive as forward right:	  14 ticks	(turn  0.0 mm)
+Receive as backward right:	1532 ticks	(turn 651.0 mm)
+Receive as general right:	1546 ticks	(turn 651.0 mm)
+Backward left drive 0.000% (should be a low value, under 50)
+Backward right drive 0.094% (should be a low value, under 50)
+Forward left drive 0.851% (should be a low value, under 50)
+Forward right drive 0.906% (should be a low value, under 50)
+
+***	Spin forward
+Receive as forward left:	2188 ticks	(turn 868.0 mm)
+Receive as backward left:	   1 ticks	(turn  0.0 mm)
+Receive as general left:	2189 ticks	(turn 868.0 mm)
+
+Receive as forward right:	2164 ticks	(turn 868.0 mm)
+Receive as backward right:	   3 ticks	(turn  0.0 mm)
+Receive as general right:	2167 ticks	(turn 868.0 mm)
+
+***	Spin backward
+Receive as forward left:	   6 ticks	(turn  0.0 mm)
+Receive as backward left:	1533 ticks	(turn 651.0 mm)
+Receive as general left:	1539 ticks	(turn 651.0 mm)
+
+Receive as forward right:	   7 ticks	(turn  0.0 mm)
+Receive as backward right:	1547 ticks	(turn 651.0 mm)
+Receive as general right:	1554 ticks	(turn 651.0 mm)
+Backward left drive 0.046% (should be a low value, under 50)
+Backward right drive 0.138% (should be a low value, under 50)
+Forward left drive 0.390% (should be a low value, under 50)
+Forward right drive 0.450% (should be a low value, under 50)
+
+Result of mc: No Errors occurred!
+#End of mc
+
+#Test category: cs
+~Everything worked fine
+
+Result of cs: No Errors occurred!
+#End of cs
+
+#Test category: gs
+
+Result of gs: No Errors occurred!
+#End of gs
+
+#Test category: irs
+~Everything worked fine
+
+Result of irs: No Errors occurred!
+#End of irs
+
+#Test category: led
+~Everything worked fine
+
+Result of led: No Errors occurred!
+#End of led
+
+#Test category: ls
+~Everything worked fine
+
+Result of ls: No Errors occurred!
+#End of ls
+
+#Test category: bt
+*AT request works not fine (wrong/no request)!
+~Everything worked fine
+
+Result of bt: 1 Error occurred
+AT request works not fine (wrong/no request)!
+#End of bt
+
+#Test category: bm
+The messurements are:
+	left: 85.88 (219 of 255)
+	right: 87.45(223 of 255)
+The messurements are:
+	left: 86.67 (221 of 255)
+	right: 83.14(212 of 255)
+The messurements are:
+	left: 87.06 (222 of 255)
+	right: 84.31(215 of 255)
+The messurements are:
+	left: 85.49 (218 of 255)
+	right: 80.78(206 of 255)
+The messurements are:
+	left: 85.49 (218 of 255)
+	right: 80.39(205 of 255)
+The messurements are:
+	left: 85.88 (219 of 255)
+	right: 80.78(206 of 255)
+The messurements are:
+	left: 86.67 (221 of 255)
+	right: 81.96(209 of 255)
+The messurements are:
+	left: 85.49 (218 of 255)
+	right: 80.78(206 of 255)
+The messurements are:
+	left: 86.27 (220 of 255)
+	right: 81.96(209 of 255)
+The messurements are:
+	left: 85.10 (217 of 255)
+	right: 82.75(211 of 255)
+The messurements are:
+	left: 86.27 (220 of 255)
+	right: 83.92(214 of 255)
+The messurements are:
+	left: 85.10 (217 of 255)
+	right: 82.75(211 of 255)
+The messurements are:
+	left: 86.27 (220 of 255)
+	right: 83.92(214 of 255)
+The messurements are:
+	left: 50.59 (129 of 255)
+	right: 81.57(208 of 255)
+The messurements are:
+	left: 45.49 (116 of 255)
+	right: 80.39(205 of 255)
+The messurements are:
+	left: 53.73 (137 of 255)
+	right: 79.61(203 of 255)
+The messurements are:
+	left: 53.73 (137 of 255)
+	right: 78.04(199 of 255)
+The messurements are:
+	left: 18.43 (47 of 255)
+	right: 83.14(212 of 255)
+The messurements are:
+	left: 12.94 (33 of 255)
+	right: 82.75(211 of 255)
+The messurements are:
+	left: 84.31 (215 of 255)
+	right: 4.31(11 of 255)
+The messurements are:
+	left: 85.88 (219 of 255)
+	right: 2.75(7 of 255)
+~Everything worked fine
+
+Result of bm: No Errors occurred!
+#End of bm
+
+#Test category: uss
+*Front sensor is not connected or had to much distance to messure!
+Sensor back was messureing 32 cm
+Sensor left was messureing 26 cm
+*Right sensor is not connected or had to much distance to messure!
+*Front sensor is not connected or had to much distance to messure!
+Sensor back was messureing 47 cm
+*Left sensor is not connected or had to much distance to messure!
+*Right sensor is not connected or had to much distance to messure!
+*Front sensor is not connected or had to much distance to messure!
+*Back sensor is not connected or had to much distance to messure!
+*Left sensor is not connected or had to much distance to messure!
+Sensor right was messureing 55 cm
+*Front sensor is not connected or had to much distance to messure!
+*Back sensor is not connected or had to much distance to messure!
+Sensor left was messureing 52 cm
+*Right sensor is not connected or had to much distance to messure!
+*Front sensor is not connected or had to much distance to messure!
+Sensor back was messureing 47 cm
+*Left sensor is not connected or had to much distance to messure!
+*Right sensor is not connected or had to much distance to messure!
+*Front sensor is not connected or had to much distance to messure!
+Sensor back was messureing 32 cm
+*Left sensor is not connected or had to much distance to messure!
+*Right sensor is not connected or had to much distance to messure!
+*Front sensor is not connected or had to much distance to messure!
+Sensor back was messureing 32 cm
+*Left sensor is not connected or had to much distance to messure!
+*Right sensor is not connected or had to much distance to messure!
+*Front sensor is not connected or had to much distance to messure!
+Sensor back was messureing 32 cm
+*Left sensor is not connected or had to much distance to messure!
+*Right sensor is not connected or had to much distance to messure!
+*Front sensor is not connected or had to much distance to messure!
+Sensor back was messureing 32 cm
+*Left sensor is not connected or had to much distance to messure!
+*Right sensor is not connected or had to much distance to messure!
+*Front sensor is not connected or had to much distance to messure!
+Sensor back was messureing 32 cm
+Sensor left was messureing 12 cm
+*Right sensor is not connected or had to much distance to messure!
+*Front sensor is not connected or had to much distance to messure!
+Sensor back was messureing 32 cm
+*Left sensor is not connected or had to much distance to messure!
+*Right sensor is not connected or had to much distance to messure!
+*Front sensor is not connected or had to much distance to messure!
+Sensor back was messureing 11 cm
+*Left sensor is not connected or had to much distance to messure!
+Sensor right was messureing 55 cm
+*Front sensor is not connected or had to much distance to messure!
+Sensor back was messureing 11 cm
+*Left sensor is not connected or had to much distance to messure!
+*Right sensor is not connected or had to much distance to messure!
+*Front sensor is not connected or had to much distance to messure!
+Sensor back was messureing 11 cm
+Sensor left was messureing 12 cm
+*Right sensor is not connected or had to much distance to messure!
+*Front sensor is not connected or had to much distance to messure!
+Sensor back was messureing 11 cm
+*Left sensor is not connected or had to much distance to messure!
+*Right sensor is not connected or had to much distance to messure!
+*Front sensor is not connected or had to much distance to messure!
+Sensor back was messureing 11 cm
+*Left sensor is not connected or had to much distance to messure!
+*Right sensor is not connected or had to much distance to messure!
+*Front sensor is not connected or had to much distance to messure!
+Sensor back was messureing 11 cm
+*Left sensor is not connected or had to much distance to messure!
+*Right sensor is not connected or had to much distance to messure!
+*Front sensor is not connected or had to much distance to messure!
+Sensor back was messureing 11 cm
+*Left sensor is not connected or had to much distance to messure!
+*Right sensor is not connected or had to much distance to messure!
+*Front sensor is not connected or had to much distance to messure!
+Sensor back was messureing 6 cm
+Sensor left was messureing 12 cm
+*Right sensor is not connected or had to much distance to messure!
+*Front sensor is not connected or had to much distance to messure!
+Sensor back was messureing 6 cm
+*Left sensor is not connected or had to much distance to messure!
+*Right sensor is not connected or had to much distance to messure!
+*Front sensor is not connected or had to much distance to messure!
+Sensor back was messureing 6 cm
+*Left sensor is not connected or had to much distance to messure!
+*Right sensor is not connected or had to much distance to messure!
+*Front sensor is not connected or had to much distance to messure!
+Sensor back was messureing 6 cm
+Sensor left was messureing 12 cm
+*Right sensor is not connected or had to much distance to messure!
+*Front sensor is not connected or had to much distance to messure!
+Sensor back was messureing 6 cm
+*Left sensor is not connected or had to much distance to messure!
+*Right sensor is not connected or had to much distance to messure!
+*Front sensor is not connected or had to much distance to messure!
+Sensor back was messureing 11 cm
+*Left sensor is not connected or had to much distance to messure!
+*Right sensor is not connected or had to much distance to messure!
+*Front sensor is not connected or had to much distance to messure!
+Sensor back was messureing 11 cm
+Sensor left was messureing 11 cm
+*Right sensor is not connected or had to much distance to messure!
+*Front sensor is not connected or had to much distance to messure!
+Sensor back was messureing 11 cm
+*Left sensor is not connected or had to much distance to messure!
+*Right sensor is not connected or had to much distance to messure!
+*Front sensor is not connected or had to much distance to messure!
+Sensor back was messureing 12 cm
+*Left sensor is not connected or had to much distance to messure!
+*Right sensor is not connected or had to much distance to messure!
+*Front sensor is not connected or had to much distance to messure!
+Sensor back was messureing 19 cm
+Sensor left was messureing 33 cm
+*Right sensor is not connected or had to much distance to messure!
+*Front sensor is not connected or had to much distance to messure!
+Sensor back was messureing 13 cm
+*Left sensor is not connected or had to much distance to messure!
+*Right sensor is not connected or had to much distance to messure!
+*Front sensor is not connected or had to much distance to messure!
+Sensor back was messureing 34 cm
+*Left sensor is not connected or had to much distance to messure!
+*Right sensor is not connected or had to much distance to messure!
+*Front sensor is not connected or had to much distance to messure!
+Sensor back was messureing 18 cm
+*Left sensor is not connected or had to much distance to messure!
+*Right sensor is not connected or had to much distance to messure!
+*Front sensor is not connected or had to much distance to messure!
+Sensor back was messureing 18 cm
+Sensor left was messureing 6 cm
+*Right sensor is not connected or had to much distance to messure!
+~Everything worked fine
+
+Result of uss: 87 Errors occurred
+Front sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Back sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Back sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+#End of uss
+*************************
+DiscBot connected to COM 4
+Started at: 09:17:27_06.10.2020 	Ended at: 09:32:21_06.10.2020
+16819 Byte were recived & 22135 Byte were sent!!
+
+
+##Completly test results: 88 Errors occurred!
+
+#Result of btn: No Errors occurred!
+#End of result btn
+
+#Result of rfid: No Errors occurred!
+#End of result rfid
+
+#Result of irc: No Errors occurred!
+#End of result irc
+
+#Result of mc: No Errors occurred!
+#End of result mc
+
+#Result of cs: No Errors occurred!
+#End of result cs
+
+#Result of gs: No Errors occurred!
+#End of result gs
+
+#Result of irs: No Errors occurred!
+#End of result irs
+
+#Result of led: No Errors occurred!
+#End of result led
+
+#Result of ls: No Errors occurred!
+#End of result ls
+
+#Result of bt: 1 Error occurred
+AT request works not fine (wrong/no request)!
+#End of result bt
+
+#Result of bm: No Errors occurred!
+#End of result bm
+
+#Result of uss: 87 Errors occurred
+Front sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Back sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Back sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+Front sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+#End of result uss
+
+##End of Completly test results
+*************************
+******************************
+Start
+******************************
+******************************
+Start
+******************************
+
+#Test category: mc
+The circumference is: 217 mm
+
+***	Spin forward
+*Receive as forward left:	   0 ticks	(turn  0.0 mm)
+Receive as backward left:	   0 ticks	(turn  0.0 mm)
+Receive as general left:	   0 ticks	(turn  0.0 mm)
+
+*Receive as forward right:	   0 ticks	(turn  0.0 mm)
+Receive as backward right:	   0 ticks	(turn  0.0 mm)
+Receive as general right:	   0 ticks	(turn  0.0 mm)
+
+***	Spin backward
+Receive as forward left:	   0 ticks	(turn  0.0 mm)
+*Receive as backward left:	   0 ticks	(turn  0.0 mm)
+Receive as general left:	   0 ticks	(turn  0.0 mm)
+
+Receive as forward right:	   0 ticks	(turn  0.0 mm)
+*Receive as backward right:	   0 ticks	(turn  0.0 mm)
+Receive as general right:	   0 ticks	(turn  0.0 mm)
+*The motor left was not turning!
+*The motor right was not turning!
+Backward left drive 0.000% (should be a low value, under 50)
+Backward right drive 0.000% (should be a low value, under 50)
+*The motor left was not turning!
+*The motor right was not turning!
+Forward left drive 0.000% (should be a low value, under 50)
+Forward right drive 0.000% (should be a low value, under 50)
+
+Result of mc: 8 Errors occurred
+Receive as forward left:	   0 ticks	(turn  0.0 mm)
+Receive as forward right:	   0 ticks	(turn  0.0 mm)
+Receive as backward left:	   0 ticks	(turn  0.0 mm)
+Receive as backward right:	   0 ticks	(turn  0.0 mm)
+The motor left was not turning!
+The motor right was not turning!
+The motor left was not turning!
+The motor right was not turning!
+#End of mc
+*************************
+DiscBot connected to COM 12
+Started at: 09:44:23_06.10.2020 	Ended at: 10:27:39_06.10.2020
+942 Byte were recived & 92 Byte were sent!!
+
+
+##Completly test results: 8 Errors occurred!
+
+#Result of mc: 8 Errors occurred
+Receive as forward left:	   0 ticks	(turn  0.0 mm)
+Receive as forward right:	   0 ticks	(turn  0.0 mm)
+Receive as backward left:	   0 ticks	(turn  0.0 mm)
+Receive as backward right:	   0 ticks	(turn  0.0 mm)
+The motor left was not turning!
+The motor right was not turning!
+The motor left was not turning!
+The motor right was not turning!
+#End of result mc
+
+##End of Completly test results
+*************************
+******************************
+Start
+******************************
+
+#Test category: mc
+The circumference is: 217 mm
+
+***	Spin forward
+Receive as forward left:	 723 ticks	(turn 217.0 mm)
+Receive as backward left:	   1 ticks	(turn  0.0 mm)
+Receive as general left:	 724 ticks	(turn 217.0 mm)
+
+Receive as forward right:	 607 ticks	(turn 217.0 mm)
+Receive as backward right:	   0 ticks	(turn  0.0 mm)
+Receive as general right:	 607 ticks	(turn 217.0 mm)
+
+***	Spin backward
+Receive as forward left:	   0 ticks	(turn  0.0 mm)
+Receive as backward left:	  76 ticks	(turn  0.0 mm)
+Receive as general left:	  76 ticks	(turn  0.0 mm)
+
+Receive as forward right:	   0 ticks	(turn  0.0 mm)
+Receive as backward right:	 442 ticks	(turn  0.0 mm)
+Receive as general right:	 442 ticks	(turn  0.0 mm)
+Backward left drive 0.138% (should be a low value, under 50)
+Backward right drive 0.000% (should be a low value, under 50)
+Forward left drive 0.000% (should be a low value, under 50)
+Forward right drive 0.000% (should be a low value, under 50)
+
+***	Spin forward
+Receive as forward left:	 941 ticks	(turn 434.0 mm)
+Receive as backward left:	   0 ticks	(turn  0.0 mm)
+Receive as general left:	 941 ticks	(turn 434.0 mm)
+
+Receive as forward right:	 283 ticks	(turn  0.0 mm)
+Receive as backward right:	   1 ticks	(turn  0.0 mm)
+Receive as general right:	 284 ticks	(turn  0.0 mm)
+
+***	Spin backward
+Receive as forward left:	   3 ticks	(turn  0.0 mm)
+Receive as backward left:	 798 ticks	(turn 217.0 mm)
+Receive as general left:	 801 ticks	(turn 217.0 mm)
+
+Receive as forward right:	   0 ticks	(turn  0.0 mm)
+Receive as backward right:	 497 ticks	(turn 217.0 mm)
+Receive as general right:	 497 ticks	(turn 217.0 mm)
+Backward left drive 0.000% (should be a low value, under 50)
+Backward right drive 0.352% (should be a low value, under 50)
+Forward left drive 0.375% (should be a low value, under 50)
+Forward right drive 0.000% (should be a low value, under 50)
+
+***	Spin forward
+Receive as forward left:	1130 ticks	(turn 434.0 mm)
+Receive as backward left:	   0 ticks	(turn  0.0 mm)
+Receive as general left:	1130 ticks	(turn 434.0 mm)
+
+Receive as forward right:	 515 ticks	(turn 217.0 mm)
+Receive as backward right:	   0 ticks	(turn  0.0 mm)
+Receive as general right:	 515 ticks	(turn 217.0 mm)
+
+***	Spin backward
+Receive as forward left:	   3 ticks	(turn  0.0 mm)
+Receive as backward left:	 777 ticks	(turn 217.0 mm)
+Receive as general left:	 780 ticks	(turn 217.0 mm)
+
+Receive as forward right:	   0 ticks	(turn  0.0 mm)
+Receive as backward right:	 421 ticks	(turn  0.0 mm)
+Receive as general right:	 421 ticks	(turn  0.0 mm)
+Backward left drive 0.000% (should be a low value, under 50)
+Backward right drive 0.000% (should be a low value, under 50)
+Forward left drive 0.385% (should be a low value, under 50)
+Forward right drive 0.000% (should be a low value, under 50)
+******************************
+Start
+******************************
+
+#Test category: mc
+The circumference is: 217 mm
+******************************
+Start
+******************************
+******************************
+Start
+******************************
+
+#Test category: mc
+The circumference is: 217 mm
+
+***	Spin forward
+Receive as forward left:	2469 ticks	(turn 1085.0 mm)
+Receive as backward left:	   0 ticks	(turn  0.0 mm)
+Receive as general left:	2469 ticks	(turn 1085.0 mm)
+
+Receive as forward right:	2516 ticks	(turn 1085.0 mm)
+Receive as backward right:	   4 ticks	(turn  0.0 mm)
+Receive as general right:	2520 ticks	(turn 1085.0 mm)
+
+***	Spin backward
+Receive as forward left:	  20 ticks	(turn  0.0 mm)
+Receive as backward left:	1645 ticks	(turn 651.0 mm)
+Receive as general left:	1665 ticks	(turn 651.0 mm)
+
+Receive as forward right:	  24 ticks	(turn  0.0 mm)
+Receive as backward right:	1704 ticks	(turn 651.0 mm)
+Receive as general right:	1728 ticks	(turn 651.0 mm)
+Backward left drive 0.000% (should be a low value, under 50)
+Backward right drive 0.159% (should be a low value, under 50)
+Forward left drive 1.201% (should be a low value, under 50)
+Forward right drive 1.389% (should be a low value, under 50)

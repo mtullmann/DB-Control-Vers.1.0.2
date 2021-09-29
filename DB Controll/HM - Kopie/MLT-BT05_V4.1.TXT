@@ -1,0 +1,125 @@
+ATS AT\r\n
+ATG OK\r\n
+
+USERNOTE Bluetooth-Low-Energy\n\t\tThis\_is\_the\_standard\_comand-configuration\_for\_the\_BT\_module!!!
+
+POWES \-
+POWEG \-
+
+POWES? \-
+POWEG? \-
+
+NAMES? AT+NAME\r\n
+NAMEG? +NAME=<P>\r\n
+
+NAMES AT+NAME<P>\r\n
+NAMEG +NAME=<P>\r\nOK\r\n
+
+PASSS? AT+PASS\r\n
+PASSG? +PASS=<P>\r\n
+
+PASSS AT+PIN<P>\r\n
+PASSG +PIN=<P>\r\nOK\r\n
+
+RENEWS AT+RENEW\r\n
+RESETS AT+RESET\r\n
+
+RENEWG +RENEW\r\nOK\r\n
+RESETG +RESET\r\nOK\r\n
+
+ROLES? AT+ROLE\r\n
+ROLEG? +ROLE=<P>\r\n
+
+ROLES AT+ROLE<P>\r\n
+ROLEG +ROLE=<P>\r\nOK\r\n
+
+TEMPS? \-
+TEMPG? \-
+
+TYPES? AT+TYPE\r\n
+TYPEG? +TYPE=<P>\r\n
+
+TYPES AT+TYPE<P>\r\n
+TYPEG +TYPE=<P>\r\nOK\r\n
+
+RADDS? AT+RADD\r\n
+RADDG? +RADD=<P>\r\nOK\r\n
+
+VERSS? AT+VERSION\r\n
+VERSG? <P>\r\n
+
+PWRS? AT+PWRM\r\n
+PWRG? +PWRM=<P>\r\n
+
+PWRS AT+PWRM<P>\r\n
+PWRG +PWRM=<P>\r\Ok\r\n
+
+RSSIS? \-
+RSSIG? \-
+
+IMMES? \-
+IMMEG? \-
+
+IMMES AT+IMME\r\n
+IMMEG +IMME=<P>\r\nOK\r\n
+
+NOTIS? AT+NOTI\r\n
+NOTIG? +NOTI=<P>\r\n
+
+NOTIS AT+NOTI<P>\r\n
+NOTIG +NOTI=<P>\r\nOK\r\n
+
+ADDRS? AT+ADDR\r\n
+ADDRG? +ADDR=<P>\r\n
+
+BATTS? \-
+BATTG? \-
+
+HELPS? \-
+HELPG? \-
+
+MODES? AT+MODE\r\n
+MODEG? +MODE=<P>\r\n
+
+MODES AT+MODE<P>\r\n
+MODEG +MODE=<P>\r\nOK\r\n
+
+PARIS? AT+PARI\r\n
+PARIG? +PARI=<P>\r\n
+
+PARIS AT+PARI<P>\r\n
+PARIG +PARI=<P>\r\nOK\r\n
+
+OPS? AT+PCTL\r\n
+OPG? +PCTL=<P>\r\n
+
+OPS AT+PCTL<P>\r\n
+OPG +PCTL=<P>\r\nOK\r\n
+
+LEDS? \-
+LEDG? \-
+
+LEDS \-
+LEDG \-
+
+STOPS? AT+STOP\r\n
+STOPG? +STOP=<P>\r\n
+
+STOPS AT+STOP<P>\r\n
+STOPG +STOP\r\nOK\r\n
+
+UUIDS? AT+UUID\r\n
+UUIDG? +UUID=<P>\r\n
+
+UUIDS AT+UUID<P>\r\n
+UUIDG +UUID=<P>\r\nOK
+
+TCONS? \-
+TCONG? \-
+
+TCONS \-
+TCONG \-
+
+CONNG OK+CONN\r\n
+LOSTG OK+LOST\r\n
+WAKEG OK+WAKE\r\n

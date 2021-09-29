@@ -1,0 +1,266 @@
+******************************
+	Start
+******************************
+******************************
+	Start
+******************************
+******************************
+	Start
+******************************
+
+#Test category: mc
+*Circumference connection error
+*Connection Error from DiscBot!!
+
+Result of mc: 2 Errors occurred
+Circumference connection error
+Connection Error from DiscBot!!
+#End of mc
+*************************
+DiscBot connected to COM 3
+Started at: 16:48:56_15.03.2021 	Ended at: 16:49:45_15.03.2021
+26 Byte were recived & 106 Byte were sent!!
+
+
+##Completly test results: 2 Errors occurred!
+
+#Result of mc: 2 Errors occurred
+Circumference connection error
+Connection Error from DiscBot!!
+#End of result mc
+
+##End of Completly test results
+*************************
+******************************
+	Start
+******************************
+******************************
+	Start
+******************************
+******************************
+	Start
+******************************
+******************************
+	Start
+******************************
+******************************
+	Start
+******************************
+Name: untitled
+******************************
+	Start
+******************************
+Name: untitled
+******************************
+	Start
+******************************
+Name: untitled
+******************************
+	Start
+******************************
+Name: untitled
+******************************
+	Start
+******************************
+Name: untitled
+
+#Test category: mc
+The circumference is: 217 mm
+
+Result of mc: No Errors occurred!
+#End of mc
+*************************
+DiscBot connected to COM 4
+Started at: 12:02:36_20.09.2021 	Ended at: 12:03:13_20.09.2021
+72 Byte were recived & 78 Byte were sent!!
+
+
+##Completly test results: 0 Errors occurred!
+
+#Result of mc: No Errors occurred!
+#End of result mc
+
+##End of Completly test results
+*************************
+******************************
+	Start
+******************************
+Name: untitled
+
+#Test category: uss
+*Front sensor is not connected or had to much distance to messure!
+*Back sensor is not connected or had to much distance to messure!
+*Left sensor is not connected or had to much distance to messure!
+*Right sensor is not connected or had to much distance to messure!
+~Everything worked fine
+
+Result of uss: 4 Errors occurred
+Front sensor is not connected or had to much distance to messure!
+Back sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+#End of uss
+*************************
+DiscBot connected to COM 4
+Started at: 12:03:29_20.09.2021 	Ended at: 12:05:05_20.09.2021
+1662 Byte were recived & 2036 Byte were sent!!
+
+
+##Completly test results: 4 Errors occurred!
+
+#Result of uss: 4 Errors occurred
+Front sensor is not connected or had to much distance to messure!
+Back sensor is not connected or had to much distance to messure!
+Left sensor is not connected or had to much distance to messure!
+Right sensor is not connected or had to much distance to messure!
+#End of result uss
+
+##End of Completly test results
+*************************
+******************************
+	Start
+******************************
+Name: untitled
+
+#Test category: bm
+The messurements are:
+	left: 58.04 (148 of 255)
+	right: 52.94(135 of 255)
+~Everything worked fine
+
+Result of bm: No Errors occurred!
+#End of bm
+
+#Test category: irs
+******************************
+	Start
+******************************
+Name: untitled
+******************************
+	Start
+******************************
+Name: untitled
+
+#Test category: ls
+*Connection Error from DiscBot!!
+
+Result of ls: 1 Error occurred
+Connection Error from DiscBot!!
+#End of ls
+*************************
+DiscBot connected to COM 4
+Started at: 12:10:15_20.09.2021 	Ended at: 12:16:56_20.09.2021
+162 Byte were recived & 350 Byte were sent!!
+
+
+##Completly test results: 1 Error occurred!
+
+#Result of ls: 1 Error occurred
+Connection Error from DiscBot!!
+#End of result ls
+
+##End of Completly test results
+*************************
+******************************
+	Start
+******************************
+Name: untitled
+
+#Test category: ls
+*Connection Error from DiscBot!!
+
+Result of ls: 1 Error occurred
+Connection Error from DiscBot!!
+#End of ls
+*************************
+DiscBot connected to COM 4
+Started at: 12:17:02_20.09.2021 	Ended at: 12:17:37_20.09.2021
+316 Byte were recived & 584 Byte were sent!!
+
+
+##Completly test results: 1 Error occurred!
+
+#Result of ls: 1 Error occurred
+Connection Error from DiscBot!!
+#End of result ls
+
+##End of Completly test results
+*************************
+******************************
+	Start
+******************************
+Name: untitled
+
+#Test category: ls
+*Connection Error from DiscBot!!
+
+Result of ls: 1 Error occurred
+Connection Error from DiscBot!!
+#End of ls
+*************************
+DiscBot connected to COM 4
+Started at: 12:17:45_20.09.2021 	Ended at: 12:18:26_20.09.2021
+498 Byte were recived & 846 Byte were sent!!
+
+
+##Completly test results: 1 Error occurred!
+
+#Result of ls: 1 Error occurred
+Connection Error from DiscBot!!
+#End of result ls
+
+##End of Completly test results
+*************************
+******************************
+	Start
+******************************
+Name: untitled
+
+#Test category: ls
+*Connection Error from DiscBot!!
+
+Result of ls: 1 Error occurred
+Connection Error from DiscBot!!
+#End of ls
+*************************
+DiscBot connected to COM 4
+Started at: 12:19:00_20.09.2021 	Ended at: 12:19:52_20.09.2021
+182 Byte were recived & 262 Byte were sent!!
+
+
+##Completly test results: 1 Error occurred!
+
+#Result of ls: 1 Error occurred
+Connection Error from DiscBot!!
+#End of result ls
+
+##End of Completly test results
+*************************
+******************************
+	Start
+******************************
+Name: untitled
+
+#Test category: ls
+******************************
+	Start
+******************************
+Name: untitled
+
+#Test category: ls
+*Connection Error from DiscBot!!
+
+Result of ls: 1 Error occurred
+Connection Error from DiscBot!!
+#End of ls
+******************************
+	Start
+******************************
+Name: untitled
+
+#Test category: ls
+*Connection Error from DiscBot!!
+
+Result of ls: 1 Error occurred
+Connection Error from DiscBot!!
+#End of ls

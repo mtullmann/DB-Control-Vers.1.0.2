@@ -1,0 +1,125 @@
+ATS AT+VERSION\r\n
+ATG +VERSION=JDY-31-V1.35,Bluetooth\_V3.0\r\n
+
+USERNOTE Bluetooth-Classic\n\t\tDo\_not\_forget\_the\_voltage\_divider\_on\_RX\_of\_the\_module!!!\n\t\tIf\_it\_does\_not\_work\_look\_at\_this\_file\_and\_change\_the\_"ATG"\_line\_to\_the\_right\_Version!!\n\t\t\tNo\_real\_AT\_command\_for\_this\_was\_found!!!
+
+POWES \-
+POWEG \-
+
+POWES? \-
+POWEG? \-
+
+NAMES? AT+NAME\r\n
+NAMEG? +NAME=<P>\r\n
+
+NAMES AT+NAME<P>\r\n
+NAMEG +OK\r\n
+
+PASSS? AT+PIN\r\n
+PASSG? +PIN=<P>\r\n
+
+PASSS AT+PIN<P>\r\n
+PASSG +OK\r\n
+
+RENEWS AT+DEFAULT\r\n
+RESETS AT+RESET\r\n
+
+RENEWG +OK\r\n
+RESETG +OK\r\n
+
+ROLES? \-
+ROLEG? \-
+
+ROLES \-
+ROLEG \-
+
+TEMPS? \-
+TEMPG? \-
+
+TYPES? \-
+TYPEG? \-
+
+TYPES \-
+TYPEG \-
+
+RADDS? \-
+RADDG? \-
+
+VERSS? AT+VERSION\r\n
+VERSG? +VERSION=<P>\r\n
+
+PWRS? \-
+PWRG? \-
+
+PWRS \-
+PWRG \-
+
+RSSIS? \-
+RSSIG? \-
+
+IMMES? \-
+IMMEG? \-
+
+IMMES \-
+IMMEG \-
+
+NOTIS? \-
+NOTIG? \-
+
+NOTIS \-
+NOTIG \-
+
+ADDRS? AT+LADDR\r\n
+ADDRG? +LADDR=<P>\r\n
+
+BATTS? \-
+BATTG? \-
+
+HELPS? \-
+HELPG? \-
+
+MODES? \-
+MODEG? \-
+
+MODES \-
+MODEG \-
+
+PARIS? \-
+PARIG? \-
+
+PARIS \-
+PARIG \-
+
+OPS? \-
+OPG? \-
+
+OPS \-
+OPG \-
+
+LEDS? \-
+LEDG? \-
+
+LEDS \-
+LEDG \-
+
+STOPS? \-
+STOPG? \-
+
+STOPS \-
+STOPG \-
+
+UUIDS? \-
+UUIDG? \-
+
+UUIDS \-
+UUIDG \-
+
+TCONS? \-
+TCONG? \-
+
+TCONS \-
+TCONG \-
+
+CONNG CONNECTED\r\r\n
+LOSTG +DISC:SUCCSTSS\r\rn
+WAKEG \-

@@ -1,0 +1,12 @@
+1 btn ;Button enable
+1 rfid ;RFID reader enable
+1 irc ;Infrared communication enable
+1 mc ;Motion control enable
+1 cs ;Color sensor enable
+1 gs ;Gyro sensor enable (not supported yet)
+1 irs ;Infrared (distance) sensor enable
+1 led ;LED's enable
+1 ls ;Loud speker enable
+1 bt ;Bluetooth (low energy) enable
+1 bm ;Brightness messurement (two front) enable
+1 uss ;Ultra sonic sensor enable
