@@ -2981,7 +2981,7 @@ bool _MC_accuracy(uint16_t summary[2][5][2], bool show, bool wheel, bool towheel
 	const char swheel[2][6] = { "left","right" };//Ticks %4i (%6.1lf) %5s-wheel %4sward (%7s)\t
 	char mystatus[2][2] = { 0,0,0,0 };
 	uint16_t minMax[2][2][2] = { 0,0,0,0,0,0,0,0 };
-	const char smystatus[4][13] = { "not messured","ok","to high","to low" };
+	const char smystatus[4][13] = { "not measured","ok","too high","too low" };
 	if (show) {
 		color(GELBh);
 		printf("\t\t+++Valid data check\n");
@@ -3038,7 +3038,7 @@ bool _MC_balancer(uint16_t summary[2][5][2], bool show, bool wheel, bool towheel
 	char mystatus[2] = { 0,0 };
 	double myvalue[2] = { 0,0 };
 	uint16_t minMax[2][2] = { 0,0,0,0, };
-	const char smystatus[4][13] = { "not messured","ok","to high","to low" };
+	const char smystatus[4][13] = { "not measured","ok","too high","too low" };
 	if (show) {
 		color(GELBh);
 		printf("\t\t+++Ballancer check\n");
@@ -3054,47 +3054,46 @@ bool _MC_balancer(uint16_t summary[2][5][2], bool show, bool wheel, bool towheel
 	for (uint8_t d = 0; d != 2; d++) {
 		for (uint8_t w = wheel; w != towheel + 1; w++) {
 			if (_dbMc_REAL(d)[0] > _dbMc_REAL(d)[1]) {
-				minMax[d][0] = _dbMc_REAL(d)[1] * (mcTolerantLeft2Right) / 100;
-				minMax[d][1] = _dbMc_REAL(d)[1] * (100 + mcTolerantLeft2Right) / 100;
-				if (minMax[d][1] >= _dbMc_REAL(d)[0]) {
-					mystatus[d] = 1;
-					myvalue[d] = 0;
-				}
-				else
-				{
+				minMax[d][0] = _dbMc_REAL(d)[0] * (mcTolerantLeft2Right) / 100;
+				minMax[d][1] = _dbMc_REAL(d)[0] * (100 + mcTolerantLeft2Right) / 100;
+
+				if (_dbMc_REAL(d)[1] > minMax[d][1]) {
 					mystatus[d] = 2;
-					myvalue[d] = (double)_dbMc_REAL(d)[1] * 100 / _dbMc_REAL(d)[0];
+					myvalue[d] = (double)100 * _dbMc_REAL(d)[1] / minMax[d][1] - 100;
 				}
-			}
-			else
-				if (_dbMc_REAL(d)[0] < _dbMc_REAL(d)[1]) {
-					minMax[d][0] = _dbMc_REAL(d)[0] * (mcTolerantLeft2Right) / 100;
-					minMax[d][1] = _dbMc_REAL(d)[0] * (100 + mcTolerantLeft2Right) / 100;
-					if (minMax[d][1] <= _dbMc_REAL(d)[1]) {
-						mystatus[d] = 1;
-						myvalue[d] = 0;
-					}
-					else
-					{
-						myvalue[d] = -(double)_dbMc_REAL(d)[0] * 100 / _dbMc_REAL(d)[1];
-						mystatus[d] = 3;
-					}
+				else if (_dbMc_REAL(d)[1] < minMax[d][0]) {
+					mystatus[d] = 3;
+					myvalue[d] = 100 - (double)100 * _dbMc_REAL(d)[1] / minMax[d][0];
 				}
 				else {
-					minMax[d][1] = _dbMc_REAL(d)[1] * (100 + mcTolerantLeft2Right) / 100;
-					minMax[d][0] = _dbMc_REAL(d)[1] * (mcTolerantLeft2Right) / 100;
 					mystatus[d] = 1;
 					myvalue[d] = 0;
 				}
-			if (w) {
-				if (mystatus[d] == 2)
-					mystatus[d] = 3;
-				else
-					if (mystatus[d] == 3)
-						mystatus[d] = 2;
-				if (myvalue[d] != 0)
-					myvalue[d] = -myvalue[d];
 			}
+			else if (_dbMc_REAL(d)[1] < _dbMc_REAL(d)[0]) {
+				minMax[d][0] = _dbMc_REAL(d)[1] * (mcTolerantLeft2Right) / 100;
+				minMax[d][1] = _dbMc_REAL(d)[1] * (100 + mcTolerantLeft2Right) / 100;
+
+				if (_dbMc_REAL(d)[0] > minMax[d][1]) {
+					mystatus[d] = 2;
+					myvalue[d] = (double)100 * _dbMc_REAL(d)[0] / minMax[d][1] - 100;
+				}
+				else if (_dbMc_REAL(d)[0] < minMax[d][0]) {
+					mystatus[d] = 3;
+					myvalue[d] = 100 - (double)100 * _dbMc_REAL(d)[0] / minMax[d][0];
+				}
+				else {
+					mystatus[d] = 1;
+					myvalue[d] = 0;
+				}
+			}
+			else {
+				minMax[d][1] = _dbMc_REAL(d)[1] * (100 + mcTolerantLeft2Right) / 100;
+				minMax[d][0] = _dbMc_REAL(d)[1] * (mcTolerantLeft2Right) / 100;
+				mystatus[d] = 1;
+				myvalue[d] = 0;
+			}
+
 			if (mystatus[d] == 3)
 				res = 0;
 			if (show) {
@@ -3118,50 +3117,48 @@ bool _MC_balancer(uint16_t summary[2][5][2], bool show, bool wheel, bool towheel
 	for (uint8_t d = 0; d != 2; d++) {
 		for (uint8_t w = wheel; w != towheel + 1; w++) {
 			if (_dbMc_WXM(d)[0] > _dbMc_WXM(d)[1]) {
-				minMax[d][0] = _dbMc_WXM(d)[1] * (mcTolerantLeft2Right) / 100;
-				minMax[d][1] = _dbMc_WXM(d)[1] * (100 + mcTolerantLeft2Right) / 100;
-				if (minMax[d][1] >= _dbMc_WXM(d)[0]) {
-					mystatus[d] = 1;
-					myvalue[d] = 0;
-				}
-				else
-				{
+				minMax[d][0] = _dbMc_WXM(d)[0] * (mcTolerantLeft2Right) / 100;
+				minMax[d][1] = _dbMc_WXM(d)[0] * (100 + mcTolerantLeft2Right) / 100;
+				
+				if (_dbMc_WXM(d)[1] > minMax[d][1]) {
 					mystatus[d] = 2;
-					myvalue[d] = (double)_dbMc_WXM(d)[1] * 100 / _dbMc_WXM(d)[0];
+					myvalue[d] = (double)100 * _dbMc_WXM(d)[1] / minMax[d][1] - 100;
 				}
-			}
-			else
-				if (_dbMc_WXM(d)[0] < _dbMc_WXM(d)[1]) {
-					minMax[d][0] = _dbMc_WXM(d)[0] * (mcTolerantLeft2Right) / 100;
-					minMax[d][1] = _dbMc_WXM(d)[0] * (100 + mcTolerantLeft2Right) / 100;
-					if (minMax[d][1] <= _dbMc_WXM(d)[1]) {
-						mystatus[d] = 1;
-						myvalue[d] = 0;
-					}
-					else
-					{
-						myvalue[d] = -(double)_dbMc_WXM(d)[0] * 100 / _dbMc_WXM(d)[1];
-						mystatus[d] = 3;
-					}
+				else if (_dbMc_WXM(d)[1] < minMax[d][0]) {
+					mystatus[d] = 3;
+					myvalue[d] = 100 - (double)100 * _dbMc_WXM(d)[1] / minMax[d][0];
 				}
 				else {
-					minMax[d][1] = _dbMc_WXM(d)[1] * (100 + mcTolerantLeft2Right) / 100;
-					minMax[d][0] = _dbMc_WXM(d)[1] * (mcTolerantLeft2Right) / 100;
 					mystatus[d] = 1;
 					myvalue[d] = 0;
 				}
-			if (w) {
-				if (mystatus[d] == 2)
+			}
+			else if (_dbMc_WXM(d)[1] > _dbMc_WXM(d)[0]) {
+				minMax[d][0] = _dbMc_WXM(d)[1] * (mcTolerantLeft2Right) / 100;
+				minMax[d][1] = _dbMc_WXM(d)[1] * (100 + mcTolerantLeft2Right) / 100;
+
+				if (_dbMc_WXM(d)[1] > minMax[d][1]) {
+					mystatus[d] = 2;
+					myvalue[d] = (double)100 * _dbMc_WXM(d)[1] / minMax[d][1] - 100;
+				}
+				else if (_dbMc_WXM(d)[1] < minMax[d][0]) {
 					mystatus[d] = 3;
-				else
-					if (mystatus[d] == 3)
-						mystatus[d] = 2;
-				if (myvalue[d] != 0)
-					myvalue[d] = -myvalue[d];
+					myvalue[d] = 100 - (double)100 * _dbMc_WXM(d)[1] / minMax[d][0];
+				}
+				else {
+					mystatus[d] = 1;
+					myvalue[d] = 0;
+				}
+			}
+			else {
+				minMax[d][1] = _dbMc_WXM(d)[1] * (100 + mcTolerantLeft2Right) / 100;
+				minMax[d][0] = _dbMc_WXM(d)[1] * (mcTolerantLeft2Right) / 100;
+				mystatus[d] = 1;
+				myvalue[d] = 0;
 			}
 			if (show) {
 
-				if (mystatus[d] > 2)
+				if (mystatus[d] > 1)
 					color(ROTh);
 				else
 					color(GRUENh);
@@ -3181,9 +3178,9 @@ bool _MC_debouncer(uint16_t summary[2][5][2], bool show, bool wheel, bool towhee
 	const char sdir[2][10] = { "for","back" };
 	const char swheel[2][10] = { "left","right" };//Ticks %4i (%6.1lf) %s-wheel %4sward (%7s)\t
 	char mystatus[2][2] = { 0,0,0,0 };
-	char mypercent[2][2] = { 0,0,0,0 };
+	float mypercent[2][2] = { 0,0,0,0 };
 	uint16_t minMax[2][2][2] = { 0,0,0,0,0,0,0,0 };
-	const char smystatus[4][13] = { "not messured","ok","to high","to low" };
+	const char smystatus[4][13] = { "not measured","ok","too high","too low" };
 	if (show) {
 		color(GELBh);
 		printf("\t\t+++Advanced debounce detection\n");
@@ -3197,8 +3194,8 @@ bool _MC_debouncer(uint16_t summary[2][5][2], bool show, bool wheel, bool towhee
 		}
 		for (uint8_t w = wheel; w != (towheel + 1); w++) {
 			mystatus[d][w] = 1;
-			minMax[d][w][0] = ((_dbMc_REAL(d)[w] * (mcTolerantReal)) / 100);
-			minMax[d][w][1] = ((_dbMc_REAL(d)[w] * (100 + mcTolerantReal)) / 100);
+			minMax[d][w][0] = _dbMc_WXM(d)[w];
+			minMax[d][w][1] = ((_dbMc_WXM(d)[w] * (100 + mcTolerantReal)) / 100);
 			if (minMax[d][w][1] < _dbMc_WXM(d)[w]) {
 				res = 0;
 				mystatus[d][w] = 2;
@@ -3208,13 +3205,21 @@ bool _MC_debouncer(uint16_t summary[2][5][2], bool show, bool wheel, bool towhee
 					res = 0;
 					mystatus[d][w] = 3;
 				}
-			if (show)
-				if (_dbMc_WXM(d)[w] > _dbMc_REAL(d)[w])
-					mypercent[d][w] = 100 - (_dbMc_WXM(d)[w] * 100) / _dbMc_REAL(d)[w];
-				else
-					mypercent[d][w] = 100 - (_dbMc_REAL(d)[w] * 100) / _dbMc_WXM(d)[w];
 
 			if (show) {
+				if (_dbMc_REAL(d)[w] > minMax[d][w][1]) {
+					mystatus[d][w] = 2;
+					mypercent[d][w] = 100 * _dbMc_REAL(d)[w] / minMax[d][w][1] - 100;
+				}
+				else if (_dbMc_REAL(d)[w] < minMax[d][w][0]) {
+					mystatus[d][w] = 3;
+					mypercent[d][w] = 100 - (double)100 * _dbMc_REAL(d)[w] / minMax[d][w][0];
+				}
+				else {
+					mystatus[d][w] = 1;
+					mypercent[d][w] = 0;
+				}
+
 				switch (mystatus[d][w]) {
 				case 1:color(GRUENh); break;
 				case 2:
@@ -3224,7 +3229,7 @@ bool _MC_debouncer(uint16_t summary[2][5][2], bool show, bool wheel, bool towhee
 				double mclength[2] = { 0,0 };
 				db_MC_length(_dbMc_REAL(d)[w], mclength);
 				db_MC_length(_dbMc_WXM(d)[w], &(mclength[1]));
-				printf("Ticks real %s-wheel: %4i (%6.1lf mm) messured: %4i (%6.1lf mm) (min %3i, max %4i (%2s%3i%%, max +-%2i%%)) (%7s)\t", swheel[w], _dbMc_REAL(d)[w], mclength[0], _dbMc_WXM(d)[w], mclength[1], minMax[d][w][0], minMax[d][w][1], (_dbMc_WXM(d)[w] == _dbMc_REAL(d)[w]) ? "+-" : (_dbMc_WXM(d)[w] > _dbMc_REAL(d)[w]) ? " +" : " -", mypercent[d][w], mcTolerantReal, smystatus[mystatus[d][w]]);
+				printf("Ticks real %s-wheel: %4i (%6.1lf mm) messured: %4i (%6.1lf mm) (min %3i, max %4i (%5.3f%% %7s, max +-%2i%%))\t", swheel[w], _dbMc_REAL(d)[w], mclength[0], _dbMc_WXM(d)[w], mclength[1], minMax[d][w][0], minMax[d][w][1], mypercent[d][w], smystatus[mystatus[d][w]], mcTolerantReal);
 				if (wheel != towheel) {
 					printf("\n");
 					printx('\t', 13);
@@ -3247,7 +3252,7 @@ bool _MC_minMaxer(uint16_t summary[2][5][2], bool show, bool wheel, bool towheel
 	char mystatus[2][2][2] = { 0,0,0,0,0,0,0,0 };
 	int mypercent[2][2][2] = { 0,0,0,0,0,0,0,0 };
 	uint16_t minMax[2][2][2][2] = { 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 };
-	const char smystatus[4][13] = { "not messured","ok","to high","to low" };
+	const char smystatus[4][13] = { "not measured","ok","too high","too low" };
 	char text[300] = "";
 	if (show) {
 		color(GELBh);
@@ -3270,13 +3275,13 @@ bool _MC_minMaxer(uint16_t summary[2][5][2], bool show, bool wheel, bool towheel
 						minMax[d][b][w][1] = mcMaxTicks;
 						if (_dbMc_Wd(d)[b][w] > mcMaxTicks) {
 							mystatus[d][b][w] = 2;
-							mypercent[d][b][w] = (_dbMc_Wd(d)[b][w]) / mcMaxTicks;
+							mypercent[d][b][w] = 100 * _dbMc_Wd(d)[b][w] / mcMaxTicks - 100;
 							*result |= MC_OVER;
 						}
 						else
 							if (_dbMc_Wd(d)[b][w] < mcMinTicks) {
 								mystatus[d][b][w] = 3;
-								mypercent[d][b][w] = (mcMinTicks) / _dbMc_Wd(d)[b][w];
+								mypercent[d][b][w] = 100 - 100 * _dbMc_Wd(d)[b][w] / mcMinTicks;
 								*result |= MC_OVER;
 							}
 							else
@@ -3287,7 +3292,7 @@ bool _MC_minMaxer(uint16_t summary[2][5][2], bool show, bool wheel, bool towheel
 						minMax[d][b][w][1] = ((_dbMc_Wd(d)[!b][w] * (mcTolerantBouncing)) / 100);
 						if (_dbMc_Wd(d)[b][w] > minMax[d][b][w][1]) {
 							mystatus[d][b][w] = 2;
-							mypercent[d][b][w] = (_dbMc_Wd(d)[b][w] * 100) / minMax[d][b][w][1];
+							mypercent[d][b][w] = 100 * _dbMc_Wd(d)[b][w] / minMax[d][b][w][1] - 100;
 							*result |= MC_WD;
 						}
 						else
@@ -3300,13 +3305,13 @@ bool _MC_minMaxer(uint16_t summary[2][5][2], bool show, bool wheel, bool towheel
 						minMax[d][b][w][1] = mcMaxTicks;
 						if (_dbMc_Wd(d)[b][w] > mcMaxTicks) {
 							mystatus[d][b][w] = 2;
-							mypercent[d][b][w] = (_dbMc_Wd(d)[b][w] * 100) / mcMaxTicks;
+							mypercent[d][b][w] = 100 * _dbMc_Wd(d)[b][w] / mcMaxTicks - 100;
 							*result |= MC_OVER;
 						}
 						else
 							if (_dbMc_Wd(d)[b][w] < mcMinTicks) {
 								mystatus[d][b][w] = 3;
-								mypercent[d][b][w] = (mcMinTicks) / _dbMc_Wd(d)[b][w];
+								mypercent[d][b][w] = 100 - 100 * _dbMc_Wd(d)[b][w] * mcMinTicks;
 								*result |= MC_OVER;
 							}
 							else
@@ -3317,7 +3322,7 @@ bool _MC_minMaxer(uint16_t summary[2][5][2], bool show, bool wheel, bool towheel
 						minMax[d][b][w][1] = ((_dbMc_Wd(d)[!b][w] * (mcTolerantBouncing)) / 100);
 						if (_dbMc_Wd(d)[b][w] > minMax[d][b][w][1]) {
 							mystatus[d][b][w] = 2;
-							mypercent[d][b][w] = (_dbMc_Wd(d)[b][w] * 100) / minMax[d][b][w][1];
+							mypercent[d][b][w] = 100 * _dbMc_Wd(d)[b][w] / minMax[d][b][w][1] - 100;
 							*result |= MC_WD;
 						}
 						else
