@@ -264,3 +264,6 @@ Name: untitled
 Result of ls: 1 Error occurred
 Connection Error from DiscBot!!
 #End of ls
+******************************
+	Start
+******************************

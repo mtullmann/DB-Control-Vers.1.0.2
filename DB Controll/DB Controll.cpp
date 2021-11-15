@@ -480,7 +480,7 @@ bool connect() {
 			return 1;
 		}
 		bell();
-		printf("Connectionn issues please fix and retry!\nPress 'y' to retry!\n");
+		printf("Connection issues please fix and retry!\nPress 'y' to retry!\n");
 		fsx++;
 		portres = 1;
 	} while ('y' == _getch());
@@ -502,9 +502,9 @@ void isWinAvrInstalled() {
 }
 void loadProgrammToDB(char* argv[], char* portnum) {
 	isWinAvrInstalled();
-	char namv[200] = "";
+	char namv[350] = "";
 	char* pxd;
-	char directory[200] = "";
+	char directory[350] = "";
 	FILE* f;
 	FILE* f2;
 	bool bx = 0;
