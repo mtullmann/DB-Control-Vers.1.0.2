@@ -1,5 +1,7 @@
-/Debug
-/Release
-/x64
-/DB Controll/Release
-/DB Controll/x64
+.idea/
+.vs/
+Debug/
+Release/
+x64/
+DB Controll/Release/
+DB Controll/x64/
