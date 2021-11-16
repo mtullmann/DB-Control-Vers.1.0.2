@@ -31,7 +31,7 @@ This software offers:
 * Compatiblity with a lot of BT modules because dynamical change of data can be made, in order to use other modules
 * Possibility of compatibility with MLT-BT05 (V4.1) and HMSoft (V540) software
 * Possibility to add compatibility of other BT modules
-* 2 BT modules are initialized
+* 3 BT modules are initialized
 * An explicit motor analysis
 * 24 sounds for loudspeaker testing
 * 102 volume modes for loudspeaker testing
