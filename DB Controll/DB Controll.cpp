@@ -47,8 +47,16 @@ void generateR(FILE* f) {
 		printf("FILE could not be created!!!\n");
 		return;
 	}
-	char text[] = "DiscBot Control\r\n\r\nDo you want to check your DiscBot, without missing a component, in a short of time?\r\nIf true, this software might help!\r\n\r\nThis Software offers:\r\n-The \"dbosX.hex\" program for ATmega2560 to test the DiscBot\r\n-Flashing your DiscBot with avrdude\r\n-An integrated guideline for flashing at the first time\r\n-Testing the many components of the DiscBot\r\n-Sheet of the results called \"checkSheet.txt\"\r\n-A written time into sheet of the results\r\n-A written send and recive into sheet of the results\r\n-Creation of multiple directories for a good structure\r\n-Savesd results of motor testing\r\n-An offline menue, which can change settings without plug in your DiscBot\r\n-A lot of sheets to save data and reduce time of typing\r\n-Presets for bluetooth\r\n-Presets for motor\r\n-Preferences for motor\r\n-Automatic open the sheets if there mistakes in them\r\n-Automatic generate of content of sheets for easy understanding and change\r\n-Easy handling with files, complicated content can be easy understand because of examples\r\n-Automatic links open for Apps (Android and IOS)\r\n-Color, tone and sound (sound might not be stabile at PC)\r\n-Inputdata error detection (eg. if there is a number expected and you type in a letter (work fine))\r\n-Flush if wrong input is typed in\r\n-Yes/no requests while the recommend awnser is choosen if there is a wrong imput (by old commands, but might happend)\r\n-Easy interface to handle with\r\n-Great advanced motor testing with an nice overview\r\n-Secure communication to DiscBot (this program handles a lot of callbacks from DiscBot)\r\n-DBOS compatiblity (9600 Baud on UART0, UART1, UART2(Bluetooth is not everytime compatible because of BT configurations (AT commands) and UART3))\r\n-Bluetooth testing (might be a need of BLE terminal on smartphone)\r\n-Easy BT configuration list\r\n-Easy BT configuration changeing\r\n-Compatiblity with a lot of BT modules because dynamical change of data can be made, in order to use other modules\r\n-Possibility of compatibility with MLT-BT05 (V4.1) and HMSoft (V540) software\r\n-Possibility to add compatibility of other BT modules\r\n-If your bluethooth module isn't working, flash it with ccLoader\r\n-2 BT modules are initialized\r\n-An explicit motor analysis\r\n-32 sounds for loudspeaker testing\r\n-102 volume modes for loudspeaker testing\r\n-Good stability, more than 7316 lines of code provide a secure executation (a lot of debuging was required)\r\n-Colorsensor testing, LED testing, ultrasonic sensor testing, button testing, motor testing, loudspeaker testing, LDR testing (8 Bit), IRS testing, BT testing, RFID, IRC testing and other features\r\n-Windows 64 bit (for faster executation)\r\n\r\nWarning!!\r\n\tif the file of the programm has a different name as it says in the program, flashing is impossible!!\r\n\r\nNeeded:\r\nA DiscBot (assembled or in parts, but at least with ATmega2560)\r\nUSB Hub cable\r\nA Windows computer (64 bit)\r\nAt least 1.5 Mega Byte discspace without software as WinAvr\r\n-Software is delivert in this program\r\n\r\nIf you find a bug please write me a Mail with a screenshot or video.\r\n\r\n\r\nkind reguards\r\n\t     Martin Tullmann\r\n\r\n--------Contact--------\r\ntullmann.m@outlook.com\r\n";
+	struct tm* c;
+	printf("Have fun with your %s\n", PER_DEVICE);
+	time_t now;
+	now = time(0) + (60 * 60);
+	c = gmtime(&now);
+	//char text[] = "DiscBot Control\r\n\r\nDo you want to check your DiscBot, without missing a component, in a short of time?\r\nIf true, this software might help!\r\n\r\nThis Software offers:\r\n-The \"dbosX.hex\" program for ATmega2560 to test the DiscBot\r\n-Flashing your DiscBot with avrdude\r\n-An integrated guideline for flashing at the first time\r\n-Testing the many components of the DiscBot\r\n-Sheet of the results called \"checkSheet.txt\"\r\n-A written time into sheet of the results\r\n-A written send and recive into sheet of the results\r\n-Creation of multiple directories for a good structure\r\n-Savesd results of motor testing\r\n-An offline menue, which can change settings without plug in your DiscBot\r\n-A lot of sheets to save data and reduce time of typing\r\n-Presets for bluetooth\r\n-Presets for motor\r\n-Preferences for motor\r\n-Automatic open the sheets if there mistakes in them\r\n-Automatic generate of content of sheets for easy understanding and change\r\n-Easy handling with files, complicated content can be easy understand because of examples\r\n-Automatic links open for Apps (Android and IOS)\r\n-Color, tone and sound (sound might not be stabile at PC)\r\n-Inputdata error detection (eg. if there is a number expected and you type in a letter (work fine))\r\n-Flush if wrong input is typed in\r\n-Yes/no requests while the recommend awnser is choosen if there is a wrong imput (by old commands, but might happend)\r\n-Easy interface to handle with\r\n-Great advanced motor testing with an nice overview\r\n-Secure communication to DiscBot (this program handles a lot of callbacks from DiscBot)\r\n-DBOS compatiblity (9600 Baud on UART0, UART1, UART2(Bluetooth is not everytime compatible because of BT configurations (AT commands) and UART3))\r\n-Bluetooth testing (might be a need of BLE terminal on smartphone)\r\n-Easy BT configuration list\r\n-Easy BT configuration changeing\r\n-Compatiblity with a lot of BT modules because dynamical change of data can be made, in order to use other modules\r\n-Possibility of compatibility with MLT-BT05 (V4.1) and HMSoft (V540) software\r\n-Possibility to add compatibility of other BT modules\r\n-If your bluethooth module isn't working, flash it with ccLoader\r\n-2 BT modules are initialized\r\n-An explicit motor analysis\r\n-32 sounds for loudspeaker testing\r\n-102 volume modes for loudspeaker testing\r\n-Good stability, more than 7316 lines of code provide a secure executation (a lot of debuging was required)\r\n-Colorsensor testing, LED testing, ultrasonic sensor testing, button testing, motor testing, loudspeaker testing, LDR testing (8 Bit), IRS testing, BT testing, RFID, IRC testing and other features\r\n-Windows 64 bit (for faster executation)\r\n\r\nWarning!!\r\n\tif the file of the programm has a different name as it says in the program, flashing is impossible!!\r\n\r\nNeeded:\r\nA DiscBot (assembled or in parts, but at least with ATmega2560)\r\nUSB Hub cable\r\nA Windows computer (64 bit)\r\nAt least 1.5 Mega Byte discspace without software as WinAvr\r\n-Software is delivert in this program\r\n\r\nIf you find a bug please write me a Mail with a screenshot or video.\r\n\r\n\r\nkind reguards\r\n\t     Martin Tullmann\r\n\r\n--------Contact--------\r\ntullmann.m@outlook.com\r\n";
+	char text[] = "DiscBot Control\n\n\n\nDo you want to check your DiscBot, without missing a component, in a short of time?\n\nIf true, this software might help!\n\n\n\nThis Software offers:\n\n-The \"dbosX.hex\" program for ATmega2560 to test the DiscBot\n\n-Flashing your DiscBot with avrdude\n\n-An integrated guideline for flashing at the first time\n\n-Testing the many components of the DiscBot\n\n-Sheet of the results called \"checkSheet.txt\"\n\n-A written time into sheet of the results\n\n-A written send and recive into sheet of the results\n\n-Creation of multiple directories for a good structure\n\n-Savesd results of motor testing\n\n-An offline menue, which can change settings without plug in your DiscBot\n\n-A lot of sheets to save data and reduce time of typing\n\n-Presets for bluetooth\n\n-Presets for motor\n\n-Preferences for motor\n\n-Automatic open the sheets if there mistakes in them\n\n-Automatic generate of content of sheets for easy understanding and change\n\n-Easy handling with files, complicated content can be easy understand because of examples\n\n-Automatic links open for Apps (Android and IOS)\n\n-Color, tone and sound (sound might not be stabile at PC)\n\n-Inputdata error detection (eg. if there is a number expected and you type in a letter (work fine))\n\n-Flush if wrong input is typed in\n\n-Yes/no requests while the recommend awnser is choosen if there is a wrong imput (by old commands, but might happend)\n\n-Easy interface to handle with\n\n-Great advanced motor testing with an nice overview\n\n-Secure communication to DiscBot (this program handles a lot of callbacks from DiscBot)\n\n-DBOS compatiblity (9600 Baud on UART0, UART1, UART2(Bluetooth is not everytime compatible because of BT configurations (AT commands) and UART3))\n\n-Bluetooth testing (might be a need of BLE terminal on smartphone)\n\n-Easy BT configuration list\n\n-Easy BT configuration changeing\n\n-Compatiblity with a lot of BT modules because dynamical change of data can be made, in order to use other modules\n\n-Possibility of compatibility with MLT-BT05 (BLE V4.1), JDY-31-SPP (Bluetooth Classic) and HMSoft (BLE V540) software\n\n-Possibility to add compatibility of other BT modules\n\n-If your bluethooth module isn't working, flash it with ccLoader\n\n-3 BT modules are initialized by default\n\n-An explicit motor analysis\n\n-Presets for motor analysis\n\n-32 sounds for loudspeaker testing\n\n-102 volume modes for loudspeaker testing (including standard and mute)\n\n-Good stability, more than 7316 lines of code provide a secure executation (a lot of debuging was required)\n\n-Colorsensor testing, LED testing, ultrasonic sensor testing, button testing, motor testing, loudspeaker testing, LDR testing (8 Bit), IRS testing, BT testing, RFID, IRC testing and other features\n\n-Windows 64 bit (for faster executation)\n\n\n\nWarning!!\n\n\tif the file of the programm has a different name as it says in the program, flashing is impossible!!\n\n\n\nNeeded:\n\nA DiscBot (assembled or in parts, but at least with ATmega2560)\n\nUSB Hub cable\n\nA Windows computer (64 bit)\n\nAt least 1.5 Mega Byte discspace without software as WinAvr\n\nWinAvr\n\n-Software and folder-structure is delivert in this program and will be autogenerated\n\n\n\nIf you find a bug please write me a Mail with a screenshot or video.\n\n\n\n\n\nkind reguards\n\n\t     Martin Tullmann\n\n\n\n--------Contact--------\n\ntullmann.m@outlook.com\n\n";
 	fprintf(f, text);
+	fprintf(f, "\t\thttps://github.com/mtullmann/DB-Control-Vers.1.0.2\n\n", c->tm_year + 1900);
+	fprintf(f, "\t\t\t(c) Martin Tullmann %i", c->tm_year + 1900);
 	fclose(f);
 }
 void generateS(FILE* f) {
@@ -617,7 +625,7 @@ void loadProgrammToDB(char* argv[], char* portnum) {
 	_getch();
 }
 void getportnum(char* num) {
-	static char numm[9] = "";
+/*	static char numm[9] = "";
 	if (numm[0] != '\0' && portres == 0) {
 		strcpy(num, numm);
 		return;
@@ -731,7 +739,7 @@ void getportnum(char* num) {
 	else {
 		strcpy(numm, num);
 	}
-
+	*/
 }
 void endofP() {
 	printTitle(" - The end!");
@@ -757,6 +765,10 @@ void endofP() {
 	color(ROTh);
 	printf("Push 'c' to close the application!!!\n\n");
 	printf("\tIf you want to scroll click here!!!\n\n");
+	rcolor;
+	printf("\t\thttps://github.com/mtullmann/DB-Control-Vers.1.0.2\n\n", c->tm_year + 1900);
+	printf("\t\t\t(c) Martin Tullmann %i\n\n", c->tm_year + 1900);
+	color(ROTh);
 	int i = 0;
 	bool played = PlaySound(L"bon.wav", NULL, SND_LOOP | SND_ASYNC);
 	do {
@@ -810,12 +822,12 @@ bool checkName(char* filenmae) {
 
 int main(int argc, char* argv[])
 {
+	global_port_manager();
 	//while(!anyKey());
 	//printf("%c characht",_getch());
 	mcOperateOffline = 0;
 	initGlobal();
 	printTitle(" - Welcome");
-	rcolor;
 
 	buildData(NULL);
 	generateDir(PER_CONFIGURE);

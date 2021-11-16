@@ -76,11 +76,14 @@ void bell();
 int int_inp();
 int int_inp(int from, int to);
 void str_inp(char* text, int size);
-bool str_inp(FILE*f,char* text, int size);
+bool str_inp(FILE* f, char* text, int size);
 
 bool generateDir(const char* name);
 bool generateDir(const char* name, DIR** dir);
 bool fileExist(const char* name);
-bool fileExist(const char* name, FILE** f);
+bool fileExist(const char* name, FILE* f);
 void printx(char c, int x);
+void printx(char c, const char* x);
+void printxCx(char c, const  char* x);
+void printxCx(char c, const char* x, int c1, int c2, int c3);
 void percentGraph(double percent, const char* format, bool colorx, int steps);

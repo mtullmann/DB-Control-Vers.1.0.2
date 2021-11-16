@@ -33,7 +33,7 @@ HANDLE db_port;
 #define DB_CAT_SONG 0x54
 #define DB_IRC_BUFFER 0x23
 #define DB_IRC_SEND 0x55
-double dat[2] = { 0,0 };
+static double dat[2] = { 0,0 };
 void db_data_transmission_byte(double* x) {
 	x[0] = dat[0];
 	x[1] = dat[1];

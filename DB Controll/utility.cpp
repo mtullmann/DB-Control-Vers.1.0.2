@@ -386,11 +386,11 @@ bool generateDir(const char* name) {
 	closedir(dir);
 	return 1;
 }
-bool fileExist(const char* name, FILE** f) {
-	if ((*f = fopen(name, "r")) == NULL)
+bool fileExist(const char* name, FILE* f) {
+	if ((f = fopen(name, "r")) == NULL)
 		return 0;
-	fclose(*f);
-	if ((*f = fopen(name, "a")) == NULL)
+	fclose(f);
+	if ((f = fopen(name, "a")) == NULL)
 		return 0;
 	return 1;
 }
@@ -405,6 +405,28 @@ void printx(char c, int x) {
 	for (0; 0 != x; x--)
 		printf("%c", c);
 }
+void printx(char c, const char* x) {
+	printx(c, strlen(x));
+	printf("\n");
+}
+void printxCx(char c, const char* x) {
+	printx(c, strlen(x));
+	printf("\n%s\n",x);
+	printx(c, strlen(x));
+	printf("\n");
+}
+void printxCx(char c, const char* x,int c1,int c2,int c3) {
+	color(c1);
+	printx(c, strlen(x));
+	color(c2);
+	printf("\n%s\n", x);
+	color(c3);
+	printx(c, strlen(x));
+	printf("\n");
+	rcolor;
+}
+
+
 double map(double x, double in_min, double in_max, double out_min, double out_max) {
 	double divisor = (in_max - in_min);
 	if (divisor == 0) {

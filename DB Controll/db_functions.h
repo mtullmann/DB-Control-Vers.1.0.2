@@ -5047,7 +5047,7 @@ bool manager_offline() {
 	mcOperateOffline = 1;
 	cSdisable();
 	printTitle(" - Offline menue");
-	const int max = 7;
+	const int max = 10;
 	const char menue[] = "Offline menue (settings)";
 	do {
 		color(ROTh);
@@ -5070,10 +5070,15 @@ bool manager_offline() {
 			case 2:printf("MC presets (manage presets)"); break;
 			case 3:printf("MC preference (set your preference to the global settings, until the program restarts)"); break;
 			case 4:printf("MC Pinout (show you the pinout of the motorpins)"); break;
+			case 5:printf("Edit configuration"); break;
+			case 6:printf("Renew configuration"); break;
+			case 7:printf("Manage devices"); break;
 			case (max - 1):printf("Exit program"); break;
 			case (max - 2):printf("Go online"); break;
 			}
 			printf("\n");
+			if (!((i+1) % 3))
+				printf("\n");
 		}
 		color(GELBh);
 		printf("\nChoose your operation: ");
@@ -5111,13 +5116,15 @@ bool manager_offline() {
 		case 2:_MC_presetshow_all(); break;
 		case 3:_MC_load_preset(0, 0); break;
 		case 4:print_MC_cable(NULL); break;
+		case 5:openConf(); break;
+		case 6:renewConf(); break;
+		case 7:global_port_add(); break;
 		case max - 1:endofP(); break;
 		case max - 2:mcOperateOffline = 0; return 1; break;
 		default:color(ROTh); printf("Ups! This function is not ready!\n"); rcolor; break;
 		}
 		rcolor;
-		printf("Do you want to go online? (y/n)");
-	} while (ynrespond() == 'n');
-	mcOperateOffline = 0;
+		//printf("Do you want to go online? (y/n)");
+	} while (1);
 	return 1;
 }

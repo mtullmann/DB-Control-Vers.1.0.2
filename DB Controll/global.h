@@ -8,7 +8,7 @@
 
 #define PER_CONFIGURE "DB Control\\configuration"
 #define PER_SHEET "DB Control\\configuration\\checkSheet.txt"
-#define PER_COM "DB Control\\configuration\\connect.txt"
+//#define PER_COM "DB Control\\configuration\\connect.txt"
 #define PER_VERS "1.0.2 beta D+ Experimental"
 #define PER_CONFIG "DB Control\\configuration\\conf.txt"
 #define PER_AVR "DB Control\\configuration\\avrDir.txt"
@@ -23,6 +23,7 @@
 #define PER_DEVICE "DiscBot"
 #define PER_PNAME "DB Control"
 #define NULL 0
+void generateC(FILE* f);
 
 static bool cSGlobal = 0;
 char* dir_readme() {
@@ -100,16 +101,16 @@ char* dir_specialThanks() {
 char* dir_HMfiles() {
 	char* x = (char*)malloc(101);
 	strcpy(x, DIR_GLOBAL);
-	strcat(x,"\\HM-Files");
+	strcat(x, "\\HM-Files");
 	return x;
 }
 void initGlobal() {
+	rcolor;
 	generateDir(DIR_GLOBAL);
-
 	generateDir(PER_PNAME);
 
 }
-char* dir_MPreset(const char *y) {
+char* dir_MPreset(const char* y) {
 	static char x[101] = "";
 	strcpy(x, PER_PNAME);
 	strcat(x, "\\motordata");
@@ -118,4 +119,62 @@ char* dir_MPreset(const char *y) {
 		strcat(x, y);
 	}
 	return x;
+}
+void renewConf() {
+	FILE* f = fopen(PER_CONFIG, "w+");
+	generateC(f);
+	fclose(f);
+}
+void openConf() {
+	char x[101] = "";
+	strcpy(x, "\"");
+	strcat(x, PER_CONFIG);
+	strcat(x, "\"");
+	system(x);
+}
+void global_port_add() {
+	FILE* f;
+	//fopen("GLOBAL\\machines.con", "a+");
+	if ((f = fopen("GLOBAL\\machines.con", "a+")) != NULL) {
+		printf("COM-port: ");
+		int i = int_inp(1, 20);
+		printf("Device-name: ");
+		char ch[102] = "";
+		str_inp(ch,101);
+		fprintf(f, "\n%i %s", i, ch);
+		fclose(f);
+	}
+	else {
+		color(ROTh);
+		printf("FAILD!!!\n");
+		rcolor;
+	}
+	
+}
+void global_port_manager() {
+	color(ROTh);
+	printxCx('*', "Global machines", rcol, ROTh, rcol);
+	rcolor;
+	FILE* f = NULL;
+	int coP[251]={0};
+
+	if (fileExist("GLOBAL\\machines.con")) {
+		f = fopen("GLOBAL\\machines.con", "r");
+		char tex[152] = "";
+		for (char i = 0; i != 251&& fgetc(f)!=EOF; i++) {
+			
+			strcpy(tex, "");
+			fscanf(f, "%i", &coP[i]);
+			str_inp(f, tex, 151);
+			printf("%02i) COM.%i \"%s\"\n",i+1,coP[i],tex);
+		}
+		fclose(f);
+	}
+	else {
+		color(GELBh);
+		printf("No machine found!!\n");
+		rcolor;
+		printf("\t\tPlease add one in the offline menue!!\n");
+	}
+
 }
