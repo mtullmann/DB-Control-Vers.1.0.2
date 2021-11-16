@@ -4,20 +4,8 @@
 //#include "winavr.h"
 #define _CRT_SECURE_NO_WARNINGS
 void endofP();
-#define PER_CONFIGURE "configuration"
-#define PER_SHEET "configuration\\checkSheet.txt"
-#define PER_COM "configuration\\connect.txt"
-#define PER_VERS "1.0.2 beta"
-#define PER_CONFIG "configuration\\conf.txt"
-#define PER_AVR "configuration\\avrDir.txt"
-#define PER_AVR_STD "C:\\WinAVR-20100110\\bin"
-#define PER_AVR_FLH "avrdude.exe"
-#define PER_TITLE "title DB Control by Martin Tullmann Vers. "
-#define PER_DEVICE "DiscBot"
-#define PER_PNAME "DB Control"
-#define PER_HEX "configuration\\dbosX.hex"
-#define NULL 0
-//#include <Urlmon.h>
+
+#include "global.h"
 //#define DEBUG
 //#define SHOW_WARNINGS
 //#define MONITOR
@@ -55,8 +43,10 @@ using namespace std;
 bool portres = 0;
 void getportnum(char* num);
 void generateR(FILE* f) {
-	if (f == NULL)
+	if (f == NULL) {
+		printf("FILE could not be created!!!\n");
 		return;
+	}
 	char text[] = "DiscBot Control\r\n\r\nDo you want to check your DiscBot, without missing a component, in a short of time?\r\nIf true, this software might help!\r\n\r\nThis Software offers:\r\n-The \"dbosX.hex\" program for ATmega2560 to test the DiscBot\r\n-Flashing your DiscBot with avrdude\r\n-An integrated guideline for flashing at the first time\r\n-Testing the many components of the DiscBot\r\n-Sheet of the results called \"checkSheet.txt\"\r\n-A written time into sheet of the results\r\n-A written send and recive into sheet of the results\r\n-Creation of multiple directories for a good structure\r\n-Savesd results of motor testing\r\n-An offline menue, which can change settings without plug in your DiscBot\r\n-A lot of sheets to save data and reduce time of typing\r\n-Presets for bluetooth\r\n-Presets for motor\r\n-Preferences for motor\r\n-Automatic open the sheets if there mistakes in them\r\n-Automatic generate of content of sheets for easy understanding and change\r\n-Easy handling with files, complicated content can be easy understand because of examples\r\n-Automatic links open for Apps (Android and IOS)\r\n-Color, tone and sound (sound might not be stabile at PC)\r\n-Inputdata error detection (eg. if there is a number expected and you type in a letter (work fine))\r\n-Flush if wrong input is typed in\r\n-Yes/no requests while the recommend awnser is choosen if there is a wrong imput (by old commands, but might happend)\r\n-Easy interface to handle with\r\n-Great advanced motor testing with an nice overview\r\n-Secure communication to DiscBot (this program handles a lot of callbacks from DiscBot)\r\n-DBOS compatiblity (9600 Baud on UART0, UART1, UART2(Bluetooth is not everytime compatible because of BT configurations (AT commands) and UART3))\r\n-Bluetooth testing (might be a need of BLE terminal on smartphone)\r\n-Easy BT configuration list\r\n-Easy BT configuration changeing\r\n-Compatiblity with a lot of BT modules because dynamical change of data can be made, in order to use other modules\r\n-Possibility of compatibility with MLT-BT05 (V4.1) and HMSoft (V540) software\r\n-Possibility to add compatibility of other BT modules\r\n-If your bluethooth module isn't working, flash it with ccLoader\r\n-2 BT modules are initialized\r\n-An explicit motor analysis\r\n-32 sounds for loudspeaker testing\r\n-102 volume modes for loudspeaker testing\r\n-Good stability, more than 7316 lines of code provide a secure executation (a lot of debuging was required)\r\n-Colorsensor testing, LED testing, ultrasonic sensor testing, button testing, motor testing, loudspeaker testing, LDR testing (8 Bit), IRS testing, BT testing, RFID, IRC testing and other features\r\n-Windows 64 bit (for faster executation)\r\n\r\nWarning!!\r\n\tif the file of the programm has a different name as it says in the program, flashing is impossible!!\r\n\r\nNeeded:\r\nA DiscBot (assembled or in parts, but at least with ATmega2560)\r\nUSB Hub cable\r\nA Windows computer (64 bit)\r\nAt least 1.5 Mega Byte discspace without software as WinAvr\r\n-Software is delivert in this program\r\n\r\nIf you find a bug please write me a Mail with a screenshot or video.\r\n\r\n\r\nkind reguards\r\n\t     Martin Tullmann\r\n\r\n--------Contact--------\r\ntullmann.m@outlook.com\r\n";
 	fprintf(f, text);
 	fclose(f);
@@ -763,12 +753,7 @@ void getportnum(char* num) {
 
 }
 void endofP() {
-	char title[100] = PER_TITLE;
-	strcat(title, PER_VERS);
-	strcat(title, " - ");
-
-	strcat(title, "The end!");
-	system(title);
+	printTitle(" - The end!");
 
 	printf("Disconnect the USB Cable first before you switch off your DiscBot!\nThen you can switch the robot off\n");
 	color(GELBh);
@@ -819,7 +804,7 @@ void endofP() {
 }
 bool checkName(char* filenmae) {
 	strcpy(exeRname, PER_PNAME);
-	strcat(exeRname, " Vers");
+	strcat(exeRname, " Vers. ");
 	strcat(exeRname, PER_VERS);
 	strcat(exeRname, ".exe");
 	char xda[2] = "";
@@ -841,76 +826,19 @@ bool checkName(char* filenmae) {
 	}
 	return 1;
 }
-void test() {
-	void* x = stdout;
-	fprintf(stdout, "Hallo\n");
-	//rewind(x);
-	fprintf((FILE*)x, "Hall1\n");
 
-	printf("\n");
-	while (1)
-	{
-		printf("***********");
-		fflush(stdout);
-		//wait(1000);
-		printf("\r");
-		printf("...........");
-		printf("\r");
-		system("cls");
-
-		///it(1000);
-	}
-
-}
 int main(int argc, char* argv[])
 {
 	//while(!anyKey());
 	//printf("%c characht",_getch());
 	mcOperateOffline = 0;
-	char title[100] = PER_TITLE;
-	strcat(title, PER_VERS);
-	strcat(title, " - Welcome");
-	system(title);
+	initGlobal();
+	printTitle(" - Welcome");
+	rcolor;
+
+	buildData(NULL);
 	generateDir(PER_CONFIGURE);
 
-	rcolor;
-	//	test();
-	/*for (double d = 0; d <= 100; d += .5) {
-		percentGraph(d, "%3.2lf%%", 1, 100);
-		printf("\n");
-		percentGraph(d, "%3.2lf%%", 0, 100);
-		printf("\n");
-		wait(12);
-	}
-	printf("\n");
-
-	for (double d = 0; d <= 100; d += .5) {
-		percentGraph(d, "%3.2lf%%", 1, 80);
-		printf("\n");
-		percentGraph(d, "%3.2lf%%", 0, 80);
-		printf("\n");
-		//wait(12);
-	}*/
-	/*
-	for (double d = 0; d <= 100; d += .5) {
-		percentGraph(d, "%3.2lf%%", 1, 50);
-		printf("\n");
-		percentGraph(d, "%3.2lf%%", 0,50);
-		printf("\n");
-		//wait(12);
-	}*/
-	//printf("\n");
-		//print_MC_cable(NULL);
-	//	system("PAUSE");
-	/*printf("welcome\n");
-	if (ynrespond() == 'y') {
-		printf("open\n");
-		system("\"F:\\\\SHtestBeta\\DB\\DB Controll\\new\\x64\\Release\\DB Control Vers1.0.1 gamma.exe\"");
-	}*/
-	if (mcDebug) {
-		mc_Test_only();
-		system("pause");
-	}
 	generateMC();
 	generateH();
 	printf("Enter ");
@@ -934,24 +862,7 @@ int main(int argc, char* argv[])
 		_getch();
 	}
 	system("cls");
-	//while (1);
-	//system("pause");
-	//endofP();
-	//bool played=PlaySound(L"bon.wav",NULL, SND_LOOP | SND_ASYNC);
-	/*char farb[2][6] = {
-		{GRUENh,ROTd,GRUENh,GRUENh,GRUENh,GRUENh},
-		{GRUENh,GRUENh,GRUENh,GRUENh,GELBh,GRUENh}
-	}; */
-	//while (true) {
-		//mc_Test_only();
-	//system("PAUSE");
-	//}
-	//endofP();
 	char xy[200] = "";
-	/*printf("%%userprofile%%\\");
-	show_bt_dir(xy);
-	printf("Filename : \"%s\"\n",xy);
-	_getch();*/
 	FILE* f;
 	bool b = 1;
 	//printf("Executed in \"%s\", arguments: %i\n", argv[0], argc);
@@ -977,27 +888,25 @@ int main(int argc, char* argv[])
 	_getch();*/
 	rcolor;
 	do {
-		f = fopen("readme.txt", "r");
+		char* rMe = dir_readme();
+		//printf("README %s\n", rMe);
+		f = fopen(rMe, "r");
 		if (f == NULL) {
-			generateR(fopen("readme.txt", "w+"));
-			generateR(f);
+			generateR(fopen(rMe, "w+"));
 			color(GRUENh);
 			printf("Close the manual file to start!\n");
 			rcolor;
-			system("readme.txt");
+			openReadMe();
 		}
 		else {
 			fclose(f);
-			generateR(fopen("readme.txt", "w+"));
+			generateR(fopen(rMe, "w+"));
 
 		}
 		system("cls");
 		bool namC = checkName(argv[0]);
 		logoprinter();
-		strcpy(title, PER_TITLE);
-		strcat(title, PER_VERS);
-		strcat(title, " - Welcome");
-		system(title);
+		printTitle(" - Welcome");
 		FILE* f;
 		bell();
 		color(GELBh);
@@ -1145,12 +1054,7 @@ int main(int argc, char* argv[])
 			}
 		}
 		cSend();
-		strcpy(title, PER_TITLE);
-		strcat(title, PER_VERS);
-		strcat(title, " - ");
-
-		strcat(title, "Check-sheet?");
-		system(title);
+		printTitle(" - Check-sheet?");
 		color(GELBh);
 		printf("Do you want to open the Check-sheet? (y/n)\n");
 		rcolor;

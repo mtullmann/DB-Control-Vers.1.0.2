@@ -56,6 +56,9 @@
     <ClInclude Include="resource1.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
+    <ClInclude Include="global.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="DB Control Vers1.0.2 beta1.rc">

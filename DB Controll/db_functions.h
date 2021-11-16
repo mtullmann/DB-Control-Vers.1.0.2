@@ -189,14 +189,7 @@ bool db_reset() {
 	return 1;
 }
 bool db_ledOnOff() {
-	char title[100] = PER_TITLE;
-	strcat(title, PER_VERS);
-	strcat(title, " - ");
-
-	strcat(title, "LED_On_Off");
-	//title[strlen(title) - strlen(cx)] = title[strlen(title) - strlen(cx)] + ('A' - 'a');
-	strcat(title, " test");
-	system(title);
+	printTitle(" - LED_On_Off test");
 	color(GELBh);
 	printf("Start LED_On_Off\n");
 	rcolor;
@@ -4967,14 +4960,12 @@ bool manager(char* ex) {
 					printf("\n\t****Start %s_Check****\n\n", cx);
 					rcolor;
 					cScategory(cx);
-					char title[100] = PER_TITLE;
-					strcat(title, PER_VERS);
-					strcat(title, " - ");
-
+					char title[31] = "";
+					strcpy(title, " - ");
 					strcat(title, cx);
 					title[strlen(title) - strlen(cx)] = title[strlen(title) - strlen(cx)] + ('A' - 'a');
 					strcat(title, " check");
-					system(title);
+					printTitle(title);
 				}
 				switch (cy) {
 				case 0:allok = db_Tbtn(); break;
@@ -5054,13 +5045,7 @@ bool manager_offline() {
 	_MC_load_preset(0, 1);
 	mcOperateOffline = 1;
 	cSdisable();
-	char title[100] = PER_TITLE;
-	strcat(title, PER_VERS);
-	strcat(title, " - ");
-
-	strcat(title, "Offline");
-	system(title);
-	title[0] = '\0';
+	printTitle(" - Offline menue");
 	const int max = 7;
 	const char menue[] = "Offline menue (settings)";
 	do {
