@@ -339,33 +339,44 @@ bool str_inp(FILE* f, char* text, int size) {
 
 bool generateDir(const char* name, DIR** dir) {
 	char* pname = NULL;
+	char* pnameX = NULL;
 	char text[101] = "mkdir ";
-	pname = (char*)malloc(strlen(name) + 3);
+	pname = (char*)malloc(strlen(name) + 5);
+	pnameX = (char*)malloc(strlen(name) + 5);
 	if (pname == NULL) {
 		color(ROTh);
 		printf("No free RAM is available!!!\n");
 		rcolor;
 		return 0;
 	}
-	strcpy(pname, name);
+	strcpy(pname, "\"");
+	strcat(pname, name);
 	strcat(pname, "\\");
-	if ((*dir = opendir(pname)) == NULL) {
+	strcat(pname, "\"");
+
+	strcpy(pnameX, name);
+	strcat(pnameX, "\\");
+
+	if ((*dir = opendir(pnameX)) == NULL) {
 		strcat(text, pname);
 		system(text);
-		if ((*dir = opendir(pname)) == NULL) {
+		if ((*dir = opendir(pnameX)) == NULL) {
 			color(ROTh);
 			printf("Can't generate \"%s\\\" directory!\n", name);
 			rcolor;
+			free(pnameX);
 			free(pname);
 			return 0;
 		}
 	}
 	closedir(*dir);
-	if ((*dir = opendir(pname)) == NULL) {
+	if ((*dir = opendir(pnameX)) == NULL) {
+		free(pnameX);
 		free(pname);
 		return 0;
 	}
 	free(pname);
+	free(pnameX);
 	return 1;
 }
 bool generateDir(const char* name) {

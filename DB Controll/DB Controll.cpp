@@ -58,6 +58,8 @@ void generateS(FILE* f) {
 	fprintf(f, "Mario Schantl (DiscBot hardware)\n");
 	fprintf(f, "Hans-Günter Heumann (sound)\n");
 	fprintf(f, "Martin Tullmann (computer software, microcontroller software, sound, debuging, spelling, configuration)\n");
+	fprintf(f, "----------------------------------------------------------------------- \n");
+	fprintf(f, "more informations on https://github.com/mtullmann/DB-Control-Vers.1.0.2 \n");
 }
 void generateC(FILE* f) {
 	fprintf(f, "1 btn ;Button enable\n");
@@ -78,47 +80,26 @@ void generateB() {
 	char text[] = "ATS AT\\r\\n\nATG OK\\r\\n\n\nUSERNOTE Bluetooth-Low-Energy\\n\\t\\tThis\\_is\\_the\\_standard\\_comand-configuration\\_for\\_the\\_BT\\_module!!!\n\nPOWES \\-\nPOWEG \\-\n\nPOWES? \\-\nPOWEG? \\-\n\nNAMES? AT+NAME\\r\\n\nNAMEG? +NAME=<P>\\r\\n\n\nNAMES AT+NAME<P>\\r\\n\nNAMEG +NAME=<P>\\r\\nOK\\r\\n\n\nPASSS? AT+PASS\\r\\n\nPASSG? +PASS=<P>\\r\\n\n\nPASSS AT+PIN<P>\\r\\n\nPASSG +PIN=<P>\\r\\nOK\\r\\n\n\nRENEWS AT+RENEW\\r\\n\nRESETS AT+RESET\\r\\n\n\nRENEWG +RENEW\\r\\nOK\\r\\n\nRESETG +RESET\\r\\nOK\\r\\n\n\nROLES? AT+ROLE\\r\\n\nROLEG? +ROLE=<P>\\r\\n\n\nROLES AT+ROLE<P>\\r\\n\nROLEG +ROLE=<P>\\r\\nOK\\r\\n\n\nTEMPS? \\-\nTEMPG? \\-\n\nTYPES? AT+TYPE\\r\\n\nTYPEG? +TYPE=<P>\\r\\n\n\nTYPES AT+TYPE<P>\\r\\n\nTYPEG +TYPE=<P>\\r\\nOK\\r\\n\n\nRADDS? AT+RADD\\r\\n\nRADDG? +RADD=<P>\\r\\nOK\\r\\n\n\nVERSS? AT+VERSION\\r\\n\nVERSG? <P>\\r\\n\n\nPWRS? AT+PWRM\\r\\n\nPWRG? +PWRM=<P>\\r\\n\n\nPWRS AT+PWRM<P>\\r\\n\nPWRG +PWRM=<P>\\r\\Ok\\r\\n\n\nRSSIS? \\-\nRSSIG? \\-\n\nIMMES? \\-\nIMMEG? \\-\n\nIMMES AT+IMME\\r\\n\nIMMEG +IMME=<P>\\r\\nOK\\r\\n\n\nNOTIS? AT+NOTI\\r\\n\nNOTIG? +NOTI=<P>\\r\\n\n\nNOTIS AT+NOTI<P>\\r\\n\nNOTIG +NOTI=<P>\\r\\nOK\\r\\n\n\nADDRS? AT+ADDR\\r\\n\nADDRG? +ADDR=<P>\\r\\n\n\nBATTS? \\-\nBATTG? \\-\n\nHELPS? \\-\nHELPG? \\-\n\nMODES? AT+MODE\\r\\n\nMODEG? +MODE=<P>\\r\\n\n\nMODES AT+MODE<P>\\r\\n\nMODEG +MODE=<P>\\r\\nOK\\r\\n\n\nPARIS? AT+PARI\\r\\n\nPARIG? +PARI=<P>\\r\\n\n\nPARIS AT+PARI<P>\\r\\n\nPARIG +PARI=<P>\\r\\nOK\\r\\n\n\nOPS? AT+PCTL\\r\\n\nOPG? +PCTL=<P>\\r\\n\n\nOPS AT+PCTL<P>\\r\\n\nOPG +PCTL=<P>\\r\\nOK\\r\\n\n\nLEDS? \\-\nLEDG? \\-\n\nLEDS \\-\nLEDG \\-\n\nSTOPS? AT+STOP\\r\\n\nSTOPG? +STOP=<P>\\r\\n\n\nSTOPS AT+STOP<P>\\r\\n\nSTOPG +STOP\\r\\nOK\\r\\n\n\nUUIDS? AT+UUID\\r\\n\nUUIDG? +UUID=<P>\\r\\n\n\nUUIDS AT+UUID<P>\\r\\n\nUUIDG +UUID=<P>\\r\\nOK\n\nTCONS? \\-\nTCONG? \\-\n\nTCONS \\-\nTCONG \\-\n\nCONNG OK+CONN\\r\\n\nLOSTG OK+LOST\\r\\n\nWAKEG OK+WAKE\\r\\n\n"; 
 	char text1[] = "ATS AT\nATG OK\n\nUSERNOTE Bluetooth-Low-Energy\\n\\t\\tYou\\_have\\_to\\_select\\_this\\_if\\_you\\_had\\_flashed\\_your\\_module\\_with\\_CCLoader!!!\n\nPOWES AT+POWE<P>\nPOWEG OK+Get:<P>\n\nPOWES? AT+POWE?\nPOWEG? OK+Get:<P>\n\nNAMES? AT+NAME?\nNAMEG? OK+NAME:<P>\n\nNAMES AT+NAME<P>\nNAMEG OK+Set:<P>\n\nPASSS? AT+PASS?\nPASSG? OK+Get:<P>\n\nPASSS AT+PIN<P>\nPASSG OK+Set:<P>\n\nRENEWS AT+RENEW\nRESETS AT+RESET\n\nRENEWG OK+RENEW\nRESETG OK+RESET\n\nROLES? AT+ROLE?\nROLEG? OK+Get:<P>\n\nROLES AT+ROLE<P>\nROLEG OK+Set:<P>\n\nTEMPS? AT+TEMP?\nTEMPG? OK+Get:<P>\n\nTYPES? AT+TYPE?\nTYPEG? OK+Get:<P>\n\nTYPES AT+TYPE<P>\nTYPEG OK+Set:<P>\n\nRADDS? AT+RADD?\nRADDG? OK+RADD:<P>\n\nVERSS? AT+VERS?\nVERSG? <P>\n\nPWRS? AT+PWRM?\nPWRG? OK+Get:<P>\n\nPWRS AT+PWRM<P>\nPWRG OK+Set:<P>\n\nRSSIS? AT+RSSI?\nRSSIG? OK+RSSI:<P>\n\nIMMES? AT+IMME?\nIMMEG? OK+Get:<P>\n\nIMMES AT+IMME<P>\nIMMEG OK+Set:<P>\n\nNOTIS? AT+NOTI?\nNOTIG? OK+Get:<P>\n\nNOTIS AT+NOTI<P>\nNOTIG OK+Set:<P>\n\nADDRS? AT+ADDR?\nADDRG? OK+ADDR:<P>\n\nBATTS? AT+BATT?\nBATTG? OK+Get:<P>\n\nHELPS? AT+HELP?\nHELPG? <P>\n\nMODES? AT+MODE?\nMODEG? OK+Get:<P>\n\nMODES AT+MODE<P>\nMODEG OK+Set:<P>\n\nPARIS? AT+PARI?\nPARIG? OK+Get:<P>\n\nPARIS AT+PARI<P>\nPARIG OK+Set:<P>\n\nOPS? AT+PCTL?\nOPG? OK+Get:<P>\n\nOPS AT+PCTL<P>\nOPG OK+Set:<P>\n\nLEDS? AT+PIO1?\nLEDG? OK+Get:<P>\n\nLEDS AT+PIO1<P>\nLEDG OK+Set:<P>\n\nSTOPS? AT+STOP?\nSTOPG? OK+Get:<P>\n\nSTOPS AT+STOP<P>\nSTOPG OK+Set:<P>\n\nUUIDS? AT+UUID?\nUUIDG? OK+Get:<P>\n\nUUIDS AT+UUID<P>\nUUIDG OK+Set:<P>\n\nTCONS? AT+TCON?\nTCONG? OK+Get:<P>\n\nTCONS AT+TCON<P>\nTCONG OK+Set:<P>\n\nCONNG OK+CONN\nLOSTG OK+LOST\nWAKEG OK+WAKE\n";
 	char text2[] = "ATS AT+VERSION\\r\\n\nATG +VERSION=JDY-31-V1.35,Bluetooth\\_V3.0\\r\\n\n\nUSERNOTE Bluetooth-Classic\\n\\t\\tDo\\_not\\_forget\\_the\\_voltage\\_divider\\_on\\_RX\\_of\\_the\\_module!!!\\n\\t\\tIf\\_it\\_does\\_not\\_work\\_look\\_at\\_this\\_file\\_and\\_change\\_the\\_\"ATG\"\\_line\\_to\\_the\\_right\\_Version!!\\n\\t\\t\\tNo\\_real\\_AT\\_command\\_for\\_this\\_was\\_found!!!\n\nPOWES \\-\nPOWEG \\-\n\nPOWES? \\-\nPOWEG? \\-\n\nNAMES? AT+NAME\\r\\n\nNAMEG? +NAME=<P>\\r\\n\n\nNAMES AT+NAME<P>\\r\\n\nNAMEG +OK\\r\\n\n\nPASSS? AT+PIN\\r\\n\nPASSG? +PIN=<P>\\r\\n\n\nPASSS AT+PIN<P>\\r\\n\nPASSG +OK\\r\\n\n\nRENEWS AT+DEFAULT\\r\\n\nRESETS AT+RESET\\r\\n\n\nRENEWG +OK\\r\\n\nRESETG +OK\\r\\n\n\nROLES? \\-\nROLEG? \\-\n\nROLES \\-\nROLEG \\-\n\nTEMPS? \\-\nTEMPG? \\-\n\nTYPES? \\-\nTYPEG? \\-\n\nTYPES \\-\nTYPEG \\-\n\nRADDS? \\-\nRADDG? \\-\n\nVERSS? AT+VERSION\\r\\n\nVERSG? +VERSION=<P>\\r\\n\n\nPWRS? \\-\nPWRG? \\-\n\nPWRS \\-\nPWRG \\-\n\nRSSIS? \\-\nRSSIG? \\-\n\nIMMES? \\-\nIMMEG? \\-\n\nIMMES \\-\nIMMEG \\-\n\nNOTIS? \\-\nNOTIG? \\-\n\nNOTIS \\-\nNOTIG \\-\n\nADDRS? AT+LADDR\\r\\n\nADDRG? +LADDR=<P>\\r\\n\n\nBATTS? \\-\nBATTG? \\-\n\nHELPS? \\-\nHELPG? \\-\n\nMODES? \\-\nMODEG? \\-\n\nMODES \\-\nMODEG \\-\n\nPARIS? \\-\nPARIG? \\-\n\nPARIS \\-\nPARIG \\-\n\nOPS? \\-\nOPG? \\-\n\nOPS \\-\nOPG \\-\n\nLEDS? \\-\nLEDG? \\-\n\nLEDS \\-\nLEDG \\-\n\nSTOPS? \\-\nSTOPG? \\-\n\nSTOPS \\-\nSTOPG \\-\n\nUUIDS? \\-\nUUIDG? \\-\n\nUUIDS \\-\nUUIDG \\-\n\nTCONS? \\-\nTCONG? \\-\n\nTCONS \\-\nTCONG \\-\n\nCONNG CONNECTED\\r\\r\\n\nLOSTG +DISC:SUCCSTSS\\r\\rn\nWAKEG \\-\n";
-	DIR* dir;
-
-
-	if ((dir = opendir("HM\\")) == NULL) {
-		system("mkdir HM");
-		if ((dir = opendir("HM\\")) == NULL) {
-			color(ROTh);
-			printf("Can't generate \"HM\\\" directory!\n");
-			rcolor;
-			return;
-		}
-		else {
-			closedir(dir);
-		}
-	}
-	else {
-		closedir(dir);
-	}
-
-
-	if ((f = fopen("HM\\HMSoft_V540.TXT", "r")) == NULL) {
-		f = fopen("HM\\HMSoft_V540.TXT", "a+");
-		if (f != NULL) {
-			fprintf(f, text1);
-			fclose(f);
+	char* cdir = dir_HMfiles();
+	generateDir(cdir);
+	const char file[3][101] = { "HMSoft_V540.TXT","MLT-BT05_V4.1.TXT","JDY-31-SPP.TXT" };
+	char fileX[101];
+	for (char i = 0; i != 3; i++) {
+		strcpy(fileX, cdir);
+		strcat(fileX, file[i]);
+		if ((f = fopen(fileX, "r")) == NULL) {
+			f = fopen(fileX, "a+");
+			if (f != NULL) {
+				switch (i) {
+				case 0:fprintf(f, text1); break;
+				case 1:fprintf(f, text); break;
+				case 2:fprintf(f, text2); break;
+				}
+				fclose(f);
+			}
 		}
 	}
-	if ((f = fopen("HM\\MLT-BT05_V4.1.TXT", "r")) == NULL) {
-		f = fopen("HM\\MLT-BT05_V4.1.TXT", "a+");
-		if (f != NULL) {
-			fprintf(f, text);
-			fclose(f);
-		}
-	}
-	if ((f = fopen("HM\\JDY-31-SPP.TXT", "r")) == NULL) {
-		f = fopen("HM\\JDY-31-SPP.TXT", "a+");
-		if (f != NULL) {
-			fprintf(f, text2);
-			fclose(f);
-		}
-	}
+	free(cdir);
 }
 void generateH() {
 	char text[101 + 2][1004];
@@ -914,14 +895,16 @@ int main(int argc, char* argv[])
 		color(rcol);
 		generateH();
 		generateB();
-		if ((f = fopen("special thanks.txt", "w+")) != NULL) {
+		char* sT = dir_specialThanks();
+		if ((f = fopen(sT, "w+")) != NULL) {
 			generateS(f);
 			fclose(f);
 		}
 
 		printf("\tAnd thanks for using this programm (mind you have a look at \"");
 		color(GELBh);
-		printf("special thanks.txt");
+		printf("%s", sT);
+		free(sT);
 		rcolor;
 		printf("\")\n");
 		printf("Do you want to go into ");

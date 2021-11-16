@@ -3521,9 +3521,9 @@ bool mc_Data_Converter(uint16_t summary[2][5][2]) {
 	return 1;
 }
 
-#define MC_PRESET "motorPresets\\preset"
-#define MC_SIMULATION "motorPresets\\tests"
-#define MC_GENERAL "motorPresets"
+#define MC_PRESET dir_MPreset("preset")
+#define MC_SIMULATION dir_MPreset("tests")
+#define MC_GENERAL dir_MPreset(NULL)
 #define MC_NAMES_BF_SIZE 10001
 bool mcAddPreset(uint16_t* param, const char* name) {
 	const int mparam = 6;
@@ -3603,7 +3603,8 @@ bool mcShowprest(const char* name, bool show, uint16_t param[6], uint8_t col) {
 bool generateMC() {
 	DIR* dir;
 	char text[101] = "";
-	char sdir[101] = MC_GENERAL;
+	char sdir[101]="";
+	strcpy(sdir,MC_GENERAL);
 	if (!generateDir(sdir))
 		return 0;
 

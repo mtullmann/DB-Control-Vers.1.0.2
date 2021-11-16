@@ -3,23 +3,23 @@
 #include <stdlib.h>
 #include <string.h>
 #include <conio.h>
+#include "utility.h"
 #include <Windows.h>
 
-#define PER_CONFIGURE "configuration"
-#define PER_SHEET "configuration\\checkSheet.txt"
-#define PER_COM "configuration\\connect.txt"
+#define PER_CONFIGURE "DB Control\\configuration"
+#define PER_SHEET "DB Control\\configuration\\checkSheet.txt"
+#define PER_COM "DB Control\\configuration\\connect.txt"
 #define PER_VERS "1.0.2 beta D+ Experimental"
-#define PER_CONFIG "configuration\\conf.txt"
-#define PER_AVR "configuration\\avrDir.txt"
+#define PER_CONFIG "DB Control\\configuration\\conf.txt"
+#define PER_AVR "DB Control\\configuration\\avrDir.txt"
 #define PER_AVR_STD "C:\\WinAVR-20100110\\bin"
 #define PER_AVR_FLH "avrdude.exe"
 #define PER_TITLE " by Martin Tullmann Vers. "
 #define PER_DEVICE "DiscBot"
-#define PER_HEX "configuration\\dbosX.hex"
+#define PER_HEX "DB Control\\configuration\\dbosX.hex"
 #define DIR_GLOBAL "GLOBAL"
 
-#define PER_CONFIGURE "configuration"
-#define PER_AVR "configuration\\avrDir.txt"
+#define PER_AVR "DB Control\\configuration\\avrDir.txt"
 #define PER_DEVICE "DiscBot"
 #define PER_PNAME "DB Control"
 #define NULL 0
@@ -91,27 +91,31 @@ void cSopen() {
 		system(PER_SHEET);
 
 }
+char* dir_specialThanks() {
+	char* x = (char*)malloc(101);
+	strcpy(x, PER_PNAME);
+	strcat(x, "\\specialThanks.txt");
+	return x;
+}
+char* dir_HMfiles() {
+	char* x = (char*)malloc(101);
+	strcpy(x, DIR_GLOBAL);
+	strcat(x,"\\HM-Files");
+	return x;
+}
 void initGlobal() {
-	char c[101];
-	strcpy(c, "mkdir ");
-	strcat(c, "\"");
-	strcat(c, DIR_GLOBAL);
-	strcat(c, "\"");
+	generateDir(DIR_GLOBAL);
 
-	system(c);
+	generateDir(PER_PNAME);
 
-	
-	char* xp = dir_readme();
-	FILE* f;
-	if (!(f=fopen(xp, "r"))) {
-		strcpy(c, "mkdir ");
-	strcat(c, "\"");
-	strcat(c, PER_PNAME);
-	strcat(c, "\"");
-	system(c);
-	 }
-	else {
-		fclose(f);
+}
+char* dir_MPreset(const char *y) {
+	static char x[101] = "";
+	strcpy(x, PER_PNAME);
+	strcat(x, "\\motordata");
+	if (y != NULL) {
+		strcat(x, "\\");
+		strcat(x, y);
 	}
-	//fclose(fopen(dir_readme(), "a+"));
+	return x;
 }
