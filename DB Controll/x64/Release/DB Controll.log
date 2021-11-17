@@ -1,0 +1,44 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(510,5): warning MSB8028: Das Zwischenverzeichnis (x64\Release\) enthält freigegebene Dateien aus einem anderen Projekt (DB Control Vers. 1.0.2 beta Experimental.vcxproj, DB Control Vers. 1.0.2 beta.vcxproj, DB Control Vers1.0.2 beta.vcxproj). Dies kann zu einem falschen Bereinigungs- und Neuerstellungsverhalten führen.
+  DB Controll.cpp
+D:\SHtestBeta\DB\DB Controll\new\DB-Controll-Vers.1.0.2\DB Controll\db_functions.h(874,57): warning C4267: "Argument": Konvertierung von "size_t" nach "uint8_t", Datenverlust möglich
+D:\SHtestBeta\DB\DB Controll\new\DB-Controll-Vers.1.0.2\DB Controll\db_functions.h(1104,6): warning C4267: "Initialisierung": Konvertierung von "size_t" nach "uint8_t", Datenverlust möglich
+D:\SHtestBeta\DB\DB Controll\new\DB-Controll-Vers.1.0.2\DB Controll\db_functions.h(1556,30): warning C4244: "Argument": Konvertierung von "double" in "int", möglicher Datenverlust
+D:\SHtestBeta\DB\DB Controll\new\DB-Controll-Vers.1.0.2\DB Controll\db_functions.h(1558,30): warning C4244: "Argument": Konvertierung von "double" in "int", möglicher Datenverlust
+D:\SHtestBeta\DB\DB Controll\new\DB-Controll-Vers.1.0.2\DB Controll\db_functions.h(1616,23): warning C4267: "Initialisierung": Konvertierung von "size_t" nach "int", Datenverlust möglich
+D:\SHtestBeta\DB\DB Controll\new\DB-Controll-Vers.1.0.2\DB Controll\db_functions.h(1691,30): warning C4267: "+=": Konvertierung von "size_t" nach "int", Datenverlust möglich
+D:\SHtestBeta\DB\DB Controll\new\DB-Controll-Vers.1.0.2\DB Controll\db_functions.h(1837,8): warning C4101: "cp": Unreferenzierte lokale Variable
+D:\SHtestBeta\DB\DB Controll\new\DB-Controll-Vers.1.0.2\DB Controll\db_functions.h(2008,7): warning C4101: "paramin": Unreferenzierte lokale Variable
+D:\SHtestBeta\DB\DB Controll\new\DB-Controll-Vers.1.0.2\DB Controll\db_functions.h(2571,25): warning C4244: "Argument": Konvertierung von "uint16_t" in "uint8_t", möglicher Datenverlust
+D:\SHtestBeta\DB\DB Controll\new\DB-Controll-Vers.1.0.2\DB Controll\db_functions.h(2581,26): warning C4244: "Argument": Konvertierung von "uint16_t" in "uint8_t", möglicher Datenverlust
+D:\SHtestBeta\DB\DB Controll\new\DB-Controll-Vers.1.0.2\DB Controll\db_functions.h(3205,65): warning C4244: "=": Konvertierung von "int" in "float", möglicher Datenverlust
+D:\SHtestBeta\DB\DB Controll\new\DB-Controll-Vers.1.0.2\DB Controll\db_functions.h(3209,28): warning C4244: "=": Konvertierung von "double" in "float", möglicher Datenverlust
+D:\SHtestBeta\DB\DB Controll\new\DB-Controll-Vers.1.0.2\DB Controll\db_functions.h(3586,13): warning C4477: "fscanf": Die Formatzeichenfolge "%i" erfordert ein Argument vom Typ "int *", das variadic-Argument "1" weist aber den Typ "uint16_t *" auf.
+D:\SHtestBeta\DB\DB Controll\new\DB-Controll-Vers.1.0.2\DB Controll\db_functions.h(3586,13): message : Verwenden Sie ggf. "%hi" in der Formatzeichenfolge.
+D:\SHtestBeta\DB\DB Controll\new\DB-Controll-Vers.1.0.2\DB Controll\db_functions.h(3604,7): warning C4101: "dir": Unreferenzierte lokale Variable
+D:\SHtestBeta\DB\DB Controll\new\DB-Controll-Vers.1.0.2\DB Controll\db_functions.h(3753,37): warning C4267: "Argument": Konvertierung von "size_t" nach "int", Datenverlust möglich
+D:\SHtestBeta\DB\DB Controll\new\DB-Controll-Vers.1.0.2\DB Controll\db_functions.h(3755,37): warning C4267: "Argument": Konvertierung von "size_t" nach "int", Datenverlust möglich
+D:\SHtestBeta\DB\DB Controll\new\DB-Controll-Vers.1.0.2\DB Controll\db_functions.h(3762,40): warning C4267: "Initialisierung": Konvertierung von "size_t" nach "char", Datenverlust möglich
+D:\SHtestBeta\DB\DB Controll\new\DB-Controll-Vers.1.0.2\DB Controll\db_functions.h(3762,40): warning C4267: "Initialisierung": Konvertierung von "size_t" nach "const char", Datenverlust möglich
+D:\SHtestBeta\DB\DB Controll\new\DB-Controll-Vers.1.0.2\DB Controll\db_functions.h(3780,12): warning C4473: "printf": nicht genügend Argumente für Formatzeichenfolge übergeben
+D:\SHtestBeta\DB\DB Controll\new\DB-Controll-Vers.1.0.2\DB Controll\db_functions.h(3780,12): message : Platzhalter und deren Parameter erwarten 1 variadic-Argumente, es wurden aber 0 variadic-Argumente bereitgestellt.
+D:\SHtestBeta\DB\DB Controll\new\DB-Controll-Vers.1.0.2\DB Controll\db_functions.h(3780,12): message : Das fehlende variadic-Argument "1" ist für die Zeichenfolge "%s" erforderlich.
+D:\SHtestBeta\DB\DB Controll\new\DB-Controll-Vers.1.0.2\DB Controll\db_functions.h(4281,16): warning C4805: "&=": unsichere Kombination von Typ "uint8_t" mit Typ "bool" in einer Operation
+D:\SHtestBeta\DB\DB Controll\new\DB-Controll-Vers.1.0.2\DB Controll\db_functions.h(4282,16): warning C4805: "&=": unsichere Kombination von Typ "uint8_t" mit Typ "bool" in einer Operation
+D:\SHtestBeta\DB\DB Controll\new\DB-Controll-Vers.1.0.2\DB Controll\db_functions.h(5054,28): warning C4267: "Argument": Konvertierung von "size_t" nach "int", Datenverlust möglich
+D:\SHtestBeta\DB\DB Controll\new\DB-Controll-Vers.1.0.2\DB Controll\db_functions.h(5058,28): warning C4267: "Argument": Konvertierung von "size_t" nach "int", Datenverlust möglich
+D:\SHtestBeta\DB\DB Controll\new\DB-Controll-Vers.1.0.2\DB Controll\DB Controll.cpp(58,86): warning C4474: "fprintf": zu viele Argumente für Formatzeichenfolge übergeben
+D:\SHtestBeta\DB\DB Controll\new\DB-Controll-Vers.1.0.2\DB Controll\DB Controll.cpp(58,86): message : Platzhalter und deren Parameter erwarten 0 variadic-Argumente, es wurden aber 1 variadic-Argumente bereitgestellt.
+D:\SHtestBeta\DB\DB Controll\new\DB-Controll-Vers.1.0.2\DB Controll\DB Controll.cpp(769,82): warning C4474: "printf": zu viele Argumente für Formatzeichenfolge übergeben
+D:\SHtestBeta\DB\DB Controll\new\DB-Controll-Vers.1.0.2\DB Controll\DB Controll.cpp(769,82): message : Platzhalter und deren Parameter erwarten 0 variadic-Argumente, es wurden aber 1 variadic-Argumente bereitgestellt.
+D:\SHtestBeta\DB\DB Controll\new\DB-Controll-Vers.1.0.2\DB Controll\DB Controll.cpp(848,24): warning C4244: "Argument": Konvertierung von "SHORT" in "BYTE", möglicher Datenverlust
+D:\SHtestBeta\DB\DB Controll\new\DB-Controll-Vers.1.0.2\DB Controll\DB Controll.cpp(849,24): warning C4244: "Argument": Konvertierung von "SHORT" in "BYTE", möglicher Datenverlust
+D:\SHtestBeta\DB\DB Controll\new\DB-Controll-Vers.1.0.2\DB Controll\DB Controll.cpp(850,24): warning C4244: "Argument": Konvertierung von "SHORT" in "BYTE", möglicher Datenverlust
+D:\SHtestBeta\DB\DB Controll\new\DB-Controll-Vers.1.0.2\DB Controll\DB Controll.cpp(851,24): warning C4244: "Argument": Konvertierung von "SHORT" in "BYTE", möglicher Datenverlust
+D:\SHtestBeta\DB\DB Controll\new\DB-Controll-Vers.1.0.2\DB Controll\DB Controll.cpp(852,24): warning C4244: "Argument": Konvertierung von "SHORT" in "BYTE", möglicher Datenverlust
+D:\SHtestBeta\DB\DB Controll\new\DB-Controll-Vers.1.0.2\DB Controll\DB Controll.cpp(853,24): warning C4244: "Argument": Konvertierung von "SHORT" in "BYTE", möglicher Datenverlust
+  Code wird generiert.
+  8 of 183 functions ( 4.4%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    31 functions had inline decision re-evaluated but remain unchanged
+  Codegenerierung ist abgeschlossen.
+  DB Controll.vcxproj -> D:\SHtestBeta\DB\DB Controll\new\DB-Controll-Vers.1.0.2\x64\Release\DB Control Vers. 1.0.2 beta D+ Experimental.exe

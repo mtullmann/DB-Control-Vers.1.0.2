@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 .idea/
 .vs/
 Debug/
@@ -23,3 +24,10 @@ DB Controll/test/configuration/checkSheet.txt
 DB Controll/test/motorPresets/preset/Default.pre
 DB Controll/motorPresets/preset/Default.pre
 DB Controll/motorPresets/preset/Default.pre
+=======
+Debug/
+Release/
+x64/
+DB Controll/
+DB Controll/Debug/
+>>>>>>> Stashed changes
