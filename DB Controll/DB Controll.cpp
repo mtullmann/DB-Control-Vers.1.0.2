@@ -624,123 +624,6 @@ void loadProgrammToDB(char* argv[], char* portnum) {
 	printf("Press any key after flashing!\n");
 	_getch();
 }
-void getportnum(char* num) {
-/*	static char numm[9] = "";
-	if (numm[0] != '\0' && portres == 0) {
-		strcpy(num, numm);
-		return;
-	}
-	portres = 0;
-	FILE* f;
-	bool bx = 0;
-	if ((f = fopen(PER_COM, "r")) == NULL) {
-		if ((f = fopen(PER_COM, "a+")) == NULL) {
-			do {
-				bx = 0;
-				printf("Files can't greate!\nEnter your port number: ");
-
-				scanf("%s", num);
-				flush();
-				for (int g = 0; num[g] != '\0' && bx == 0; g++) {
-					//printf("%i %c\n", ablechint(num[g]), num[g]);
-					if (ablechint(num[g])) bx = 1;
-					if (g > 2)bx = 1;
-				}
-
-			} while (bx);
-			strcpy(numm, num);
-			return;
-		}
-		fprintf(f, "COM X");
-		fclose(f);
-		printf("Type in your COM port!\n");
-		system(PER_COM);
-		if ((f = fopen(PER_COM, "r")) == NULL) {
-			do {
-				bx = 0;
-				printf("Files can't greate!\nEnter your port number: ");
-
-				scanf("%s", num);
-				flush();
-				for (int g = 0; num[g] != '\0' && bx == 0; g++) {
-					printf("%i %c\n", ablechint(num[g]), num[g]);
-					if (ablechint(num[g])) bx = 1;
-					if (g > 2)bx = 1;
-				}
-
-			} while (bx);
-			return;
-		}
-	}
-	char co[5] = "";
-	do {
-		if (f == NULL)
-			f = fopen(PER_COM, "a+");
-		if (f == NULL) {
-			do {
-				bx = 0;
-				printf("Files can't greate!\nEnter your port number: ");
-
-				scanf("%s", num);
-				flush();
-				for (int g = 0; num[g] != '\0' && bx == 0; g++) {
-					//printf("%i %c\n", ablechint(num[g]), num[g]);
-					if (ablechint(num[g])) bx = 1;
-					if (g > 2)bx = 1;
-				}
-
-			} while (bx);
-			strcpy(numm, num);
-
-			return;
-		}
-		rewind(f);
-		num[0] = '\0';
-		co[0] = '\0';
-		fscanf(f, "%s %s", co, num);
-
-		bx = 0;
-		if (strcmp(co, "COM")) {
-			bx = 1;
-			printf("%s is an invalid command use COM instead!\n", co);
-			fclose(f);
-			system(PER_COM);
-			f = fopen(PER_COM, "a+");
-
-		}
-		if (!bx) {
-			if (num[0] == '\0')
-				bx = 1;
-			for (int g = 0; num[g] != '\0' && bx == 0; g++) {
-				//printf("%i %c\n", ablechint(num[g]), num[g]);
-				if (ablechint(num[g])) bx = 1;
-				if (g > 2)bx = 1;
-			}
-			if (bx) {
-				printf("%s is an invalid number !try again\n", num);
-				fclose(f);
-				system(PER_COM);
-				f = fopen(PER_COM, "a+");
-			}
-		}
-	} while (bx);
-	printf("Do you want to change ");
-	color(GELBh);
-	printf("COM %s", num);
-	color(rcol);
-	printf("? (y/n)\n");
-	if (f != NULL) {
-		fclose(f);
-	}
-	if (_getch() != 'n') {
-		system(PER_COM);
-		getportnum(num);
-	}
-	else {
-		strcpy(numm, num);
-	}
-	*/
-}
 void endofP() {
 	printTitle(" - The end!");
 
@@ -822,7 +705,7 @@ bool checkName(char* filenmae) {
 
 int main(int argc, char* argv[])
 {
-	global_port_manager();
+	//global_port_manager();
 	//while(!anyKey());
 	//printf("%c characht",_getch());
 	mcOperateOffline = 0;

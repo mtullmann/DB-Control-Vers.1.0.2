@@ -24,6 +24,7 @@
 #define PER_PNAME "DB Control"
 #define NULL 0
 void generateC(FILE* f);
+static char numer[5] = "";
 
 static bool cSGlobal = 0;
 char* dir_readme() {
@@ -140,7 +141,7 @@ void global_port_add() {
 		int i = int_inp(1, 20);
 		printf("Device-name: ");
 		char ch[102] = "";
-		str_inp(ch,101);
+		str_inp(ch, 101);
 		fprintf(f, "\n%i %s", i, ch);
 		fclose(f);
 	}
@@ -149,35 +150,67 @@ void global_port_add() {
 		printf("FAILD!!!\n");
 		rcolor;
 	}
-	
+
 }
 void global_port_manager() {
-	color(ROTh);
-	printxCx('*', "Global machines", rcol, ROTh, rcol);
-	rcolor;
-	FILE* f = NULL;
-	int coP[251]={0};
-
-	if (fileExist("GLOBAL\\machines.con")) {
-		f = fopen("GLOBAL\\machines.con", "r");
-		char tex[152] = "";
-		char b = 1;
-		for (unsigned char i = 0; i != 251&& b==1; i++) {
-			
-			tex[0] = '\0';
-			tex[1] = '\0';
-			fscanf(f, "%i", &coP[i]);
-			b=str_inp(f, tex, 151);
-			strcpy(tex, &tex[1]);
-			printf("%02i) COM.%i \"%s\"\n",i+1,coP[i],tex);
-		}
-		fclose(f);
-	}
-	else {
-		color(GELBh);
-		printf("No machine found!!\n");
+	while (1) {
+		bool haveNO = 0;
+		color(ROTh);
+		printxCx('*', "Global machines", rcol, ROTh, rcol);
 		rcolor;
-		printf("\t\tPlease add one in the offline menue!!\n");
+		FILE* f = NULL;
+		int coP[251] = { 0 };
+
+		if (fileExist("GLOBAL\\machines.con")) {
+			f = fopen("GLOBAL\\machines.con", "r");
+			char tex[251][152];
+			char b = 1;
+			unsigned char i = 0;
+			if (EOF != fgetc(f)) {
+				printf("00) ADD Device!\n");
+				for (i = 0; i != 251 && b == 1; i++)
+				{
+
+					tex[i][0] = '\0';
+					tex[i][1] = '\0';
+					fscanf(f, "%i", &coP[i]);
+					b = str_inp(f, tex[i], 151);
+					strcpy(tex[i], &tex[i][1]);
+					printf("%02i) COM.%i \"%s\"\n", i + 1, coP[i], tex[i]);
+				}
+			
+				fclose(f);
+				printf("Select one of them: ");
+				unsigned char vanderwahl = int_inp(0, i);
+				if (vanderwahl != 0) {
+					printf("Selected: COM.%i , \"%s\"\n", coP[vanderwahl - 1], tex[vanderwahl - 1]);
+					sprintf(numer, "%i", coP[vanderwahl - 1]);
+					return;
+				}
+				global_port_add();
+
+			}
+			else
+				haveNO = 1;
+		}
+		else
+			haveNO = 1;
+		if(haveNO){
+			color(GELBh);
+			printf("No machine found!!\n");
+			rcolor;
+			printf("\t\tPlease add one now!!\n");
+			global_port_add();
+		}
+	}
+}
+void getportnum(char* num) {
+	if (num == NULL)
+		return;
+	if (numer[0] == '\0') {
+		global_port_manager();
 	}
 
+	if (num != NULL)
+		strcpy(num, numer);
 }
