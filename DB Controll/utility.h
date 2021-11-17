@@ -76,7 +76,7 @@ void bell();
 int int_inp();
 int int_inp(int from, int to);
 void str_inp(char* text, int size);
-bool str_inp(FILE* f, char* text, int size);
+char str_inp(FILE* f, char* text, int size);
 
 bool generateDir(const char* name);
 bool generateDir(const char* name, DIR** dir);

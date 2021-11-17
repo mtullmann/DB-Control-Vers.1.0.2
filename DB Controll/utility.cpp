@@ -317,7 +317,7 @@ void str_inp(char* text, int size) {
 	}
 }
 void endofP(void);
-bool str_inp(FILE* f, char* text, int size) {
+char str_inp(FILE* f, char* text, int size) {
 	int i = 0;
 	char c = 0;
 
@@ -333,7 +333,10 @@ bool str_inp(FILE* f, char* text, int size) {
 		return 0;
 	}
 	text[i] = '\0';
+	if (c == EOF)
+		return -1;
 	return 1;
+
 }
 
 
@@ -411,11 +414,11 @@ void printx(char c, const char* x) {
 }
 void printxCx(char c, const char* x) {
 	printx(c, strlen(x));
-	printf("\n%s\n",x);
+	printf("\n%s\n", x);
 	printx(c, strlen(x));
 	printf("\n");
 }
-void printxCx(char c, const char* x,int c1,int c2,int c3) {
+void printxCx(char c, const char* x, int c1, int c2, int c3) {
 	color(c1);
 	printx(c, strlen(x));
 	color(c2);

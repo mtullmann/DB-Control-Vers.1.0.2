@@ -161,11 +161,14 @@ void global_port_manager() {
 	if (fileExist("GLOBAL\\machines.con")) {
 		f = fopen("GLOBAL\\machines.con", "r");
 		char tex[152] = "";
-		for (char i = 0; i != 251&& fgetc(f)!=EOF; i++) {
+		char b = 1;
+		for (unsigned char i = 0; i != 251&& b==1; i++) {
 			
-			strcpy(tex, "");
+			tex[0] = '\0';
+			tex[1] = '\0';
 			fscanf(f, "%i", &coP[i]);
-			str_inp(f, tex, 151);
+			b=str_inp(f, tex, 151);
+			strcpy(tex, &tex[1]);
 			printf("%02i) COM.%i \"%s\"\n",i+1,coP[i],tex);
 		}
 		fclose(f);

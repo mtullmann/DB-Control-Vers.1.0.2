@@ -22,8 +22,6 @@ D:\SHtestBeta\DB\DB Controll\new\DB-Controll-Vers.1.0.2\DB Controll\db_functions
 D:\SHtestBeta\DB\DB Controll\new\DB-Controll-Vers.1.0.2\DB Controll\db_functions.h(3780,12): warning C4473: "printf": nicht genügend Argumente für Formatzeichenfolge übergeben
 D:\SHtestBeta\DB\DB Controll\new\DB-Controll-Vers.1.0.2\DB Controll\db_functions.h(3780,12): message : Platzhalter und deren Parameter erwarten 1 variadic-Argumente, es wurden aber 0 variadic-Argumente bereitgestellt.
 D:\SHtestBeta\DB\DB Controll\new\DB-Controll-Vers.1.0.2\DB Controll\db_functions.h(3780,12): message : Das fehlende variadic-Argument "1" ist für die Zeichenfolge "%s" erforderlich.
-D:\SHtestBeta\DB\DB Controll\new\DB-Controll-Vers.1.0.2\DB Controll\db_functions.h(4281,16): warning C4805: "&=": unsichere Kombination von Typ "uint8_t" mit Typ "bool" in einer Operation
-D:\SHtestBeta\DB\DB Controll\new\DB-Controll-Vers.1.0.2\DB Controll\db_functions.h(4282,16): warning C4805: "&=": unsichere Kombination von Typ "uint8_t" mit Typ "bool" in einer Operation
 D:\SHtestBeta\DB\DB Controll\new\DB-Controll-Vers.1.0.2\DB Controll\db_functions.h(5054,28): warning C4267: "Argument": Konvertierung von "size_t" nach "int", Datenverlust möglich
 D:\SHtestBeta\DB\DB Controll\new\DB-Controll-Vers.1.0.2\DB Controll\db_functions.h(5058,28): warning C4267: "Argument": Konvertierung von "size_t" nach "int", Datenverlust möglich
 D:\SHtestBeta\DB\DB Controll\new\DB-Controll-Vers.1.0.2\DB Controll\DB Controll.cpp(58,86): warning C4474: "fprintf": zu viele Argumente für Formatzeichenfolge übergeben
@@ -37,8 +35,8 @@ D:\SHtestBeta\DB\DB Controll\new\DB-Controll-Vers.1.0.2\DB Controll\DB Controll.
 D:\SHtestBeta\DB\DB Controll\new\DB-Controll-Vers.1.0.2\DB Controll\DB Controll.cpp(852,24): warning C4244: "Argument": Konvertierung von "SHORT" in "BYTE", möglicher Datenverlust
 D:\SHtestBeta\DB\DB Controll\new\DB-Controll-Vers.1.0.2\DB Controll\DB Controll.cpp(853,24): warning C4244: "Argument": Konvertierung von "SHORT" in "BYTE", möglicher Datenverlust
   Code wird generiert.
-  8 of 183 functions ( 4.4%) were compiled, the rest were copied from previous compilation.
+  3 of 183 functions ( 1.6%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    31 functions had inline decision re-evaluated but remain unchanged
+    32 functions had inline decision re-evaluated but remain unchanged
   Codegenerierung ist abgeschlossen.
   DB Controll.vcxproj -> D:\SHtestBeta\DB\DB Controll\new\DB-Controll-Vers.1.0.2\x64\Release\DB Control Vers. 1.0.2 beta D+ Experimental.exe
