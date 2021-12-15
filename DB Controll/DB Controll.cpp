@@ -9,9 +9,9 @@ void endofP();
 //#define DEBUG
 //#define SHOW_WARNINGS
 //#define MONITOR
-bool mcDebug = 0;
-bool mcOperateOffline = 0;
-bool db_monitor = 0;
+//bool mcDebug = 0;
+//bool mcOperateOffline = 0;
+//bool db_monitor = 0;
 char exeRname[30] = PER_PNAME;
 
 
@@ -25,7 +25,7 @@ char exeRname[30] = PER_PNAME;
 #include "serial.h"
 #include <windows.h>
 #include "sheet.h"
-#include "db_functions.h"
+#include "test_functions.h"
 //#include "music.h"
 #include <iostream>
 #include <shlobj.h>
@@ -83,6 +83,7 @@ void generateC(FILE* f) {
 	fprintf(f, "1 bm ;Brightness messurement (two front) enable\n");
 	fprintf(f, "1 uss ;Ultra sonic sensor enable\n");
 }
+/*
 void generateB() {
 	FILE* f;
 	char text[] = "ATS AT\\r\\n\nATG OK\\r\\n\n\nUSERNOTE Bluetooth-Low-Energy\\n\\t\\tThis\\_is\\_the\\_standard\\_comand-configuration\\_for\\_the\\_BT\\_module!!!\n\nPOWES \\-\nPOWEG \\-\n\nPOWES? \\-\nPOWEG? \\-\n\nNAMES? AT+NAME\\r\\n\nNAMEG? +NAME=<P>\\r\\n\n\nNAMES AT+NAME<P>\\r\\n\nNAMEG +NAME=<P>\\r\\nOK\\r\\n\n\nPASSS? AT+PASS\\r\\n\nPASSG? +PASS=<P>\\r\\n\n\nPASSS AT+PIN<P>\\r\\n\nPASSG +PIN=<P>\\r\\nOK\\r\\n\n\nRENEWS AT+RENEW\\r\\n\nRESETS AT+RESET\\r\\n\n\nRENEWG +RENEW\\r\\nOK\\r\\n\nRESETG +RESET\\r\\nOK\\r\\n\n\nROLES? AT+ROLE\\r\\n\nROLEG? +ROLE=<P>\\r\\n\n\nROLES AT+ROLE<P>\\r\\n\nROLEG +ROLE=<P>\\r\\nOK\\r\\n\n\nTEMPS? \\-\nTEMPG? \\-\n\nTYPES? AT+TYPE\\r\\n\nTYPEG? +TYPE=<P>\\r\\n\n\nTYPES AT+TYPE<P>\\r\\n\nTYPEG +TYPE=<P>\\r\\nOK\\r\\n\n\nRADDS? AT+RADD\\r\\n\nRADDG? +RADD=<P>\\r\\nOK\\r\\n\n\nVERSS? AT+VERSION\\r\\n\nVERSG? <P>\\r\\n\n\nPWRS? AT+PWRM\\r\\n\nPWRG? +PWRM=<P>\\r\\n\n\nPWRS AT+PWRM<P>\\r\\n\nPWRG +PWRM=<P>\\r\\Ok\\r\\n\n\nRSSIS? \\-\nRSSIG? \\-\n\nIMMES? \\-\nIMMEG? \\-\n\nIMMES AT+IMME\\r\\n\nIMMEG +IMME=<P>\\r\\nOK\\r\\n\n\nNOTIS? AT+NOTI\\r\\n\nNOTIG? +NOTI=<P>\\r\\n\n\nNOTIS AT+NOTI<P>\\r\\n\nNOTIG +NOTI=<P>\\r\\nOK\\r\\n\n\nADDRS? AT+ADDR\\r\\n\nADDRG? +ADDR=<P>\\r\\n\n\nBATTS? \\-\nBATTG? \\-\n\nHELPS? \\-\nHELPG? \\-\n\nMODES? AT+MODE\\r\\n\nMODEG? +MODE=<P>\\r\\n\n\nMODES AT+MODE<P>\\r\\n\nMODEG +MODE=<P>\\r\\nOK\\r\\n\n\nPARIS? AT+PARI\\r\\n\nPARIG? +PARI=<P>\\r\\n\n\nPARIS AT+PARI<P>\\r\\n\nPARIG +PARI=<P>\\r\\nOK\\r\\n\n\nOPS? AT+PCTL\\r\\n\nOPG? +PCTL=<P>\\r\\n\n\nOPS AT+PCTL<P>\\r\\n\nOPG +PCTL=<P>\\r\\nOK\\r\\n\n\nLEDS? \\-\nLEDG? \\-\n\nLEDS \\-\nLEDG \\-\n\nSTOPS? AT+STOP\\r\\n\nSTOPG? +STOP=<P>\\r\\n\n\nSTOPS AT+STOP<P>\\r\\n\nSTOPG +STOP\\r\\nOK\\r\\n\n\nUUIDS? AT+UUID\\r\\n\nUUIDG? +UUID=<P>\\r\\n\n\nUUIDS AT+UUID<P>\\r\\n\nUUIDG +UUID=<P>\\r\\nOK\n\nTCONS? \\-\nTCONG? \\-\n\nTCONS \\-\nTCONG \\-\n\nCONNG OK+CONN\\r\\n\nLOSTG OK+LOST\\r\\n\nWAKEG OK+WAKE\\r\\n\n"; 
@@ -108,7 +109,7 @@ void generateB() {
 		}
 	}
 	free(cdir);
-}
+}*/
 void generateH() {
 	char text[101 + 2][1004];
 
@@ -625,6 +626,7 @@ void loadProgrammToDB(char* argv[], char* portnum) {
 	_getch();
 }
 void endofP() {
+	rcolor;
 	printTitle(" - The end!");
 
 	printf("Disconnect the USB Cable first before you switch off your DiscBot!\nThen you can switch the robot off\n");
@@ -686,17 +688,23 @@ bool checkName(char* filenmae) {
 	char xda[2] = "";
 	xda[1] = '\0';
 	char* pxd;
-	int cnt = 0;
-	pxd = filenmae;
+	int cnt = strlen(filenmae);
+	pxd = filenmae + strlen(filenmae);
 	do {
-		xda[0] = pxd[0];
+		pxd--;
 		//printf("%c", pxd[0]);
-		pxd++;
-		cnt++;
-	} while (strcmp(pxd, exeRname) != 0 && cnt < 10001);
-	if (cnt >= 10001) {
+	} while (pxd[0] != '\\');
+	pxd++;
+	//printf("\nName:%s\n",pxd);
+	//do {
+	//	xda[0] = pxd[0];
+		//printf("%c", pxd[0]);
+		//pxd++;
+		//cnt++;
+	// } while (strcmp(pxd, exeRname) != 0 && cnt < 10001);
+	if (strcmp(pxd, exeRname)) {
 		color(ROTh);
-		printf("Program has the wrong name!!\nIt should be named \"%s\"!!!\n", exeRname);
+		printf("Program has the wrong name!!\nIt should be named\t\"%s\"!!!\n\tNOT\t\t\"%s\"", exeRname, pxd);
 		rcolor;
 		return 0;
 	}
@@ -710,12 +718,12 @@ int main(int argc, char* argv[])
 	//printf("%c characht",_getch());
 	mcOperateOffline = 0;
 	initGlobal();
+	initTest();
 	printTitle(" - Welcome");
 
 	buildData(NULL);
 	generateDir(PER_CONFIGURE);
 
-	generateMC();
 	generateH();
 	printf("Enter ");
 	color(GELBh);
@@ -789,7 +797,6 @@ int main(int argc, char* argv[])
 		printf("Welcome\n");
 		color(rcol);
 		generateH();
-		generateB();
 		char* sT = dir_specialThanks();
 		if ((f = fopen(sT, "w+")) != NULL) {
 			generateS(f);
@@ -907,7 +914,7 @@ int main(int argc, char* argv[])
 		printf("Do you want to run an example (LED_On_Off)? (y/n)\n");
 		rcolor;
 		if (ynrespond() == 'y') {
-			if (!db_ledOnOff())
+			if (!simpleExample())
 				db_reset();
 		}
 		if (!manager(ex)) {
@@ -920,7 +927,7 @@ int main(int argc, char* argv[])
 				rcolor;
 			}
 			else {
-				if (db_ledOnOff()) {
+				if (simpleExample()) {
 					color(VIOLETTh);
 					printf("There was no error by the example \"led on off\"\nPlease call Martin Tullmann for help!\n");
 					printf("");

@@ -142,11 +142,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="DB Controll.cpp" />
+    <ClCompile Include="DB_serial.cpp">
+      <FileType>CppCode</FileType>
+    </ClCompile>
+    <ClCompile Include="global.cpp" />
     <ClCompile Include="serial.cpp" />
+    <ClCompile Include="sheet.cpp" />
+    <ClCompile Include="test_functions.cpp" />
     <ClCompile Include="utility.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="db_functions.h" />
     <ClInclude Include="DB_serial.h" />
     <ClInclude Include="dirent.h" />
     <ClInclude Include="global.h" />
@@ -156,6 +161,7 @@
     <ClInclude Include="resource1.h" />
     <ClInclude Include="serial.h" />
     <ClInclude Include="sheet.h" />
+    <ClInclude Include="test_functions.h" />
     <ClInclude Include="utility.h" />
   </ItemGroup>
   <ItemGroup>

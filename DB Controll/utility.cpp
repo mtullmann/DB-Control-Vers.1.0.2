@@ -1,5 +1,5 @@
 #include "utility.h"
-
+void endofP();
 void bell() { printf("%c", BELL); }
 
 struct DbLsNote dbLs_beep[] = { {DB_LS_C6, DB_LS_1_8,STD_LOUD}, {DB_LS_LAST, DB_LS_1_4,STD_LOUD} };
@@ -271,12 +271,12 @@ char ynrespond() {
 	return c;
 }
 int int_inp() {
-	char s[300] = "";
+	static char s[30000] = "";
 	int i = 0;
 	bool b = 1;
 	while (1) {
 		i = 0;
-		gets_s(s);
+		gets_s(s, sizeof(s));
 		flush();
 		b = 1;
 
@@ -298,6 +298,14 @@ int int_inp() {
 	}
 }
 int int_inp(int from, int to) {
+	if (from == to||from==to+1) {
+		color(ROTh);
+		printf("\n\tType in a number between %i and %i: ", from - 1, to + 1);
+		color(VIOLETTh);
+		printf("\n\nYou are fucked off...\n");
+
+		endofP();
+	}
 	int res = 0;
 	if (from == to) {
 		printf("%i\n", from);
