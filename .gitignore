@@ -9,25 +9,20 @@ DB Controll/DB Control/
 DB Controll/GLOBAL/
 DB Controll/test/
 DB Controll/x64/
+DB Controll/Save/
 DB Controll/HM/HMSoft_V540.TXT
 DB Controll/HM/JDY-31-SPP.TXT
 DB Controll/HM/MLT-BT05_V4.1.TXT
-DB Controll/iconX.ico
-DB Controll/iconX.ico
 DB Controll/configuration/checkSheet.txt
 DB Controll/configuration/conf.txt
 DB Controll/configuration/dbosX.hex
 DB Controll/iconX.ico
-DB Controll/iconX.ico
-DB Controll/iconX.ico
 DB Controll/test/configuration/checkSheet.txt
 DB Controll/test/motorPresets/preset/Default.pre
-DB Controll/motorPresets/preset/Default.pre
 DB Controll/motorPresets/preset/Default.pre
 =======
 Debug/
 Release/
 x64/
-DB Controll/
 DB Controll/Debug/
 >>>>>>> Stashed changes
