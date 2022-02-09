@@ -10,13 +10,14 @@ void buildData(char* build) {
 	if (build == NULL)
 		printf("Build: ");
 	if (sprntf[0] == '\0') {
-		int h, m, s;
+		short h, m, s;
 		int d, y;
 		char mos[4] = "";
 		//long long int b;
 		char bn[15];
 		//const char* months[] = { "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug","Sep", "Oct", "Nov", "Dec" };
-		sscanf(__TIME__, "%i:%i:%i", &h, &m, &s);
+		sscanf(__TIME__, "%02i:%02i:%02i", &h, &m, &s);
+		//sscanf("22:01:02", "%02i:%02i:%02i", &h, &m, &s);
 		sscanf(__DATE__, "%04s %i %i", mos, &d, &y);
 		/*for (mo = 0; mo != 12; mo++) {
 			if (!strcmp(months[mo], mos)) {
@@ -37,7 +38,19 @@ void buildData(char* build) {
 		printf("%s\n", sprntf);
 	if (build != NULL)
 		strcpy(build, sprntf);
+	rcolor;
+
 }
+char* dir_procedure() {
+	static char c[201] = "";
+	if (c[0] == '\0') {
+		strcpy(c, PER_PNAME);
+		strcat(c, "\\");
+		strcat(c, PER_CONFIG_STR);
+	}
+	return c;
+}
+
 char* dir_readme() {
 	char* x = (char*)malloc(101);
 	strcpy(x, DIR_PROG_PATH);
@@ -67,7 +80,7 @@ void printTitle(const char* tit) {
 }
 void cSopen() {
 	if (!cSGlobal)
-		system(PER_SHEET);
+		system(dir2CMD((char*)PER_SHEET));
 
 }
 char* dir_specialThanks() {
@@ -87,15 +100,37 @@ char* dir_MPreset(const char* y) {
 	}
 	return x;
 }
+char* dir_MConf(const char* y) {
+	static char x[101] = "";
+	strcpy(x, PER_PNAME);
+	strcat(x, "\\");
+	strcat(x, PER_CONFIGURE);
+	if (y != NULL) {
+		strcat(x, "\\");
+		strcat(x, y);
+	}
+	return x;
+}
+char* dir_GConf(const char* y) {
+	static char x[101] = "";
+	strcpy(x, DIR_GLOBAL);
+	strcat(x, "\\");
+	strcat(x, "configuration");
+	if (y != NULL) {
+		strcat(x, "\\");
+		strcat(x, y);
+	}
+	return x;
+}
 void renewConf() {
-	FILE* f = fopen(PER_CONFIG, "w+");
+	FILE* f = fopen(dir_procedure(), "w+");
 	generateC(f);
 	fclose(f);
 }
 void openConf() {
 	char x[101] = "";
 	strcpy(x, "\"");
-	strcat(x, PER_CONFIG);
+	strcat(x, dir_procedure());
 	strcat(x, "\"");
 	system(x);
 }
@@ -193,6 +228,10 @@ char* dir_BT() {
 void initGlobal() {
 	generateDir(PER_PNAME);
 	generateDir(DIR_GLOBAL);
+	generateDir(dir_MPreset(NULL));
+	generateDir(dir_MConf(NULL));
+	generateDir(dir_GConf(NULL));
+
 	generateDir(dir_BT());
 
 	generateBT();
@@ -321,7 +360,7 @@ bool show_bt_dir(char* filename) {
 						sprintf(fnam, "%s\\%s%s", pathName, tex, BT_ENDING);
 						//printf("%s\n",fnam);
 						FILE* f2 = fopen(fnam, "a+");
-					//	printf("OPEN \"%s\"\n", fnam);
+						//	printf("OPEN \"%s\"\n", fnam);
 						if (f2 != NULL && bt_get_cmd(f2, "USERNOTE", userNote))
 							printf("\n\t Note: \"%s\"", userNote);
 						if (f2 != NULL)
@@ -587,4 +626,104 @@ bool bt_get_cmd(FILE* fj, const char* in, char* out) {
 	printf("NO IDEA!\n");
 	rcolor;
 	return 0;
+}
+char* dir2CMD(char* c) {
+	static char cx[2001] = "";
+	strcpy(cx, "");
+	strcat(cx, "\"");
+	strcat(cx, c);
+	strcat(cx, "\"");
+	return cx;
+}
+char* generateSstring() {
+	static char* c = NULL;
+	char temp[111] = "Can't be displayed!\n";
+	if (c == NULL) {
+		c = (char*)malloc(1001);
+	}
+
+	if (c != NULL) {
+		strcpy(c, "");
+		sprintf(temp, "Dietmar Scheiblhofer (microcontroller software, sound)\n");
+		strcat(c, temp);
+		sprintf(temp, "Jakob Faltisek (DiscBot hardware)\n");
+		strcat(c, temp);
+		sprintf(temp, "Manuel Hackl (DiscBot hardware)\n");
+		strcat(c, temp);
+		sprintf(temp, "Mario Schantl (DiscBot hardware)\n");
+		strcat(c, temp);
+		sprintf(temp, "Hans-Günter Heumann (sound)\n");
+		strcat(c, temp);
+		sprintf(temp, "Martin Tullmann (computer software, microcontroller software, sound, debuging, spelling, configuration)\n");
+		strcat(c, temp);
+		sprintf(temp, "----------------------------------------------------------------------- \n");
+		strcat(c, temp);
+		sprintf(temp, "more informations on https://github.com/mtullmann/DB-Control-Vers.1.0.2 \n");
+		strcat(c, temp);
+		return c;
+	}
+	return temp;
+}
+void generateS(FILE* f) {
+	char* c = NULL;
+	fprintf(f, (c = generateSstring()));
+}
+
+void endofP() {
+	rcolor;
+	printTitle(" - The end!");
+
+	printf("Disconnect the USB Cable first before you switch off your %s!\nThen you can turn your %s off\n", PER_DEVICE, PER_DEVICE);
+	color(GELBh);
+	//printf("Press enter to exit\n");
+	rcolor;
+	struct tm* c;
+	double x[2] = { 0,0 };
+	db_data_transmission_byte(x);
+	printf("%0.0lf Byte%swere recived & %0.0lf Byte%swere sent!!\n", x[1], (x[1] != 1) ? " " : "s ", x[0], (x[0] != 1) ? " " : "s ");
+	printf("Have fun with your %s\n", PER_DEVICE);
+	time_t now;
+	now = time(0) + (60 * 60);
+	c = gmtime(&now);
+	color(GRUENh);
+	char days[7][25] = { "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" };
+	printf("Goodbye, have a nice %s!!\n\n", days[c->tm_wday]);
+	rcolor;
+	_fcloseall();
+	flush();
+	color(ROTh);
+	printf("Push 'c' to close the application!!!\n\n");
+	printf("\tIf you want to scroll click here!!!\n\n");
+	rcolor;
+	if (GIT_SOURCE != NULL) {
+		printf("\t\t%s\n\n", GIT_SOURCE);
+	}
+	//printf("Thanks to:\n%s\n\n",insAfterNL(generateSstring(),"\n\t"));
+	printf("\t\t\t(c) Martin Tullmann %i\n\n", c->tm_year + 1900);
+	color(ROTh);
+	int i = 0;
+	bool played = PlaySound(L"bon.wav", NULL, SND_LOOP | SND_ASYNC);
+	do {
+		printf(" THE_END");
+		rcolor;
+		printf("%c", ((i / 4) % 2) ? '_' : ' ');
+		switch ((i++) % 10) {
+		case 0:color(ROTh); break;
+		case 1:color(ROTd); break;
+		case 2:color(GELBd); break;
+		case 3:color(GELBh); break;
+		case 4:color(GRUENh); break;
+		case 5:color(GRUENd); break;
+		case 6:color(VIOLETTh); break;
+		case 7:color(VIOLETTd); break;
+		case 8:color(TURKEYSEh); break;
+		case 9:color(TURKEYSEd); break;
+		}
+		printf("\r");
+		waitS(250, 1);
+		while (!waitS(250, 0) && !(GetKeyState(0x43) & 1));
+	} while (!(GetKeyState(0x43) & 1) || _getch() != 'c');
+	rcolor;
+	printf("\n\n");
+	exit(0);
 }

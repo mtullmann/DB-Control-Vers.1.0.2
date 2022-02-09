@@ -5,11 +5,12 @@
 #include <string.h>
 #include <Windows.h>
 #include "utility.h"
+#include "test_serial.h"
 #define PER_VERS "1.0.2 beta D+ Experimental"
 #define PER_CONFIGURE "configuration"
 #define PER_SHEET "GLOBAL\\configuration\\checkSheet.txt"
 #define PER_COM "configuration\\connect.txt"
-#define PER_CONFIG "configuration\\conf.txt"
+#define PER_CONFIG_STR "configuration\\testprocdure.txt"
 #define PER_AVR "configuration\\avrDir.txt"
 #define PER_AVR_STD "C:\\WinAVR-20100110\\bin"
 #define PER_AVR_FLH "avrdude.exe"
@@ -21,8 +22,9 @@
 #define DIR_GLOBAL "GLOBAL"
 #define DIR_BT "Bluetooth modules"
 #define BT_ENDING ".BT"
+#define GIT_SOURCE "https://github.com/mtullmann/DB-Control-Vers.1.0.2"
 
-
+char* dir_procedure();
 
 extern bool cSGlobal;
 char* dir_readme();
@@ -41,3 +43,7 @@ void initGlobal();
 bool bt_get_cmd(FILE* fj, const char* in, char* out);
 bool show_bt_dir(char* filename);
 char* dir_MPreset(const char* y);
+char* dir2CMD(char* c);
+char* generateSstring();
+void generateS(FILE* f);
+void endofP();

@@ -134,4 +134,4 @@ tullmann.m@outlook.com
 
 		https://github.com/mtullmann/DB-Control-Vers.1.0.2
 
-			(c) Martin Tullmann 2021
+			(c) Martin Tullmann 2022

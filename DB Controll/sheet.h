@@ -22,3 +22,4 @@ void cSaddMsg(const char* x);
 void cScreate();
 void cSenable();
 void cSdisable();
+void cSaddENote(const char* x);

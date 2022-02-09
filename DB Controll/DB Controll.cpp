@@ -59,16 +59,6 @@ void generateR(FILE* f) {
 	fprintf(f, "\t\t\t(c) Martin Tullmann %i", c->tm_year + 1900);
 	fclose(f);
 }
-void generateS(FILE* f) {
-	fprintf(f, "Dietmar Scheiblhofer (microcontroller software, sound)\n");
-	fprintf(f, "Jakob Faltisek (DiscBot hardware)\n");
-	fprintf(f, "Manuel Hackl (DiscBot hardware)\n");
-	fprintf(f, "Mario Schantl (DiscBot hardware)\n");
-	fprintf(f, "Hans-Günter Heumann (sound)\n");
-	fprintf(f, "Martin Tullmann (computer software, microcontroller software, sound, debuging, spelling, configuration)\n");
-	fprintf(f, "----------------------------------------------------------------------- \n");
-	fprintf(f, "more informations on https://github.com/mtullmann/DB-Control-Vers.1.0.2 \n");
-}
 void generateC(FILE* f) {
 	fprintf(f, "1 btn ;Button enable\n");
 	fprintf(f, "1 rfid ;RFID reader enable\n");
@@ -86,7 +76,7 @@ void generateC(FILE* f) {
 /*
 void generateB() {
 	FILE* f;
-	char text[] = "ATS AT\\r\\n\nATG OK\\r\\n\n\nUSERNOTE Bluetooth-Low-Energy\\n\\t\\tThis\\_is\\_the\\_standard\\_comand-configuration\\_for\\_the\\_BT\\_module!!!\n\nPOWES \\-\nPOWEG \\-\n\nPOWES? \\-\nPOWEG? \\-\n\nNAMES? AT+NAME\\r\\n\nNAMEG? +NAME=<P>\\r\\n\n\nNAMES AT+NAME<P>\\r\\n\nNAMEG +NAME=<P>\\r\\nOK\\r\\n\n\nPASSS? AT+PASS\\r\\n\nPASSG? +PASS=<P>\\r\\n\n\nPASSS AT+PIN<P>\\r\\n\nPASSG +PIN=<P>\\r\\nOK\\r\\n\n\nRENEWS AT+RENEW\\r\\n\nRESETS AT+RESET\\r\\n\n\nRENEWG +RENEW\\r\\nOK\\r\\n\nRESETG +RESET\\r\\nOK\\r\\n\n\nROLES? AT+ROLE\\r\\n\nROLEG? +ROLE=<P>\\r\\n\n\nROLES AT+ROLE<P>\\r\\n\nROLEG +ROLE=<P>\\r\\nOK\\r\\n\n\nTEMPS? \\-\nTEMPG? \\-\n\nTYPES? AT+TYPE\\r\\n\nTYPEG? +TYPE=<P>\\r\\n\n\nTYPES AT+TYPE<P>\\r\\n\nTYPEG +TYPE=<P>\\r\\nOK\\r\\n\n\nRADDS? AT+RADD\\r\\n\nRADDG? +RADD=<P>\\r\\nOK\\r\\n\n\nVERSS? AT+VERSION\\r\\n\nVERSG? <P>\\r\\n\n\nPWRS? AT+PWRM\\r\\n\nPWRG? +PWRM=<P>\\r\\n\n\nPWRS AT+PWRM<P>\\r\\n\nPWRG +PWRM=<P>\\r\\Ok\\r\\n\n\nRSSIS? \\-\nRSSIG? \\-\n\nIMMES? \\-\nIMMEG? \\-\n\nIMMES AT+IMME\\r\\n\nIMMEG +IMME=<P>\\r\\nOK\\r\\n\n\nNOTIS? AT+NOTI\\r\\n\nNOTIG? +NOTI=<P>\\r\\n\n\nNOTIS AT+NOTI<P>\\r\\n\nNOTIG +NOTI=<P>\\r\\nOK\\r\\n\n\nADDRS? AT+ADDR\\r\\n\nADDRG? +ADDR=<P>\\r\\n\n\nBATTS? \\-\nBATTG? \\-\n\nHELPS? \\-\nHELPG? \\-\n\nMODES? AT+MODE\\r\\n\nMODEG? +MODE=<P>\\r\\n\n\nMODES AT+MODE<P>\\r\\n\nMODEG +MODE=<P>\\r\\nOK\\r\\n\n\nPARIS? AT+PARI\\r\\n\nPARIG? +PARI=<P>\\r\\n\n\nPARIS AT+PARI<P>\\r\\n\nPARIG +PARI=<P>\\r\\nOK\\r\\n\n\nOPS? AT+PCTL\\r\\n\nOPG? +PCTL=<P>\\r\\n\n\nOPS AT+PCTL<P>\\r\\n\nOPG +PCTL=<P>\\r\\nOK\\r\\n\n\nLEDS? \\-\nLEDG? \\-\n\nLEDS \\-\nLEDG \\-\n\nSTOPS? AT+STOP\\r\\n\nSTOPG? +STOP=<P>\\r\\n\n\nSTOPS AT+STOP<P>\\r\\n\nSTOPG +STOP\\r\\nOK\\r\\n\n\nUUIDS? AT+UUID\\r\\n\nUUIDG? +UUID=<P>\\r\\n\n\nUUIDS AT+UUID<P>\\r\\n\nUUIDG +UUID=<P>\\r\\nOK\n\nTCONS? \\-\nTCONG? \\-\n\nTCONS \\-\nTCONG \\-\n\nCONNG OK+CONN\\r\\n\nLOSTG OK+LOST\\r\\n\nWAKEG OK+WAKE\\r\\n\n"; 
+	char text[] = "ATS AT\\r\\n\nATG OK\\r\\n\n\nUSERNOTE Bluetooth-Low-Energy\\n\\t\\tThis\\_is\\_the\\_standard\\_comand-configuration\\_for\\_the\\_BT\\_module!!!\n\nPOWES \\-\nPOWEG \\-\n\nPOWES? \\-\nPOWEG? \\-\n\nNAMES? AT+NAME\\r\\n\nNAMEG? +NAME=<P>\\r\\n\n\nNAMES AT+NAME<P>\\r\\n\nNAMEG +NAME=<P>\\r\\nOK\\r\\n\n\nPASSS? AT+PASS\\r\\n\nPASSG? +PASS=<P>\\r\\n\n\nPASSS AT+PIN<P>\\r\\n\nPASSG +PIN=<P>\\r\\nOK\\r\\n\n\nRENEWS AT+RENEW\\r\\n\nRESETS AT+RESET\\r\\n\n\nRENEWG +RENEW\\r\\nOK\\r\\n\nRESETG +RESET\\r\\nOK\\r\\n\n\nROLES? AT+ROLE\\r\\n\nROLEG? +ROLE=<P>\\r\\n\n\nROLES AT+ROLE<P>\\r\\n\nROLEG +ROLE=<P>\\r\\nOK\\r\\n\n\nTEMPS? \\-\nTEMPG? \\-\n\nTYPES? AT+TYPE\\r\\n\nTYPEG? +TYPE=<P>\\r\\n\n\nTYPES AT+TYPE<P>\\r\\n\nTYPEG +TYPE=<P>\\r\\nOK\\r\\n\n\nRADDS? AT+RADD\\r\\n\nRADDG? +RADD=<P>\\r\\nOK\\r\\n\n\nVERSS? AT+VERSION\\r\\n\nVERSG? <P>\\r\\n\n\nPWRS? AT+PWRM\\r\\n\nPWRG? +PWRM=<P>\\r\\n\n\nPWRS AT+PWRM<P>\\r\\n\nPWRG +PWRM=<P>\\r\\Ok\\r\\n\n\nRSSIS? \\-\nRSSIG? \\-\n\nIMMES? \\-\nIMMEG? \\-\n\nIMMES AT+IMME\\r\\n\nIMMEG +IMME=<P>\\r\\nOK\\r\\n\n\nNOTIS? AT+NOTI\\r\\n\nNOTIG? +NOTI=<P>\\r\\n\n\nNOTIS AT+NOTI<P>\\r\\n\nNOTIG +NOTI=<P>\\r\\nOK\\r\\n\n\nADDRS? AT+ADDR\\r\\n\nADDRG? +ADDR=<P>\\r\\n\n\nBATTS? \\-\nBATTG? \\-\n\nHELPS? \\-\nHELPG? \\-\n\nMODES? AT+MODE\\r\\n\nMODEG? +MODE=<P>\\r\\n\n\nMODES AT+MODE<P>\\r\\n\nMODEG +MODE=<P>\\r\\nOK\\r\\n\n\nPARIS? AT+PARI\\r\\n\nPARIG? +PARI=<P>\\r\\n\n\nPARIS AT+PARI<P>\\r\\n\nPARIG +PARI=<P>\\r\\nOK\\r\\n\n\nOPS? AT+PCTL\\r\\n\nOPG? +PCTL=<P>\\r\\n\n\nOPS AT+PCTL<P>\\r\\n\nOPG +PCTL=<P>\\r\\nOK\\r\\n\n\nLEDS? \\-\nLEDG? \\-\n\nLEDS \\-\nLEDG \\-\n\nSTOPS? AT+STOP\\r\\n\nSTOPG? +STOP=<P>\\r\\n\n\nSTOPS AT+STOP<P>\\r\\n\nSTOPG +STOP\\r\\nOK\\r\\n\n\nUUIDS? AT+UUID\\r\\n\nUUIDG? +UUID=<P>\\r\\n\n\nUUIDS AT+UUID<P>\\r\\n\nUUIDG +UUID=<P>\\r\\nOK\n\nTCONS? \\-\nTCONG? \\-\n\nTCONS \\-\nTCONG \\-\n\nCONNG OK+CONN\\r\\n\nLOSTG OK+LOST\\r\\n\nWAKEG OK+WAKE\\r\\n\n";
 	char text1[] = "ATS AT\nATG OK\n\nUSERNOTE Bluetooth-Low-Energy\\n\\t\\tYou\\_have\\_to\\_select\\_this\\_if\\_you\\_had\\_flashed\\_your\\_module\\_with\\_CCLoader!!!\n\nPOWES AT+POWE<P>\nPOWEG OK+Get:<P>\n\nPOWES? AT+POWE?\nPOWEG? OK+Get:<P>\n\nNAMES? AT+NAME?\nNAMEG? OK+NAME:<P>\n\nNAMES AT+NAME<P>\nNAMEG OK+Set:<P>\n\nPASSS? AT+PASS?\nPASSG? OK+Get:<P>\n\nPASSS AT+PIN<P>\nPASSG OK+Set:<P>\n\nRENEWS AT+RENEW\nRESETS AT+RESET\n\nRENEWG OK+RENEW\nRESETG OK+RESET\n\nROLES? AT+ROLE?\nROLEG? OK+Get:<P>\n\nROLES AT+ROLE<P>\nROLEG OK+Set:<P>\n\nTEMPS? AT+TEMP?\nTEMPG? OK+Get:<P>\n\nTYPES? AT+TYPE?\nTYPEG? OK+Get:<P>\n\nTYPES AT+TYPE<P>\nTYPEG OK+Set:<P>\n\nRADDS? AT+RADD?\nRADDG? OK+RADD:<P>\n\nVERSS? AT+VERS?\nVERSG? <P>\n\nPWRS? AT+PWRM?\nPWRG? OK+Get:<P>\n\nPWRS AT+PWRM<P>\nPWRG OK+Set:<P>\n\nRSSIS? AT+RSSI?\nRSSIG? OK+RSSI:<P>\n\nIMMES? AT+IMME?\nIMMEG? OK+Get:<P>\n\nIMMES AT+IMME<P>\nIMMEG OK+Set:<P>\n\nNOTIS? AT+NOTI?\nNOTIG? OK+Get:<P>\n\nNOTIS AT+NOTI<P>\nNOTIG OK+Set:<P>\n\nADDRS? AT+ADDR?\nADDRG? OK+ADDR:<P>\n\nBATTS? AT+BATT?\nBATTG? OK+Get:<P>\n\nHELPS? AT+HELP?\nHELPG? <P>\n\nMODES? AT+MODE?\nMODEG? OK+Get:<P>\n\nMODES AT+MODE<P>\nMODEG OK+Set:<P>\n\nPARIS? AT+PARI?\nPARIG? OK+Get:<P>\n\nPARIS AT+PARI<P>\nPARIG OK+Set:<P>\n\nOPS? AT+PCTL?\nOPG? OK+Get:<P>\n\nOPS AT+PCTL<P>\nOPG OK+Set:<P>\n\nLEDS? AT+PIO1?\nLEDG? OK+Get:<P>\n\nLEDS AT+PIO1<P>\nLEDG OK+Set:<P>\n\nSTOPS? AT+STOP?\nSTOPG? OK+Get:<P>\n\nSTOPS AT+STOP<P>\nSTOPG OK+Set:<P>\n\nUUIDS? AT+UUID?\nUUIDG? OK+Get:<P>\n\nUUIDS AT+UUID<P>\nUUIDG OK+Set:<P>\n\nTCONS? AT+TCON?\nTCONG? OK+Get:<P>\n\nTCONS AT+TCON<P>\nTCONG OK+Set:<P>\n\nCONNG OK+CONN\nLOSTG OK+LOST\nWAKEG OK+WAKE\n";
 	char text2[] = "ATS AT+VERSION\\r\\n\nATG +VERSION=JDY-31-V1.35,Bluetooth\\_V3.0\\r\\n\n\nUSERNOTE Bluetooth-Classic\\n\\t\\tDo\\_not\\_forget\\_the\\_voltage\\_divider\\_on\\_RX\\_of\\_the\\_module!!!\\n\\t\\tIf\\_it\\_does\\_not\\_work\\_look\\_at\\_this\\_file\\_and\\_change\\_the\\_\"ATG\"\\_line\\_to\\_the\\_right\\_Version!!\\n\\t\\t\\tNo\\_real\\_AT\\_command\\_for\\_this\\_was\\_found!!!\n\nPOWES \\-\nPOWEG \\-\n\nPOWES? \\-\nPOWEG? \\-\n\nNAMES? AT+NAME\\r\\n\nNAMEG? +NAME=<P>\\r\\n\n\nNAMES AT+NAME<P>\\r\\n\nNAMEG +OK\\r\\n\n\nPASSS? AT+PIN\\r\\n\nPASSG? +PIN=<P>\\r\\n\n\nPASSS AT+PIN<P>\\r\\n\nPASSG +OK\\r\\n\n\nRENEWS AT+DEFAULT\\r\\n\nRESETS AT+RESET\\r\\n\n\nRENEWG +OK\\r\\n\nRESETG +OK\\r\\n\n\nROLES? \\-\nROLEG? \\-\n\nROLES \\-\nROLEG \\-\n\nTEMPS? \\-\nTEMPG? \\-\n\nTYPES? \\-\nTYPEG? \\-\n\nTYPES \\-\nTYPEG \\-\n\nRADDS? \\-\nRADDG? \\-\n\nVERSS? AT+VERSION\\r\\n\nVERSG? +VERSION=<P>\\r\\n\n\nPWRS? \\-\nPWRG? \\-\n\nPWRS \\-\nPWRG \\-\n\nRSSIS? \\-\nRSSIG? \\-\n\nIMMES? \\-\nIMMEG? \\-\n\nIMMES \\-\nIMMEG \\-\n\nNOTIS? \\-\nNOTIG? \\-\n\nNOTIS \\-\nNOTIG \\-\n\nADDRS? AT+LADDR\\r\\n\nADDRG? +LADDR=<P>\\r\\n\n\nBATTS? \\-\nBATTG? \\-\n\nHELPS? \\-\nHELPG? \\-\n\nMODES? \\-\nMODEG? \\-\n\nMODES \\-\nMODEG \\-\n\nPARIS? \\-\nPARIG? \\-\n\nPARIS \\-\nPARIG \\-\n\nOPS? \\-\nOPG? \\-\n\nOPS \\-\nOPG \\-\n\nLEDS? \\-\nLEDG? \\-\n\nLEDS \\-\nLEDG \\-\n\nSTOPS? \\-\nSTOPG? \\-\n\nSTOPS \\-\nSTOPG \\-\n\nUUIDS? \\-\nUUIDG? \\-\n\nUUIDS \\-\nUUIDG \\-\n\nTCONS? \\-\nTCONG? \\-\n\nTCONS \\-\nTCONG \\-\n\nCONNG CONNECTED\\r\\r\\n\nLOSTG +DISC:SUCCSTSS\\r\\rn\nWAKEG \\-\n";
 	char* cdir = dir_HMfiles();
@@ -224,7 +214,7 @@ void generateH() {
 		return;
 	}
 	color(ROTh);
-	printf("File \"%s\" could not denerated!!\n\tNo flashing possible!!!\n", PER_HEX);
+	printf("File \"%s\" could not generated!!\n\tNo flashing possible!!!\n", PER_HEX);
 	rcolor;
 
 }
@@ -325,20 +315,20 @@ void logoprinter() {
 }
 bool configF() {
 	FILE* f;
-	if ((f = fopen(PER_CONFIG, "r+")) == NULL) {
+	if ((f = fopen(dir_procedure(), "r+")) == NULL) {
 #ifdef DEBUG
 		printf("create\n");
 #endif
-		if ((f = fopen(PER_CONFIG, "a+")) == NULL) {
+		if ((f = fopen(dir_procedure(), "a+")) == NULL) {
 			color(ROTh);
-			printf("The File \"%s\" could not be generated!!\n\n", PER_CONFIG);
+			printf("The File \"%s\" could not be generated!!\n\n", dir_procedure());
 			rcolor;
 			return 0;
 		}
 		else {
 			generateC(f);
 			fclose(f);
-			system(PER_CONFIG);
+			system(dir2CMD(dir_procedure()));
 		}
 	}
 
@@ -349,7 +339,7 @@ bool configF() {
 void configL(char* cx) {
 	FILE* f;
 	strcpy(cx, "");
-	if ((f = fopen(PER_CONFIG, "r+")) == NULL) {
+	if ((f = fopen(dir_procedure(), "r+")) == NULL) {
 		return;
 	}
 	if (fgetc(f) == EOF) {
@@ -360,7 +350,7 @@ void configL(char* cx) {
 		if ('y' == _getch()) {
 			generateC(f);
 			fclose(f);
-			system(PER_CONFIG);
+			system(dir2CMD(dir_procedure()));
 			configL(cx);
 			return;
 		}
@@ -400,10 +390,10 @@ void configL(char* cx) {
 		printf("Nothing is selected in configuration file!!\n");
 		printf("Do you want to auto generate the document? (y/n)\n");
 		if ('y' == _getch()) {
-			f = fopen(PER_CONFIG, "w+");
+			f = fopen(dir_procedure(), "w+");
 			generateC(f);
 			fclose(f);
-			system(PER_CONFIG);
+			system(dir2CMD(dir_procedure()));
 			configL(cx);
 			return;
 		}
@@ -625,61 +615,6 @@ void loadProgrammToDB(char* argv[], char* portnum) {
 	printf("Press any key after flashing!\n");
 	_getch();
 }
-void endofP() {
-	rcolor;
-	printTitle(" - The end!");
-
-	printf("Disconnect the USB Cable first before you switch off your DiscBot!\nThen you can switch the robot off\n");
-	color(GELBh);
-	//printf("Press enter to exit\n");
-	rcolor;
-	struct tm* c;
-	double x[2] = { 0,0 };
-	db_data_transmission_byte(x);
-	printf("%0.0lf Byte%swere recived & %0.0lf Byte%swere sent!!\n", x[1], (x[1] != 1) ? " " : "s ", x[0], (x[0] != 1) ? " " : "s ");
-	printf("Have fun with your %s\n", PER_DEVICE);
-	time_t now;
-	now = time(0) + (60 * 60);
-	c = gmtime(&now);
-	color(GRUENh);
-	char days[7][25] = { "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" };
-	printf("Goodbye, have a nice %s!!\n\n", days[c->tm_wday]);
-	rcolor;
-	_fcloseall();
-	flush();
-	color(ROTh);
-	printf("Push 'c' to close the application!!!\n\n");
-	printf("\tIf you want to scroll click here!!!\n\n");
-	rcolor;
-	printf("\t\thttps://github.com/mtullmann/DB-Control-Vers.1.0.2\n\n", c->tm_year + 1900);
-	printf("\t\t\t(c) Martin Tullmann %i\n\n", c->tm_year + 1900);
-	color(ROTh);
-	int i = 0;
-	bool played = PlaySound(L"bon.wav", NULL, SND_LOOP | SND_ASYNC);
-	do {
-		printf(" THE_END");
-		rcolor;
-		printf("%c", ((i / 4) % 2) ? '_' : ' ');
-		switch ((i++) % 10) {
-		case 0:color(ROTh); break;
-		case 1:color(ROTd); break;
-		case 2:color(GELBd); break;
-		case 3:color(GELBh); break;
-		case 4:color(GRUENh); break;
-		case 5:color(GRUENd); break;
-		case 6:color(VIOLETTh); break;
-		case 7:color(VIOLETTd); break;
-		case 8:color(TURKEYSEh); break;
-		case 9:color(TURKEYSEd); break;
-		}
-		printf("\r");
-		waitS(250, 1);
-		while (!waitS(250, 0) && !(GetKeyState(0x43) & 1));
-	} while (!(GetKeyState(0x43) & 1) || _getch() != 'c');
-	rcolor;
-	printf("\n\n");
-	exit(0);
-}
 bool checkName(char* filenmae) {
 	strcpy(exeRname, PER_PNAME);
 	strcat(exeRname, " Vers. ");
@@ -716,13 +651,33 @@ int main(int argc, char* argv[])
 	//global_port_manager();
 	//while(!anyKey());
 	//printf("%c characht",_getch());
+/*
+	printf("ORIG:\"%s\"\n\"%s\"\n", orig, insAfter(orig, "OH", "OH NO"));
+	*/
+	char orig[12000];
+	sprintf(orig,"Ich m%cchte, dass das fungioniert",oe);
+	// strcpy(orig, generateSstring());
+	printf("%s\n\n", orig);
+	printf("Thanks to:\n%s\n\n", insAfter(orig,"g", "k"));
+
+	//
+	if (argc > 1 && !strcmp(argv[1], "visual++")) {
+		color(GRUENh);
+		printf("Enter Visual Checksheet!\n\n");
+		rcolor;
+		for (int i = 1; i != argc; i++) {
+			printf("Nr. %i, Val=\"%s\"\n", i, argv[i]);
+		}
+		cSopenVisual(argc, argv);
+		exit(0);
+	}
 	mcOperateOffline = 0;
 	initGlobal();
 	initTest();
 	printTitle(" - Welcome");
 
 	buildData(NULL);
-	generateDir(PER_CONFIGURE);
+	//generateDir(PER_CONFIGURE);
 
 	generateH();
 	printf("Enter ");
@@ -817,13 +772,13 @@ int main(int argc, char* argv[])
 		if (ynrespond() == 'y') {
 			manager_offline();
 		}
-		if ((f = fopen(PER_CONFIG, "r+")) == NULL) {
+		if ((f = fopen(dir_procedure(), "r+")) == NULL) {
 			color(GRUENh);
-			printf("Okay!\tLet's start with the configuration!\n");
+			printf("Okay!\tLet's start with the configure the testprocdure file!\n");
 			rcolor;
 			if (!configF()) {
 				color(ROTh);
-				printf("Something went wrong with config File!\nPlease make sure you have enought diskspace and a right config File!\nTry again!\n");
+				printf("Something went wrong with config File!\nPlease make sure you have enought diskspace and a right testprocdure File!\nTry again!\n");
 				rcolor;
 				_getch();
 				return 0;
@@ -833,17 +788,17 @@ int main(int argc, char* argv[])
 			fclose(f);
 			printf("Do you want to change your ");
 			color(GELBh);
-			printf("configurations");
+			printf("testprocdure");
 			rcolor;
 			printf("? (y/n)\n");
 			if ('y' == _getch())
-				system(PER_CONFIG);
+				system(dir2CMD(dir_procedure()));
 		}
-		
+
 		//printf("EXEC: \"%s\"\n", ex);
-		
+
 		color(GRUENh);
-		printf("Load congiguration ...\n");
+		printf("Load testprocdure ...\n");
 		rcolor;
 		static char ex[1000] = "";
 		configL(ex);

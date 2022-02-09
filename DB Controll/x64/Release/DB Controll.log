@@ -1,12 +1,19 @@
 ﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(510,5): warning MSB8028: Das Zwischenverzeichnis (x64\Release\) enthält freigegebene Dateien aus einem anderen Projekt (DB Control Vers. 1.0.2 beta Experimental.vcxproj, DB Control Vers. 1.0.2 beta.vcxproj, DB Control Vers1.0.2 beta.vcxproj). Dies kann zu einem falschen Bereinigungs- und Neuerstellungsverhalten führen.
-  global.cpp
-F:\SHtestBeta\DB\DB Controll\new\DB-Controll-Vers.1.0.2\DB Controll\global.cpp(267,31): warning C4267: "Initialisierung": Konvertierung von "size_t" nach "int", Datenverlust möglich
-F:\SHtestBeta\DB\DB Controll\new\DB-Controll-Vers.1.0.2\DB Controll\global.cpp(274,23): warning C4267: "Initialisierung": Konvertierung von "size_t" nach "int", Datenverlust möglich
-F:\SHtestBeta\DB\DB Controll\new\DB-Controll-Vers.1.0.2\DB Controll\global.cpp(352,30): warning C4267: "+=": Konvertierung von "size_t" nach "int", Datenverlust möglich
-F:\SHtestBeta\DB\DB Controll\new\DB-Controll-Vers.1.0.2\DB Controll\global.cpp(547,8): warning C4101: "cp": Unreferenzierte lokale Variable
+  utility.cpp
+F:\SHtestBeta\DB\DB Controll\new\DB-Controll-Vers.1.0.2\DB Controll\utility.cpp(213,94): warning C4244: "Argument": Konvertierung von "double" in "DWORD", möglicher Datenverlust
+F:\SHtestBeta\DB\DB Controll\new\DB-Controll-Vers.1.0.2\DB Controll\utility.cpp(456,21): warning C4267: "Argument": Konvertierung von "size_t" nach "int", Datenverlust möglich
+F:\SHtestBeta\DB\DB Controll\new\DB-Controll-Vers.1.0.2\DB Controll\utility.cpp(460,21): warning C4267: "Argument": Konvertierung von "size_t" nach "int", Datenverlust möglich
+F:\SHtestBeta\DB\DB Controll\new\DB-Controll-Vers.1.0.2\DB Controll\utility.cpp(462,21): warning C4267: "Argument": Konvertierung von "size_t" nach "int", Datenverlust möglich
+F:\SHtestBeta\DB\DB Controll\new\DB-Controll-Vers.1.0.2\DB Controll\utility.cpp(467,21): warning C4267: "Argument": Konvertierung von "size_t" nach "int", Datenverlust möglich
+F:\SHtestBeta\DB\DB Controll\new\DB-Controll-Vers.1.0.2\DB Controll\utility.cpp(471,21): warning C4267: "Argument": Konvertierung von "size_t" nach "int", Datenverlust möglich
+F:\SHtestBeta\DB\DB Controll\new\DB-Controll-Vers.1.0.2\DB Controll\utility.cpp(522,10): warning C4244: "Initialisierung": Konvertierung von "double" in "int", möglicher Datenverlust
+F:\SHtestBeta\DB\DB Controll\new\DB-Controll-Vers.1.0.2\DB Controll\utility.cpp(539,13): warning C4309: "Initialisierung": Verkürzung eines konstanten Wertes
+F:\SHtestBeta\DB\DB Controll\new\DB-Controll-Vers.1.0.2\DB Controll\utility.cpp(584,26): warning C4267: "Initialisierung": Konvertierung von "size_t" nach "int", Datenverlust möglich
+F:\SHtestBeta\DB\DB Controll\new\DB-Controll-Vers.1.0.2\DB Controll\utility.cpp(585,26): warning C4267: "Initialisierung": Konvertierung von "size_t" nach "int", Datenverlust möglich
+F:\SHtestBeta\DB\DB Controll\new\DB-Controll-Vers.1.0.2\DB Controll\utility.cpp(598,12): warning C4552: "-": Ergebnis des Ausdrucks nicht verwendet.
   Code wird generiert.
-  11 of 191 functions ( 5.8%) were compiled, the rest were copied from previous compilation.
+  1 of 206 functions ( 0.5%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    34 functions had inline decision re-evaluated but remain unchanged
+    35 functions had inline decision re-evaluated but remain unchanged
   Codegenerierung ist abgeschlossen.
   DB Controll.vcxproj -> F:\SHtestBeta\DB\DB Controll\new\DB-Controll-Vers.1.0.2\x64\Release\DB Control Vers. 1.0.2 beta D+ Experimental.exe

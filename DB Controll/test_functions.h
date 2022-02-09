@@ -1,6 +1,6 @@
 #pragma once
 #define _CRT_SECURE_NO_WARNINGS
-#include "DB_serial.h"
+#include "test_serial.h"
 #include "utility.h"
 #include <iostream>
 #include <shlobj.h>
@@ -18,3 +18,4 @@ bool simpleExample();
 bool manager(char* ex);
 void endofP();
 void initTest();
+bool cSopenVisual(int argc, char* argv[]);

@@ -142,7 +142,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="DB Controll.cpp" />
-    <ClCompile Include="DB_serial.cpp">
+    <ClCompile Include="test_serial.cpp">
       <FileType>CppCode</FileType>
     </ClCompile>
     <ClCompile Include="global.cpp" />
@@ -152,9 +152,10 @@
     <ClCompile Include="utility.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="DB_serial.h" />
+    <ClInclude Include="test_serial.h" />
     <ClInclude Include="dirent.h" />
     <ClInclude Include="global.h" />
+    <ClInclude Include="graphicHelp.h" />
     <ClInclude Include="keyboard.h" />
     <ClInclude Include="music.h" />
     <ClInclude Include="resource.h" />

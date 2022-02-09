@@ -27,7 +27,7 @@
     <ClCompile Include="sheet.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
-    <ClCompile Include="DB_serial.cpp">
+    <ClCompile Include="test_serial.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
     <ClCompile Include="global.cpp">
@@ -44,7 +44,7 @@
     <ClInclude Include="serial.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
-    <ClInclude Include="DB_serial.h">
+    <ClInclude Include="test_serial.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
     <ClInclude Include="utility.h">
@@ -69,6 +69,9 @@
       <Filter>Headerdateien</Filter>
     </ClInclude>
     <ClInclude Include="test_functions.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="graphicHelp.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
   </ItemGroup>

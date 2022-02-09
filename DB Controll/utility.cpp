@@ -1,4 +1,6 @@
 #include "utility.h"
+#include "vector"
+using namespace std;
 void endofP();
 void bell() { printf("%c", BELL); }
 
@@ -293,18 +295,52 @@ int int_inp() {
 		}
 		color(ROTh);
 		if (s[0] != '\0')
-			printf("\n\tWrong input!!!\n\tInput has to be a an integer value!!!\n\t\t\"%s\" is not an integer value!!!\nTry again: ", s);
+			printf("\n\tWrong input!!!\n\tInput has to be a an integer value!!!\n\t\t\"%s\" is not an integer value!!!", s);
 		rcolor;
+		for (int i = 0; i != strlen(s);i++) {
+			if(ablechint(s[i]))
+			s[i]=GROSS_2_KLEIN(s[i]);
+		}
+		//printf("\nNew: \"%s\"\n", s);
+		if (!strcmp("exit", s)||!strcmp("3x1t", s)) {
+			color(VIOLETTd);
+			printf("\nDo you really want to exit now?");
+			rcolor;
+			if (ynrespond() == 'y') {
+				printf("\r");
+				printx(' ',100);
+				printf("\r");
+				endofP();
+			}
+			printf("\r");
+			printx(' ', 100);
+			printf("\r");
+		}
+		color(ROTh);
+		if (s[0] != '\0')
+			printf("\nTry again: ");
+		rcolor;
+
 	}
 }
 int int_inp(int from, int to) {
-	if (from == to||from==to+1) {
-		color(ROTh);
-		printf("\n\tType in a number between %i and %i: ", from - 1, to + 1);
-		color(VIOLETTh);
-		printf("\n\nYou are fucked off...\n");
+	if (from == to || from == to + 1) {
+		if (from == to) {
+			color(ROTh);
+			printf("\n\tType in a number between %i and %i: ", from - 1, to + 1);
+			rcolor;
+			printf("%i\n", from);
+			return from;
 
-		endofP();
+		}
+		if (0) {
+			color(ROTh);
+			printf("\n\tType in a number between %i and %i: ", from - 1, to + 1);
+			color(VIOLETTh);
+			printf("\n\nYou are fucked off...\n");
+
+			endofP();
+		}
 	}
 	int res = 0;
 	if (from == to) {
@@ -531,3 +567,42 @@ void percentGraph(double percentx, const char* format, bool colorx, int steps) {
 	printf(format, shadowpercentx);
 }
 //gets_s
+
+char* insAfter(const char* source, const char* after, const char* thing) {
+	static char* p;
+	const int siz = 12000;
+	p = (char*)malloc(siz + 1);
+	if (p == NULL) {
+		color(ROTh);
+		printf("\n\n~||######$$$$$OPERATION CAN NOT BE EXECUTED BECAUSE RAM SPACE!!!!!!!!!!!!!!!???????????===============AFSDDDDDDDDDDDDDBASD\n\n");
+		rcolor;
+		return NULL;
+	}
+	strcpy(p, source);
+	int cntdiff = 0;
+	int cnt = 0;
+	int gsiz = strlen(thing);
+	int asiz = strlen(after);
+	char temp[100];
+	for (int i = 0; p[i] != '\0'; i++) {
+		if (asiz > strlen(&p[i]))
+			break;
+		strcpy(temp, &p[i]);
+		temp[asiz ] = '\0';
+			if (!strcmp(temp,after)) {
+				cnt++;
+				strcpy(&p[i], thing);
+				cntdiff += gsiz;
+				i += gsiz;
+				strcpy(&p[i], &source[i - cntdiff+cnt*asiz]);
+				cntdiff- asiz;
+			}
+	}
+	return p;
+}
+char* insAfterNL(const char* source, const char* thing) {
+	static char* p;
+	p = insAfter(source, (char*)"\n", thing);
+
+	return p;
+}

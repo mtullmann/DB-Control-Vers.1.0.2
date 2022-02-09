@@ -70,6 +70,11 @@ void cSaddMsg(const char* x) {
 	if (write)
 		fprintf(sheet, x);
 }
+void cSaddENote(const char* x) {
+	if (!cSconnect)return;
+	if (write)
+		fprintf(sheet, "|EditorNote::\"%s\"\\\"%s\"\\_%s",PER_PNAME, cScategoryS[cScategoryCnt],x);
+}
 void cScategory(char* x) {
 	if (!cSconnect)return;
 	if (!write)

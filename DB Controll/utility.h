@@ -87,3 +87,5 @@ void printx(char c, const char* x);
 void printxCx(char c, const  char* x);
 void printxCx(char c, const char* x, int c1, int c2, int c3);
 void percentGraph(double percent, const char* format, bool colorx, int steps);
+char* insAfter(const char* source, const char* after, const char* thing);
+char* insAfterNL(const char* source, const char* thing);

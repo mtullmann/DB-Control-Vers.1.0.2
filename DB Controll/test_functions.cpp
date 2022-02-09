@@ -300,10 +300,12 @@ bool db_Tbtn() {
 	_getch();
 	db_cmd(DB_BTN, 0, NULL, ou);
 	//printf("ou=%i\n", ou[2]);
+	char note[101] = "";
 	if (ou[2] == 0) {
 		printf("No button was pushed\n");
 		db_Beep();
 		//cScError("No button was pushed\n");
+		strcat(note, "000 ");
 	}
 	else {
 		for (uint8_t i = 0; i != 3; i++) {
@@ -320,8 +322,13 @@ bool db_Tbtn() {
 				sprintf(s, "The button %s was pushed instead of none!\n", col[i]);
 				cScError(s);
 				db_Siren();
+				strcat(note, "1");
+			}
+			else {
+				strcat(note, "0");
 			}
 		}
+		strcat(note, " ");
 	}
 	bool f = 0;
 	for (uint8_t oi = 0; oi != 3; oi++) {
@@ -415,6 +422,8 @@ bool db_Tbtn() {
 	for (uint8_t i = 0; i != 3; i++) {
 		dbLed_setColor(4 + i, 0, 0, 0);
 	}
+	//oups
+	cSaddENote(note);
 	exitS();
 	return 1;
 }
@@ -3182,9 +3191,9 @@ bool mc_Data_Converter(uint16_t summary[2][5][2]) {
 	return 1;
 }
 
-#define MC_PRESET "motorPresets\\preset"
-#define MC_SIMULATION "motorPresets\\tests"
-#define MC_GENERAL "motorPresets"
+#define MC_PRESET "DB Control\\motordata\\preset"
+#define MC_SIMULATION "DB Control\\motordata\\tests"
+#define MC_GENERAL "DB Control\\motordata"
 #define MC_NAMES_BF_SIZE 10001
 bool mcAddPreset(uint16_t* param, const char* name) {
 	const int mparam = 6;
@@ -4668,7 +4677,7 @@ bool manager(char* ex) {
 					bt_os(1);
 					break;
 				case 11:allok = db_Tbm(); break;
-				default:color(ROTh); printf("Command \"%s\" is not defined!\nPlease delete it from the configuration File!\n", cx); system(PER_CONFIG); color(rcol); break;
+				default:color(ROTh); printf("Command \"%s\" is not defined!\nPlease delete it from the configuration File!\n", cx); system(dir2CMD(dir_procedure())); color(rcol); break;
 				}
 				if (!allok) {
 
@@ -4794,4 +4803,111 @@ void generate_Files() {
 }
 void initTest() {
 	generateMC();
+}
+#include "graphicHelp.h"
+#define FULL_CHARACTER 219
+void visBTNline(char c1, char c2, char c3) {
+	char c[100];
+	char ou[100];
+	GPU_GRAPH g;
+	gpu_rectangle(2, 2, FULL_CHARACTER, ROTh, &g);
+	for (int i = 0; i != 2; i++) {
+		/*color(g.colr[0]);
+		printf("%s\n\n",g.c);
+		rcolor;*/
+		for (int ii = 0; ii != 3; ii++) {
+			switch (ii) {
+			case 0:color(c1); break;
+			case 1:color(c2); break;
+			case 2:color(c3); break;
+			}
+			gpu_extractLine(g.c, ii, ou);
+			printf("%s ", ou);
+			rcolor;
+		}
+		printf("\n");
+	}
+}
+bool cSVBtn(char* b[]) {
+	char x[4][3];
+	printf(" %s %s %s %s\n", b[0], b[1], b[2], b[3]);
+
+	for (int i = 0; i != 4; i++)
+		sscanf(b[i], "%c%c%c", &x[i][0], &x[i][1], &x[i][2]);
+	int tel = 0;
+	char tex[4][12] = { "no","red","green","blue" };
+	char texPin[6][12] = { "PB4","GPIO17","PB5","GPIO27","PB6","GPIO22", };
+	for (int i = 0; i != 4; i++) {
+		printf("Testing button %s pressed...\n", tex[i]);
+		visBTNline(ROTh, GRUENh, BLAUh);
+		tel = 0;
+		if (i == 0) {
+			for (int ii = 0; ii != 3; ii++) {
+				if (x[i][ii] == '0') {
+					color(GRUENh);
+					printf("pass ");
+					tel++;
+				}
+				else {
+					color(ROTh);
+					printf("fail ");
+				}
+			}
+		}
+		else {
+			for (int ii = 0; ii != 3; ii++) {
+				if ((x[i][ii] == '1' && i - 1 == ii) ||
+					(x[i][ii] == '0' && i - 1 != ii)) {
+					color(GRUENh);
+					printf("pass ");
+					tel++;
+				}
+				else {
+					color(ROTh);
+					printf("fail ");
+				}
+				rcolor;
+			}
+		}
+
+		if (tel == 3)
+			color(GRUENh);
+		else
+			color(ROTh);
+		printf(" %c%c", FULL_CHARACTER, FULL_CHARACTER);
+		rcolor;
+		printf("\n\n");
+	}
+	return 1;
+}
+bool cSopenVisual(int argc, char* argv[]) {
+	printf("CMD ");
+	color(GELBh);
+	printf("%s ", argv[2]);
+	rcolor;
+	if (!strcmp(argv[2], "git")) {
+		system("git");
+	}
+	int nr = -1;
+	if ((nr = wtn(argv[2])) == -1) {
+		color(ROTh);
+		printf("not found!!\n\n");
+		rcolor;
+		return 0;
+	}
+	color(GRUENh);
+	printf("found!\n\n");
+	rcolor;
+	switch (nr) {
+	case 0:
+		cSVBtn(&argv[3]);
+		break;
+	default:
+		color(VIOLETTh);
+		printf("Comming soon!!\n");
+		rcolor;
+	}
+
+	printf("Exit visual Checksheet\n");
+	return 1;
 }

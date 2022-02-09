@@ -35,3 +35,4 @@ extern bool mcDebug;
 
 bool db_reset();
 bool db_cmd(uint8_t cmd, uint8_t lenIn, uint8_t* parameterIn, uint8_t* parameterOut);
+void db_data_transmission_byte(double* x);
